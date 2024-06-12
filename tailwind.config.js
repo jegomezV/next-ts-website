@@ -10,6 +10,14 @@ module.exports = {
 
 	theme: {
 		extend: {
+			spacing: {
+        '18rem': '18rem',
+        '12rem': '12rem',
+        '16rem': '16rem',
+        '13rem': '13rem',
+        '11rem': '11rem',
+      },
+
 			typography: {
 				DEFAULT: {
 					css: {

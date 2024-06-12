@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { Parallax } from 'react-scroll-parallax'
+import Image from 'next/image';
+import { Parallax } from 'react-scroll-parallax';
 
 import voguePhoto from '../../public/homeImgs/homeBg/voguePhoto.jpg';
 import blurHead from '../../public/homeImgs/homeBg/blurHead.jpg';
@@ -18,67 +18,66 @@ import thirdPhoto from '../../public/homeImgs/thirdPhoto.jpg';
 
 export const HeaderImages: React.FC = (): JSX.Element => {
   return (
-    <div className="absolute w-full h-full">
-
-      <Parallax scale={[1, 1]} translateX={[1, 1]}>
-        <div className='relative left-[300px] -bottom-64 h-30 w-52 border-[1px] border-white/20'>
+    <div className="absolute inset-0 w-screen h-full border-2 overflow-hidden">
+      <Parallax scale={[1, 1]} translateX={[-10, 10]}>
+        <div className='relative border-[1px] h-[18rem] w-[12rem] border-white/20 -right-[75%] -bottom-[2.5rem] hover:-translate-x-10 hover:-translate-y-4 hover:duration-300 duration-300 overflow-hidden'>
           <Image
-            width={1000}
-            height={1000}
-            className='absolute border-[1px] border-white/20'
-            src={artAlbine.src}
-            alt="Picture of the author"
-          />
-        </div>
-      </Parallax>
-
-      <Parallax scale={[1,1]} translateX={[-10, 10]}>
-        <div className='relative border-[1px] h-72 w-48 border-white/20 left-[1100px] -bottom-10 hover:-translate-x-10 hover:-translate-y-4 hover:duration-300 duration-300'>
-          <Image
-            width={1000}
-            height={1000}
-            className='absolute'
+            layout="fill"
+            objectFit="cover"
             src={secondPhoto.src}
             alt="Picture of the author"
+            priority={true}
           />
         </div>
       </Parallax>
 
       <Parallax scale={[1, 1]} translateX={[4, -10]}>
-        <div className='relative border-[1px] left-[20px] border-white/40 h-72 w-52 overflow-hidden bottom-60 hover:translate-x-4 hover:translate-y-4 hover:duration-300 duration-300'>
+        <div className='relative border-[1px] left-[2.5rem] border-white/40 h-[18rem] w-[13rem] overflow-hidden -top-[16rem] hover:translate-x-4 hover:translate-y-4 hover:duration-300 duration-300'>
           <Image
-            width={1900}
-            height={1900}
-            className='absolute'
+            layout="fill"
+            objectFit="cover"
             src={cameraMan.src}
             alt="Picture of the author"
+            priority={true}
           />
         </div>
       </Parallax>
 
       <Parallax scale={[1, 1]} translateX={[1, -10]}>
-        <div className='relative border-[1px] h-44 w-44 border-white/20 left-[950px] -top-72 hover:translate-x-10 hover:-translate-y-2 hover:duration-300 duration-300'>
+        <div className='relative border-[1px] h-[16rem] w-[11rem] border-white/20 -right-[46rem] bottom-[18rem] hover:translate-x-10 hover:-translate-y-2 hover:duration-300 duration-300 overflow-hidden'>
           <Image
-            width={1000}
-            height={1000}
-            className='absolute '
+            layout="fill"
+            objectFit="cover"
             src={albineGirl.src}
             alt="Picture of the author"
+            priority={true}
           />
         </div>
       </Parallax>
 
       <Parallax scale={[1, 1]} translateX={[1, 40]}>
-        <div className='relative left-[680px] -top-[850px] h-[345px] w-52 border-[1px] border-white/20 overflow-hidden'>
+        <div className='relative inset-0 left-2/4 -top-[48rem] h-[16rem] w-[13rem] border-[1px] border-white/20 overflow-hidden'>
           <Image
-            width={1900}
-            height={1900}
-            className='absolute'
+            layout="fill"
+            objectFit="cover"
             src={girlPick.src}
             alt="Picture of the author"
+            priority={true}
+          />
+        </div>
+      </Parallax>
+
+      <Parallax scale={[1, 1]} translateX={[4, -10]}>
+        <div className='relative border-[1px] left-[2.5rem] border-white/40 h-[18rem] w-[13rem] overflow-hidden -top-[15rem] hover:translate-x-4 hover:translate-y-4 hover:duration-300 duration-300'>
+          <Image
+            layout="fill"
+            objectFit="cover"
+            src={cameraMan.src}
+            alt="Picture of the author"
+            priority={true}
           />
         </div>
       </Parallax>
     </div>
-  )
-}
+  );
+};
