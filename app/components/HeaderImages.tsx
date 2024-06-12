@@ -37,7 +37,7 @@ export const HeaderImages: React.FC = (): JSX.Element => {
           <Image
             width={1000}
             height={1000}
-            className='absolute '
+            className='absolute'
             src={secondPhoto.src}
             alt="Picture of the author"
           />
