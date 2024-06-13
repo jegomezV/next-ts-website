@@ -17,11 +17,11 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 const Home = () => {
   return (
     <ParallaxProvider>
-    <div className="h-full w-screen border-4 border-red-800">
+    <div className="h-full w-screen">
       
       <HeaderM />
       
-        <main className="relative h-full w-screen border-4 border-blue-800">
+        <main className="relative h-full w-screen">
           {/* <CardSpotlight configs='h-full absolute w-[50%] border-4'>
               {<section className='w-full mx-auto rounded-full z-30 grid grid-cols-1 gap-3 border-4'>
                 <article className='flex mx-auto w-full justify-center text-center items-center flex-wrap'>
@@ -35,7 +35,7 @@ const Home = () => {
                 </article>
               </section>}
           </CardSpotlight> */}
-          <div className='relative w-[80%] rounded-full z-30  border-4'>
+          <div className='relative w-[80%] rounded-full z-30'>
        
               <h3 className='text-center text-4xl text-white'>Welcome to our website</h3>
               <p className='text-center text-xl text-white'>We provide the best services for you.</p>

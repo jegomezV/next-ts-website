@@ -13,7 +13,7 @@ import { Parallax } from 'react-scroll-parallax'
 
 export const HeaderM: React.FC = (): JSX.Element => {
   return (
-    <header className="border-2 border-green-600">
+    <header className="">
       <Nav />
 
       <div className='h-[100vh]'>
@@ -28,7 +28,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
       </div>
 
       
-      <div className='absolute top-0 border-2 border-violet-600 w-screen h-screen'>
+      <div className='absolute top-0 w-screen h-screen'>
 
         <Image
           width={1200}
