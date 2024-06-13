@@ -2,15 +2,16 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
+import Particles from './components/particles';
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
+    default: "Styles.com",
     template: "%s | chronark.com",
   },
   description: "Co-founder of unkey.dev and founder of planetfall.io",
   openGraph: {
-    title: "chronark.com",
+    title: "chronark",
     description:
       "Co-founder of unkey.dev and founder of planetfall.io",
     url: "https://chronark.com",
@@ -67,6 +68,7 @@ export default function RootLayout({
         className={`bg-black overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
+        <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={100} />
         {children}
       </body>
     </html>
