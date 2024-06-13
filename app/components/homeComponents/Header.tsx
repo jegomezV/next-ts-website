@@ -38,7 +38,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         <Image
           width={1200}
           height={1200}
-          className='absolute left-40 bottom-10 h-60 w-44 sm:left-10 lg:left-36 border-[1px] xl:h-72 xl:w-64 xl:left-40 xl:bottom-7 border-white/30 hover:translate-x-5 hover:duration-300 duration-300'
+          className='absolute left-40 bottom-10 h-60 w-44 sm:left-10 lg:left-28 border-[1px] xl:h-72 xl:w-64 xl:left-40 xl:bottom-7 border-white/30 hover:translate-x-5 hover:duration-300 duration-300'
           src={artAlbine.src}
           alt="Picture of the author"
         />
@@ -70,7 +70,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         <Image
           width={1200}
           height={1200}
-          className='absolute -bottom-28 sm:h-72 sm:w-52 sm:bottom-10 sm:right-[70px] lg:right-72 lg:-bottom-20 xl:h-[450px] xl:w-[330px] xl:-bottom-24 xl:right-[425px] h-96 lg:h-[400px] lg:w-[300px] w-60 right-1/4 transform -translate-x-1/2 -translate-y-1/2 border-[1px] border-white/30'
+          className='absolute -bottom-28 sm:h-72 sm:w-52 sm:bottom-10 sm:right-[70px] lg:right-72 lg:-bottom-20 xl:h-[465px] xl:w-[345px] xl:-bottom-22 xl:right-[425px] h-96 lg:h-[400px] lg:w-[300px] w-60 right-1/4 transform -translate-x-1/2 -translate-y-1/2 border-[1px] border-white/30'
           src={girlPick.src}
           alt="Picture of the author"
         />
@@ -86,7 +86,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         <Image
           width={1200}
           height={1200}
-          className='absolute right-60 top-40 sm:w-0 sm:h-0 h-60 w-36 md:h-40 md:w-28 md:left-40 md:top-60 lg:left-[40rem] lg:top-44 xl:left-[49rem] xl:h-44 xl:w-36 xl:top-32 border-[1px] border-white/30 hover:translate-x-3 hover:translate-y-3 hover:duration-300 duration-300'
+          className='absolute right-60 top-40 sm:w-0 sm:h-0 h-60 w-36 md:h-40 md:w-28 md:left-40 md:top-58 lg:left-[40rem] lg:top-32 xl:left-[49rem] xl:h-44 xl:w-36 xl:top-32 border-[1px] border-white/30 hover:translate-x-3 hover:translate-y-3 hover:duration-300 duration-300'
           src={shadowGirl.src}
           alt="Picture of the author"
         />
