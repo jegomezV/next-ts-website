@@ -5,7 +5,7 @@ export const TranslateButton: React.FC = (): JSX.Element => {
   return (
     <a
       onClick={() => { }}
-      className="fixed z-40 xs:right-4 md:right-2 lg:right-7 -top-0.5 md:top-0 inline-flex h-11 w-9 md:h-12 lg:h-14 xs:h-11 xs:w-7 items-center justify-center overflow-hidden bg-transparent font-medium text-neutral-200"
+      className="fixed z-40 xs:right-4 md:right-2 lg:right-7 sm:right-[1rem] sm:top-1 -top-0.5 md:top-0 inline-flex h-11 w-9 md:h-12 lg:h-14 xs:h-11 xs:w-7 lg:-top-[3.8px] xl:-top-[3px] items-center justify-center overflow-hidden bg-transparent font-medium text-neutral-200"
       aria-label="Scroll to top"
     >
       <div className="duration-200 p-1 transition">
