@@ -68,7 +68,7 @@ export default function RootLayout({
         className={`bg-black overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
-        <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={100} />
+        <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={300} />
         {children}
       </body>
     </html>
