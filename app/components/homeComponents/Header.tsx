@@ -49,9 +49,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-60 w-44
           sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
-          lg:left-28
-          xl:h-96 xl:w-80 xl:left-[50%] xl:bottom-20
-          2xl:left-[4rem] 2xl:bottom-[8rem] 2xl:h-96 2xl:w-72
+          xl:h-96 xl:w-80 xl:left-[50%] xl:bottom-12
           hover:translate-x-5 hover:duration-300
           duration-300">
           <Image
@@ -66,9 +64,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-52 w-36
           sm:left-[67%] sm:top-3
           md:left-[78%] md:h-60 md:w-44
-          lg:top-16 lg:right-40
           xl:left-[84%] xl:h-72 xl:w-52 xl:top-16
-          2xl:top-12 2xl:h-[30rem] 2xl:w-72
           hover:-translate-x-1 hover:translate-y-1 hover:duration-300
           duration-300">
           <Image
@@ -84,7 +80,6 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:top-10 sm:h-56 sm:w-44
           md:-left-[4%] md:h-80 md:w-60
           xl:h-96 xl:w-[18rem]
-          2xl:h-96 2xl:w-72 2xl:top-20
           hover:translate-y-3 hover:duration-300
           duration-300">
           <Image
@@ -101,9 +96,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-60 w-40
           sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
-          lg:right-72
-          xl:h-72 xl:w-52 xl:left-0 xl:bottom-20
-          2xl:right-[40rem] 2xl:bottom-[8rem] 2xl:h-[500px] 2xl:w-[400px] 
+          xl:h-72 xl:w-60 xl:left-0 xl:bottom-0
           hover:translate-x-5 hover:-translate-y-2 hover:duration-300
           duration-300
         ">
@@ -122,9 +115,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-64 w-52
           sm:h-72 sm:w-52 sm:bottom-20 sm:left-[47%]
           md:left-[46%] md:bottom-10 md:h-[500px] md:w-[350px]
-          lg:h-[400px] lg:w-[300px] lg:right-72 lg:-bottom-20
-          xl:h-[40rem] xl:w-[29rem] xl:-bottom-[20%] xl:right-[425px]
-          2xl:h-[800px] 2xl:w-[600px] 2xl:right-[900px] 2xl:top-[35rem]">
+          xl:h-[35rem] xl:w-[29rem] xl:-bottom-[20%] xl:right-[425px]">
 
           <Image
             fill
@@ -141,9 +132,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:w-0 sm:h-0
           sm:right-56 sm:top-5
           md:h-44 md:w-36 md:right-36 md:top-48
-          lg:top-64
           xl:h-64 xl:w-48 xl:top-64 xl:right-48
-          2xl:right-[20rem] 2xl:top-32 2xl:h-96 2xl:w-72
           hover:-translate-x-5 hover:-translate-y-2 hover:duration-300
           duration-300">
           <Image
@@ -158,9 +147,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-0 w-0
           sm:w-0 sm:h-0
           md:h-40 md:w-32 md:left-20 md:top-80
-          lg:left-[40rem] lg:top-32
-          xl:left-[22rem] xl:h-52 xl:w-44 xl:top-[55%]
-          2xl:left-[30rem] 2xl:top-96 2xl:h-96 2xl:w-72
+          xl:left-[23rem] xl:h-52 xl:w-48 xl:top-[55%]
           hover:translate-x-3 hover:translate-y-3 hover:duration-300
           duration-300">
           <Image
