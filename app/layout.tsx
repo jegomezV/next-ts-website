@@ -6,16 +6,16 @@ import Particles from './components/particles';
 
 export const metadata: Metadata = {
   title: {
-    default: "Styles.com",
-    template: "%s | chronark.com",
+    default: "Fashion.com",
+    template: "%s | Fashion.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Developed by Juan Gómez && Luis diaz.",
   openGraph: {
-    title: "chronark",
+    title: "Fashion.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Developed by Juan Gómez && Luis diaz.",
+    url: "",
+    siteName: "",
     images: [
       {
         url: "https://chronark.com/og.png",

@@ -6,7 +6,6 @@ import Image from 'next/image';
 
 // Importing image files
 import cameraMan from '../../../public/homeImgs/homeBg/cameraMan.jpg';
-import albineGirl from '../../../public/homeImgs/homeBg/albineGirl.jpg';
 import artAlbine from '../../../public/homeImgs/homeBg/artAlbine.jpg';
 import albineMan from '../../../public/homeImgs/homeBg/albineMan.jpg';
 import secondPhoto from '../../../public/homeImgs/secondPhoto.jpg';
