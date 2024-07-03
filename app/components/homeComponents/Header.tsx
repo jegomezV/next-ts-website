@@ -25,7 +25,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
       {/* Main header section with title */}
       <div className="h-[100vh] border-b-[1px] border-white/30">
-        <div className="w-screen h-full flex items-center justify-center">
+        <div className="w-screen h-full flex flex-col items-center justify-center">
           <div className="
             animate-glow md:block animate-fade-left
             bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0" />
@@ -33,8 +33,14 @@ export const HeaderM: React.FC = (): JSX.Element => {
             z-10 text-2xl text-transparent duration-1000
             bg-white cursor-default text-edge-outline
             animate-title font-display sm:text-5xl md:text-6xl xl:text-8xl
-            whitespace-nowrap bg-clip-text"> What about beauty?
+            whitespace-nowrap bg-clip-text"> What about beauty? <br />
           </h1>
+          <h3 className="
+            z-10 text-2xl text-transparent duration-1000
+            bg-white cursor-default text-edge-outline
+            animate-title font-display sm:text-5xl md:text-6xl xl:text-3xl
+            whitespace-nowrap bg-clip-text">Stories of Transformation
+          </h3>
         </div>
       </div>
 
@@ -47,7 +53,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
           xl:h-80 xl:w-80 xl:left-[50%] xl:bottom-12
-          2xl:h-[25rem] 2xl:w-[20rem] 2xl:left-[50%] 2xl:bottom-[1rem]
+          2xl:h-[25rem] 2xl:w-[20rem] 2xl:left-[55%] 2xl:bottom-[1rem]
           hover:translate-x-5 hover:duration-300
           duration-300">
           <Image
