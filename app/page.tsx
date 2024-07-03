@@ -15,7 +15,7 @@ const Home = () => {
         <main className="relative h-full w-screen">
           <Parallax scale={[0.7, 1.2]} translateX={[10, -9]} translateY={[-10, -40]}>
             <CardSpotlight configs='h-50 absolute w-screen border-4'>
-              <section className='relative w-full mx-auto rounded-full z-30 grid grid-cols-1 gap-3'>
+              <section className='relative w-full mx-auto rounded-full grid grid-cols-1 gap-3'>
                 <article className='flex mx-auto w-full justify-center text-center items-center flex-wrap m-4'>
                   <div className="group relative w-full h-full text-neutral-950">
                     <h1 className='text-center text-6xl mb-7 text-white'> Where is the</h1>

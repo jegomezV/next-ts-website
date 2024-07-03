@@ -23,7 +23,7 @@ export const Nav: React.FC = () => {
               className="
                       relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                       bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
-                      text-gray-400 transition-[background-size,color] duration-300
+                      text-gray-300 transition-[background-size,color] duration-300
                       hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"> Home
             </Link>
           </li>
@@ -33,7 +33,7 @@ export const Nav: React.FC = () => {
               className="
                       relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                       bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
-                      text-gray-400 transition-[background-size,color] duration-300
+                      text-gray-300 transition-[background-size,color] duration-300
                       hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"> About
             </Link>
           </li>
@@ -43,7 +43,7 @@ export const Nav: React.FC = () => {
               className="
           relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
           bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
-          text-gray-400 transition-[background-size,color] duration-300
+          text-gray-300 transition-[background-size,color] duration-300
           hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"> Credits
             </Link>
           </li>
@@ -53,7 +53,7 @@ export const Nav: React.FC = () => {
               className="
           relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
           bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
-          text-gray-400 transition-[background-size,color] duration-300
+          text-gray-300 transition-[background-size,color] duration-300
           hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"> Models
             </Link>
           </li>

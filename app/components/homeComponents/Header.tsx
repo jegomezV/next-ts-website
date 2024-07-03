@@ -39,7 +39,6 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </div>
       </div>
 
-
       {/* Absolute positioned images with hover effects */}
       <div className='absolute top-0 w-screen h-screen'>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
@@ -49,6 +48,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
           xl:h-96 xl:w-80 xl:left-[50%] xl:bottom-12
+          2xl:h-[30rem] 2xl:w-[25rem] 2xl:left-[50%] 2xl:bottom-[1rem]
           hover:translate-x-5 hover:duration-300
           duration-300">
           <Image
@@ -64,6 +64,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:left-[67%] sm:top-3
           md:left-[78%] md:h-60 md:w-44
           xl:left-[84%] xl:h-72 xl:w-52 xl:top-16
+          2xl:h-96 2xl:w-72 2xl:top-16
           hover:-translate-x-1 hover:translate-y-1 hover:duration-300
           duration-300">
           <Image
@@ -79,6 +80,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:top-10 sm:h-56 sm:w-44
           md:-left-[4%] md:h-80 md:w-60
           xl:h-96 xl:w-[18rem]
+          2xl:h-[30rem] 2xl:w-[20rem] 2xl:-left-[4%]
           hover:translate-y-3 hover:duration-300
           duration-300">
           <Image
@@ -90,12 +92,13 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
-          absolute right-72 bottom-24
-          border-[1px] border-white/10 rounded
+          absolute right-72 bottom-24 z-20
+          border-[1px] border-white/40 rounded
           h-60 w-40
           sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
           xl:h-72 xl:w-60 xl:left-0 xl:bottom-0
+          2xl:h-96 2xl:w-72 2xl:left-[22rem] 2xl:bottom-[2rem]
           hover:translate-x-5 hover:-translate-y-2 hover:duration-300
           duration-300
         ">
@@ -114,7 +117,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-64 w-52
           sm:h-72 sm:w-52 sm:bottom-20 sm:left-[47%]
           md:left-[46%] md:bottom-10 md:h-[500px] md:w-[350px]
-          xl:h-[35rem] xl:w-[29rem] xl:-bottom-[20%] xl:right-[425px]">
+          xl:h-[35rem] xl:w-[29rem] xl:-bottom-[20%] xl:right-[425px]
+          2xl:h-[40rem] 2xl:w-[32rem] 2xl:right-[450px] 2xl:-bottom-[10%]
+          ">
 
           <Image
             fill
@@ -132,6 +137,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:right-56 sm:top-5
           md:h-44 md:w-36 md:right-36 md:top-48
           xl:h-64 xl:w-48 xl:top-64 xl:right-48
+          2xl:h-80 2xl:w-60 2xl:right-[15rem] 2xl:top-[21rem]
           hover:-translate-x-5 hover:-translate-y-2 hover:duration-300
           duration-300">
           <Image
@@ -147,6 +153,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:w-0 sm:h-0
           md:h-40 md:w-32 md:left-20 md:top-80
           xl:left-[23rem] xl:h-52 xl:w-48 xl:top-[55%]
+          2xl:h-80 2xl:w-60 2xl:left-[20rem] 2xl:top-[36%]
           hover:translate-x-3 hover:translate-y-3 hover:duration-300
           duration-300">
           <Image
