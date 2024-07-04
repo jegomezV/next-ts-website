@@ -119,7 +119,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           sm:h-72 sm:w-52 sm:bottom-20 sm:left-[47%]
           md:left-[46%] md:bottom-10 md:h-[500px] md:w-[350px]
           xl:h-[30rem] xl:w-[25rem] xl:-bottom-[20%] xl:right-[425px]
-          2xl:h-[40rem] 2xl:w-[32rem] 2xl:right-[450px] 2xl:-bottom-[33%]">
+          2xl:h-[40rem] 2xl:w-[32rem] 2xl:right-[450px] 2xl:-bottom-[23%]">
           <Image
             fill
             src={girlPick.src}
