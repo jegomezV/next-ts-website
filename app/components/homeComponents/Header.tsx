@@ -63,7 +63,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[-50, 0]} className="
-          absolute left-[65%] top-6
+          absolute left-[61%] top-6
           border-[1px] border-white/10 rounded
           h-52 w-36
           sm:left-[67%] sm:top-3

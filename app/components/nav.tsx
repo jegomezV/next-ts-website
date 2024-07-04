@@ -1,23 +1,34 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 // import dynamic from 'next/dynamic';
 import { TranslateButton } from './buttons/TranslateButton';
 
 export const Nav: React.FC = () => {
+  
   return (
     <div className='w-screen mx-auto'>
+      <button className="fixed z-40 menu-toggle-button right-[6px] top-[3rem] max-sm:p-[4px] max-sm:border-[1px] rounded-full border-white max-sm:h-10 max-sm:w-10 flex justify-center items-center backdrop-blur-3xl">
+        {/* Icono del menú aquí */}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="max-sm:w-10 max-sm:h-10 text-white">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
       <nav className="
-                    fixed top-0 w-[100%] mx-auto py-3 lg:py-[14px] z-20
-                    hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner
-                    shadow-white/10 border-y-[1px] wrapper border-white/20 mt-3 flex
-                    justify-center items-baseline backdrop-blur-3xl space-x-40">
+                    fixed max-sm:border-y-[1px] max-sm:border-white  top-8 left-0 right-0 mx-auto mt-3 py-3 z-50
+                    flex justify-center items-baseline space-x-40
+                    max-sm:py-[20%]
+                    sm:w-[100%] sm:mx-auto sm:py-[14px]
+                    hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
+                    border-y-[1px] wrapper border-white/20 backdrop-blur-3xl
+                    transform -translate-y-1/2 max-sm:top-1/2">
 
         <ul className="
-                    flex space-x-2 xs:text-xs sm:text-base sm:space-x-6 md:text-sm
-                    xs:space-x-4 md:space-x-20 lg:text-base xl:text-base lg:space-x-40
+                    flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-start max-sm:text-right sm:flex-row md:flex-row xl:flex-row 2xl:flex-row space-x-2 md:text-sm
+                    md:space-x-20 lg:text-base xl:text-base lg:space-x-40
                     hover:text-white text-xl">
 
-          <li>
+          <li className="sm:inline-block hidden">
             <Link
               href="/"
               className="
@@ -64,5 +75,3 @@ export const Nav: React.FC = () => {
     </div>
   );
 };
-
-// export default dynamic(() => Promise.resolve(Nav), { ssr: false });
