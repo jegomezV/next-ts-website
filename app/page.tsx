@@ -1,5 +1,6 @@
 "use client"
 
+import { ButtonStart } from './components/buttons/ButtonStart';
 import { CardSpotlight } from './components/CardSpotlight';
 import { HeaderM } from './components/homeComponents/Header';
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -11,6 +12,7 @@ const Home = () => {
       <div className="h-full w-screen">
 
         <HeaderM />
+        <ButtonStart />
 
         <main className="relative h-full w-screen">
           <Parallax scale={[0.7, 1.2]} translateX={[10, -9]} translateY={[-10, -40]}>
