@@ -5,7 +5,7 @@ import { Nav } from '../nav';
 import Image from 'next/image';
 
 // Importing image files
-import firstPhoto from '../../../public/homeImgs/homeBg/FirstPhoto.jpg';
+import firstPhoto from '../../../public/homeImgs/homeBg/firstPhoto.jpg';
 import pasarellaPhoto from '../../../public/homeImgs/homeBg/pasarellaPhoto.jpg';
 import mainJefreyPhoto from '../../../public/homeImgs/homeBg/mainJefreyPhoto.jpg';
 import mainSecondPhoto from '../../../public/homeImgs/homeBg/mainSecondPhoto.jpg';
