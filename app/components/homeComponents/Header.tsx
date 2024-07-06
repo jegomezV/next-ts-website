@@ -48,7 +48,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
       <div className='absolute top-0 w-screen h-screen'>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute left-[35%] bottom-36
-          border-l-[1px] border-t-[1px] border-white rounded
+          border-l-[1px] border-t-[1px] border-white/30 rounded
           h-60 w-44
           sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
@@ -65,7 +65,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[-50, 0]} className="
           absolute left-[61%] top-6
-          border-[1px] border-white/80 rounded
+          border-[1px] border-white/30 rounded
           h-52 w-36
           sm:left-[67%] sm:top-3
           md:left-[78%] md:h-60 md:w-44
@@ -82,7 +82,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute top-16 -left-[4%]
-          border-b-[1px] border-l-[1px] border-white rounded
+          border-b-[1px] border-l-[1px] border-white/30 rounded
           h-52 w-36
           sm:top-10 sm:h-56 sm:w-44
           md:-left-[4%] md:h-80 md:w-60
@@ -98,7 +98,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute right-72 bottom-24 z-20
-          border-t-[1px] border-r-[1px] border-white
+          border-t-[1px] border-r-[1px] border-white/30
           h-60 w-40
           sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
@@ -117,10 +117,10 @@ export const HeaderM: React.FC = (): JSX.Element => {
         <div className="
           absolute bottom-[25%] left-[50%]
           transform -translate-x-1/2 -translate-y-1/2
-          border-b-[1px] border-x-[1px] border-white/60 rounded
+          border-b-[1px] border-x-[1px] border-white/50 rounded shadow-md shadow-white/30
           h-64 w-52
           sm:h-72 sm:w-52 sm:bottom-20 sm:left-[47%]
-          md:left-[46%] md:bottom-10 md:h-[500px] md:w-[350px]
+          md:left-[46%] md:top-[17rem] md:h-[500px] md:w-[350px]
           lg:top-[20rem]
           xl:h-[32rem] xl:w-[30rem] xl:top-[20rem] xl:right-[425px]
           2xl:h-[40rem] 2xl:w-[37rem] 2xl:right-[450px] 2xl:top-[21rem]">
@@ -133,7 +133,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
         <Parallax scale={[1, 1]} translateX={[-30, 0]} className="
           absolute right-32 top-36
-          border-t-[1px] border-l-[1px] border-white rounded
+          border-t-[1px] border-l-[1px] border-white/30 rounded
           h-0 w-0
           sm:w-0 sm:h-0
           md:h-44 md:w-36 md:right-36 md:top-48

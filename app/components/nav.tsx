@@ -40,7 +40,7 @@ export const Nav: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/about"
+              href="/pages/about"
               className="
                       relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                       bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -50,7 +50,7 @@ export const Nav: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/credits"
+              href="/pages/credits"
               className="
           relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
           bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -60,7 +60,7 @@ export const Nav: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/models"
+              href="/"
               className="
           relative bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
           bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
