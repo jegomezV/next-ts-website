@@ -25,8 +25,8 @@ export const Nav: React.FC = () => {
 
     } else {
       gsap.to(menuRef.current, {
-        duration: 1,
-        height: '-100vh',
+        duration: 0.6,
+        height: '-1vh',
         ease: "expo.out",
         onComplete: () => {
           menuRef.current?.classList.add('max-sm:hidden');
@@ -79,13 +79,6 @@ export const Nav: React.FC = () => {
           hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
           border-y-[1px] wrapper border-white/20 backdrop-blur-3xl
           overflow-hidden'>
-      {/* fixed max-sm:border-y-[1px] max-sm:border-white  top-8 left-0 right-0 mx-auto mt-3 py-3 z-50
-          flex justify-center items-baseline space-x-40
-          max-sm:py-[20%]
-          sm:w-[100%] sm:mx-auto sm:py-[14px]
-          hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
-          border-y-[1px] wrapper border-white/20 backdrop-blur-3xl
-          transform -translate-y-1/2 max-sm:top-1/2" */}
 
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center sm:flex-row space-x-2 md:text-sm
