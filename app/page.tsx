@@ -6,10 +6,9 @@ import { ButtonStart } from './components/buttons/ButtonStart';
 import { CardSpotlight } from './components/utils/CardSpotlight';
 import { HeaderM } from './components/homeComponents/Header';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import { Parallax } from 'react-scroll-parallax'
 
 const Home = () => {
-  React.useEffect(() => {
+/*   React.useEffect(() => {
     gsap.to('.square', {
       duration: 10,
       ease: "elastic.out(1,0.3)",
@@ -17,7 +16,7 @@ const Home = () => {
       x: 500,
       repeat: -1,
       });
-  }, []);
+  }, []); */
 
   return (
     <ParallaxProvider>
@@ -41,7 +40,7 @@ const Home = () => {
             <article>
               <div className="min-h-screen w-[80%] mx-auto flex justify-center items-center border-[1px]">
                 <h1 className='text-4xl text-center text-white'>This is the second section</h1>
-                <div className='square h-[5rem] w-[5rem] bg-white absolute bottom-20'></div>
+                {/* <div className='square h-[5rem] w-[5rem] bg-white absolute bottom-20'></div> */}
               </div>
             </article>
           </section>
