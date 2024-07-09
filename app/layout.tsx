@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     default: "Fashion.com",
     template: "%s | Fashion.com",
   },
-  description: "Developed by Juan Gómez && Luis diaz.",
+  description: "Developed by Juan Gómez.",
   openGraph: {
     title: "Fashion.com",
     description:
-      "Developed by Juan Gómez && Luis diaz.",
+      "Developed by Juan Gómez.",
     url: "",
     siteName: "",
     images: [

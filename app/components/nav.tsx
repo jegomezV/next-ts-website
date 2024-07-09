@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import { TranslateButton } from './buttons/TranslateButton';
 import { gsap } from 'gsap';
 
-
 export const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -17,7 +16,7 @@ export const Nav: React.FC = () => {
       gsap.to(menuRef.current, {
         duration: 1,
         height: '100vh',
-        ease: "expo.out",
+        ease: "none",
         onStart: () => {
           menuRef.current?.classList.remove('max-sm:hidden');
         },
@@ -26,8 +25,8 @@ export const Nav: React.FC = () => {
     } else {
       gsap.to(menuRef.current, {
         duration: 0.6,
-        height: '-1vh',
-        ease: "expo.out",
+        height: '-100vh',
+        ease: "none",
         onComplete: () => {
           menuRef.current?.classList.add('max-sm:hidden');
         },
