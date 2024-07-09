@@ -48,7 +48,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
       <div className='absolute top-0 w-screen h-screen'>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute left-[35%] bottom-36
-          border-l-[1px] border-t-[1px] border-white/30 rounded
+          border-[1px] border-white/50 shadow-md shadow-white/10
           h-60 w-44
           sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
@@ -82,7 +82,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute top-16 -left-[4%]
-          border-b-[1px] border-l-[1px] border-white/30 rounded
+          border-[1px] border-white/40 rounded shadow-md shadow-white/20
           h-52 w-36
           sm:top-10 sm:h-56 sm:w-44
           md:-left-[4%] md:h-80 md:w-60
@@ -98,7 +98,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </Parallax>
         <Parallax scale={[1, 1]} translateX={[50, 0]} className="
           absolute right-72 bottom-24 z-20
-          border-t-[1px] border-r-[1px] border-white/30
+          border-[1px] border-white/30
           h-60 w-40
           sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
@@ -148,10 +148,11 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Picture of the author"
           />
         </Parallax >
+
         <Parallax scale={[1, 1]} translateX={[-50, 0]} className="
           absolute right-60 top-40
           rounded border-[1px] border-black
-          h-0 w-0
+          h-0 w-0 z-40
           sm:w-0 sm:h-0
           md:h-40 md:w-32 md:left-20 md:top-80
           lg:h-40 lg:w-34 lg:left-[10rem] lg:top-80
