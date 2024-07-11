@@ -20,7 +20,7 @@ export default function useLocoScroll(start: boolean) {
         const locoScrollInstance = new LocomotiveScroll({
           el: scrollEl,
           smooth: true,
-          multiplier: 1,
+          multiplier: 0.8,
           direction: "vertical",
           class: "is-reveal",
         });

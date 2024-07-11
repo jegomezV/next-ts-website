@@ -21,7 +21,12 @@ export const ModelsSection: React.FC = (): JSX.Element => {
       <article>
         <div className="w-full flex overflow-x-scroll h-screen items-center relative space-x-4">
           <div className='absolute left-[7rem] top-[2rem]'>
-            <h1 className='text-black text-4xl'>Models</h1>
+            <h1 className="
+            z-10 text-2xl text-transparent duration-1000
+            bg-black cursor-default
+            animate-title font-display sm:text-3xl md:text-4xl xl:text-6xl
+            whitespace-nowrap bg-clip-text"> Actors <br />
+          </h1>
           </div>
           {modelPhotos.map((photo, index) => (
             <div data-scroll data-scroll-speed="-0.5"
@@ -32,7 +37,7 @@ export const ModelsSection: React.FC = (): JSX.Element => {
                 src={photo}
                 alt={`Model ${index + 1}`}
                 fill
-                className='h-full w-full shadow-[0_35px_75px_-25px_rgba(0,0,0,0.3)] shadow-black'
+                className='h-full w-full drop-shadow-[0_10px_30px_rgba(0,0,0,2)]'
               />
             </div>
           ))}
