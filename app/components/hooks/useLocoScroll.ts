@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import dynamic from "next/dynamic";
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 export default function useLocoScroll(start: boolean) {
@@ -22,12 +21,11 @@ export default function useLocoScroll(start: boolean) {
           el: scrollEl,
           smooth: true,
           multiplier: 1,
+          direction: "vertical",
           class: "is-reveal",
         });
         
         console.log('LocomotiveScroll initialized');
-        
-        // Opcionalmente, puedes hacer algo más con locoScrollInstance
       }
     };
 

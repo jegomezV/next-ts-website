@@ -66,7 +66,7 @@ export default function RootLayout({
       <head>
       </head>
       <body
-        className={`bg-black overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        className={`bg-slate-300 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
         <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={300} />

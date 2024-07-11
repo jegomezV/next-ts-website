@@ -4,14 +4,17 @@ import secondPhoto from '@/public/homeImgs/homeBg/cameraMan.jpg';
 export const Introduction: React.FC = (): JSX.Element => {
   return (
     <section data-scroll-section>
-      <article>
-        <div className='square h-20 w-20 bg-white'></div>
-        <div className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-[1px]">
+      <article data-scroll data-scroll-speed="0.2">
+        <div className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <Image
             src={secondPhoto}
             alt="Background"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
+            
             className="absolute top-0 left-0 w-screen h-screen object-cover z-[-1]" />
 
           <h1 className='text-4xl text-center text-white'>Redefining Beauty Beyond Stereotypes</h1>

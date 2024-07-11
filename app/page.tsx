@@ -2,22 +2,20 @@
 
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
 import { ButtonStart } from './components/buttons/ButtonStart';
 import { HeaderM } from './components/homeComponents/Header';
-
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
 import { Marketing } from './components/homeComponents/Marketing';
 import { ModelsSection } from './components/homeComponents/ModelsSection';
-
-import { ScrollTrigger } from 'gsap/all';
 import useLocoScroll from './components/hooks/useLocoScroll';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const [preloader, setPreloader] = React.useState(true);
-  const [timer, setTimer] = React.useState(1);
+  const [timer, setTimer] = React.useState(0);
   const id = useRef<number | undefined>(undefined);
 
   const clear = () => {
@@ -51,20 +49,22 @@ const Home = () => {
     <>
       {preloader ? (
         <div className='loader-wrapper absoluteP'>
-          <h1 className="text-6xl">Flirty flowers</h1>
-          <h2 className="text-6xl">Rio de Janeiro</h2>
+          <h1 className="text-6xl">Loading</h1>
+          <h2 className="text-6xl">Under construction</h2>
         </div>
       ) : (
-        <div id='main-container' className="h-full w-screen" data-scroll-container>
-          <HeaderM />
-          <ButtonStart />
-          <main className="relative h-full w-screen">
-            <Introduction />
-            <Stereotypes />
-            <Marketing />
-            <ModelsSection />
-          </main>
-        </div>
+        <>
+          <div id='main-container' className="h-full w-screen" data-scroll-container>
+            <ButtonStart />
+            <HeaderM />
+            <main className="relative h-full w-screen">
+              <Introduction />
+              <Stereotypes />
+              <Marketing />
+              <ModelsSection />
+            </main>
+          </div>
+        </>
       )}
     </>
   );

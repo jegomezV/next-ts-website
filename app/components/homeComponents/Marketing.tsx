@@ -5,12 +5,15 @@ export const Marketing: React.FC = (): JSX.Element => {
   return (
     <section data-scroll-section>
       <article>
-        <div className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-[1px]">
+        <div data-scroll data-scroll-speed="-0.1" className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-y-[1px]">
           <Image
             src={thirdPhoto}
             alt="Background"
-            layout="fill"
-            objectFit="cover"
+            fill
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }}
             className="absolute top-0 left-0 w-screen h-screen object-cover z-[-1]" />
 
           <h1 className='text-4xl text-center text-white'>Real Inclusion: More Than a Marketing Trend</h1>
