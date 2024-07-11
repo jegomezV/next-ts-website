@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
-import { TranslateButton } from './buttons/TranslateButton';
+import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
 
 export const Nav: React.FC = () => {

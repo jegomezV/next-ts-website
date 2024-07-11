@@ -1,0 +1,19 @@
+.loader-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  height: 100vh;
+  color: aliceblue;
+}
+
+.absoluteP {
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+}

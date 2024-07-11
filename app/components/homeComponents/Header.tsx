@@ -1,25 +1,22 @@
 // Importing the Nav component
-import { Nav } from '../nav';
+import { Nav } from '../general/Nav';
 
 // Importing Next.js Image component for optimized image handling
 import Image from 'next/image';
 
 // Importing image files
-import firstPhoto from '../../../public/homeImgs/homeBg/firstPhoto.jpg';
-import pasarellaPhoto from '../../../public/homeImgs/homeBg/pasarellaPhoto.jpg';
-import mainJefreyPhoto from '../../../public/homeImgs/homeBg/mainJefreyPhoto.jpg';
-import mainSecondPhoto from '../../../public/homeImgs/homeBg/mainSecondPhoto.jpg';
-import principalPhoto from '../../../public/homeImgs/homeBg/principalPhoto.jpg';
-import buttersHead from '../../../public/homeImgs/homeBg/buttersHead.jpg';
-import shadowGirl from '../../../public/homeImgs/homeBg/shadowGirl.jpg';
-
-// Importing Parallax component from react-scroll-parallax for parallax effect
-import { Parallax } from 'react-scroll-parallax';
+import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
+import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.jpg';
+import mainJefreyPhoto from '@/public/homeImgs/homeBg/mainJefreyPhoto.jpg';
+import mainSecondPhoto from '@/public/homeImgs/homeBg/mainSecondPhoto.jpg';
+import principalPhoto from '@/public/homeImgs/homeBg/principalPhoto.jpg';
+import buttersHead from '@/public/homeImgs/homeBg/buttersHead.jpg';
+import shadowGirl from '@/public/homeImgs/homeBg/shadowGirl.jpg';
 
 // HeaderM component definition
 export const HeaderM: React.FC = (): JSX.Element => {
   return (
-    <header className="">
+    <header data-scroll-section>
       {/* Navigation bar component */}
       <Nav />
 
@@ -46,7 +43,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
       {/* Absolute positioned images with hover effects */}
       <div className='absolute top-0 w-screen h-screen'>
-        <Parallax scale={[1, 1]} translateX={[50, 0]} className="
+        <div className="
           absolute left-[35%] bottom-36
           border-[1px] border-white/50 shadow-md shadow-white/10
           h-60 w-44
@@ -62,8 +59,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={pasarellaPhoto.src}
             alt="Picture of the author"
           />
-        </Parallax>
-        <Parallax scale={[1, 1]} translateX={[-50, 0]} className="
+        </div>
+        <div className="
           absolute left-[61%] top-6
           border-[1px] border-white/30 rounded
           h-52 w-36
@@ -79,8 +76,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={mainSecondPhoto.src}
             alt="Picture of the author"
           />
-        </Parallax>
-        <Parallax scale={[1, 1]} translateX={[50, 0]} className="
+        </div>
+        <div className="
           absolute top-16 -left-[4%]
           border-[1px] border-white/40 rounded shadow-md shadow-white/20
           h-52 w-36
@@ -95,8 +92,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={firstPhoto.src}
             alt="Picture of the author"
           />
-        </Parallax>
-        <Parallax scale={[1, 1]} translateX={[50, 0]} className="
+        </div>
+        <div className="
           absolute right-72 bottom-24 z-20
           border-[1px] border-white/30
           h-60 w-40
@@ -112,7 +109,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={mainJefreyPhoto.src}
             alt="Picture of the author"
           />
-        </Parallax>
+        </div>
 
         <div className="
           absolute bottom-[25%] left-[50%]
@@ -131,7 +128,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </div>
 
-        <Parallax scale={[1, 1]} translateX={[-30, 0]} className="
+        <div className="
           absolute right-32 top-36
           border-t-[1px] border-l-[1px] border-white/30 rounded
           h-0 w-0
@@ -147,9 +144,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={buttersHead.src}
             alt="Picture of the author"
           />
-        </Parallax >
+        </div >
 
-        <Parallax scale={[1, 1]} translateX={[-50, 0]} className="
+        <div className="
           absolute right-60 top-40
           rounded border-[1px] border-black
           h-0 w-0 z-30
@@ -165,7 +162,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             src={shadowGirl.src}
             alt="Picture of the author"
           />
-        </Parallax >
+        </div >
       </div >
 
     </header >
