@@ -66,7 +66,7 @@ const Home = () => {
           whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
           Preparing Your Content... <br />
         </h2>
-       </div>
+      </div>
       ) : (
         <>
           <div id='main-container' className="h-full w-screen" data-scroll-container>

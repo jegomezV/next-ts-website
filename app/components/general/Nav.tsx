@@ -2,14 +2,21 @@ import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
 import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
+import { useLocoScrollContext } from '../utils/LocoScrollContext';
 
 export const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const locoScrollInstance = useLocoScrollContext();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleScrollTo = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(`#$targetId`);
+  }
 
   useEffect(() => {
     const handleResize = () => {

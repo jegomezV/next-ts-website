@@ -167,26 +167,6 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </div>
 
-
-        {/* <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" className="
-  absolute right-60 top-40
-  h-0 w-0 z-30
-  sm:w-0 sm:h-0
-  md:h-40 md:w-32 md:left-20 md:top-80
-  lg:h-40 lg:w-34 lg:left-[10rem] lg:top-80
-  xl:left-[21rem] xl:h-[10rem] xl:w-[8rem] xl:top-[55%]
-  2xl:h-[10rem] 2xl:w-[9rem] 2xl:left-[16rem] 2xl:top-[55%]
-  hover:translate-x-3 hover:translate-y-3 hover:duration-300
-  duration-300">
-          <Image
-            fill
-            src={shadowGirl.src}
-            alt="Picture of the author"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px"
-            priority
-            className='border-[1px] border-slate-800'
-          />
-        </div> */}
       </div >
 
     </header >

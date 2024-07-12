@@ -17,7 +17,7 @@ const modelPhotos = [modelPhoto, modelPhoto2, modelPhoto3, modelPhoto4, modelPho
 export const ModelsSection: React.FC = (): JSX.Element => {
 
   return (
-    <section data-scroll-section>
+    <section data-scroll-section id='actors'>
       <article>
         <div className="w-full flex overflow-x-scroll h-screen items-center relative space-x-4">
           
