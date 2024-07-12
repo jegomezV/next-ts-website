@@ -8,7 +8,7 @@ import { HeaderM } from './components/homeComponents/Header';
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
 import { Marketing } from './components/homeComponents/Marketing';
-import { ModelsSection } from './components/homeComponents/ModelsSection';
+import ModelsSection from './components/homeComponents/ModelsSection';
 import useLocoScroll from './components/hooks/useLocoScroll';
 
 gsap.registerPlugin(ScrollTrigger);
