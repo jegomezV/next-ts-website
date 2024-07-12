@@ -1,34 +1,46 @@
-import { useEffect } from "react";
+// useLocoScroll.ts
+import { useEffect, useState, useRef } from "react";
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 export default function useLocoScroll(start: boolean) {
-  useEffect(() => {
-    if (!start) return;
+  const [locoScroll, setLocoScroll] = useState(null);
+  const locoScrollRef = useRef(locoScroll);
 
-    // Verificar que estamos en el lado del cliente
-    if (typeof window === 'undefined') {
-      return;
-    }
+  useEffect(() => {
+    if (!start || typeof window === 'undefined') return;
+
+    let locoScrollInstance: any = null;
 
     const initLocomotiveScroll = async () => {
-      const LocomotiveScroll = (await import('locomotive-scroll')).default;
-      const scrollEl = document.querySelector("#main-container") as HTMLElement;
+      try {
+        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const scrollEl = document.querySelector("#main-container") as HTMLElement;
 
-      if (scrollEl && LocomotiveScroll) {
-        console.log('LocomotiveScroll initializing...');
-        
-        const locoScrollInstance = new LocomotiveScroll({
-          el: scrollEl,
-          smooth: true,
-          multiplier: 0.8,
-          direction: "vertical",
-          class: "is-reveal",
-        });
-        
-        console.log('LocomotiveScroll initialized');
+        if (scrollEl) {
+          locoScrollInstance = new LocomotiveScroll({
+            el: scrollEl,
+            smooth: true,
+            multiplier: 0.9,
+            lerp: 0.1,
+            direction: "vertical",
+            class: "is-reveal",
+          });
+          setLocoScroll(locoScrollInstance);
+          locoScrollRef.current = locoScrollInstance;
+        }
+      } catch (error) {
+        console.error("Error initializing LocomotiveScroll:", error);
       }
     };
 
     initLocomotiveScroll();
+
+    return () => {
+      if (locoScrollInstance) {
+        locoScrollInstance.destroy();
+      }
+    };
   }, [start]);
+
+  return locoScrollRef.current;
 }

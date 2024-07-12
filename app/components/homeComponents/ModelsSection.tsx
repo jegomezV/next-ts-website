@@ -62,7 +62,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
   };
 
   return (
-    <section data-scroll-section>
+    <section data-scroll-section id='actors'>
       <article>
         <div className="w-full flex overflow-x-scroll h-screen items-center relative space-x-4">
           <div className='absolute left-[7rem] top-[2rem]'>
@@ -84,6 +84,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
                 className='h-full w-full drop-shadow-[0_10px_30px_rgba(0,0,0,2)] cursor-pointer'
               />
             </div>
+            
           ))}
           {openModalIndex !== null && (
             <motion.div
