@@ -65,17 +65,12 @@ const ModelsSection: React.FC = (): JSX.Element => {
     <section data-scroll-section id='actors'>
       <article>
         <div className="w-full flex overflow-x-scroll h-screen items-center relative space-x-4">
-          <div className='absolute left-[7rem] top-[2rem]'>
-            <h1 className="z-10 text-2xl text-transparent duration-1000 bg-black cursor-default animate-title font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text">
-              Actors <br />
-            </h1>
-          </div>
           {modelPhotos.map((photo, index) => (
             <div
               key={index}
               data-scroll
               data-scroll-speed="-0.5"
-              className="min-w-[40%] h-[75%] flex justify-center items-center mx-4 relative"
+              className="min-w-[30%] h-[75%] flex justify-center items-center mx-4 relative"
             >
               <Image
                 src={photo}
@@ -114,9 +109,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
                     className="absolute top-2 right-1 cursor-pointer text-xl bg-slate-200 rounded-full items-center transfor hover:bg-slate-500 transition duration-300 hover:scale-105 "
                     onClick={handleCloseModal}
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30" viewBox="0 0 50 50">
-                    <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
-                    </svg>
+                    &times
                   </span>
                   <div className='max-h-[80%] max-w-[80%] overflow-y-hidden'>
                     <p className='font-bold text-xl text-center mb-4'>
@@ -130,6 +123,14 @@ const ModelsSection: React.FC = (): JSX.Element => {
               </motion.div>
             </motion.div>
           )}
+          <div className='absolute left-[2rem] bottom-[1rem]'>
+            <h1 className="
+            z-10 text-2xl text-transparent duration-1000
+            bg-black cursor-default
+            animate-title font-display sm:text-3xl md:text-4xl xl:text-6xl
+            whitespace-nowrap bg-clip-text m-b-10"> Actors <br />
+          </h1>
+          </div>
         </div>
       </article>
     </section>
