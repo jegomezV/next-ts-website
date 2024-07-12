@@ -15,8 +15,12 @@ export const Marketing: React.FC = (): JSX.Element => {
               objectPosition: "center"
             }}
             className="absolute top-0 left-0 w-screen h-screen object-cover z-[-1]" />
-
-          <h1 className='text-4xl text-center text-white'>Real Inclusion: More Than a Marketing Trend</h1>
+          <h1 className="
+            z-10 text-2xl text-transparent duration-1000
+            bg-white cursor-default
+            font-display sm:text-3xl md:text-4xl xl:text-6xl
+            whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]"> Real Inclusion: More Than a Marketing Trend <br />
+          </h1>
           <p className="text-lg text-center text-white mt-4">
             Inclusion must be genuine and not just a marketing strategy.
             Many brands have been criticized for exploiting diversity as a passing trend

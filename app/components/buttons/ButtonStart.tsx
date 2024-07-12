@@ -1,9 +1,17 @@
-export const ButtonStart: React.FC = (): JSX.Element => {
+// ButtonStart.js
+import React from 'react';
+import { useLocoScrollContext } from '../utils/LocoScrollContext'; // Importa el hook
+
+export const ButtonStart = () => {
+    const locoScroll = useLocoScrollContext(); // Accede a la instancia de Locomotive Scroll
+
     const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+        if (locoScroll) {
+            locoScroll.scrollTo(0, {
+                duration: 700,
+                easing: [0.25, 0.0, 0.35, 1.0],
+            });
+        }
     };
 
     return (

@@ -117,7 +117,7 @@ export const Nav: React.FC = () => {
           flex max-sm:flex-col items-center justify-center sm:flex-row space-x-40
           sm:w-full sm:py-[14px]
           hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
-          border-y-[1px] wrapper border-white/20 backdrop-blur-3xl
+          border-y-[1px] wrapper border-black/80 backdrop-blur-3xl
           overflow-hidden">
 
         <ul className="
@@ -132,7 +132,7 @@ export const Nav: React.FC = () => {
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
                 text-black transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] "
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
               Home
             </Link>
@@ -156,7 +156,7 @@ export const Nav: React.FC = () => {
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
                 text-gray-300 transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] drop-shadow-[0_0px_10px_rgba(0,0,0,10)]"
             >
               About
             </Link>

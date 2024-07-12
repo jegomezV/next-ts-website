@@ -19,7 +19,6 @@ export const HeaderM: React.FC = (): JSX.Element => {
   return (
     <header data-scroll-section>
       {/* Navigation bar component */}
-      <Nav />
 
       {/* Main header section with title */}
       <div className="h-[100vh]">
