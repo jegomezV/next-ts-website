@@ -64,11 +64,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
+        {/* Agrega esta línea para tu favicon */}
+        <link rel="icon" type="image/webp" href="/favicon.png" />
       </head>
-      <body
-        className={`bg-slate-300 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
-      >
+      <body className={`bg-slate-300 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
         <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={300} />
         {children}
       </body>

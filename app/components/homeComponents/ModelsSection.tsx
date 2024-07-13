@@ -82,6 +82,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
             
           ))}
           {openModalIndex !== null && (
+            
             <motion.div
               className="fixed inset-0 flex items-center justify-center"
               onClick={handleModalClick}
@@ -91,7 +92,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
               transition={{ duration: 0.2 }}
             >
               <motion.div
-                className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50"
+                className="fixed inset-0 flex justify-center items-center bg-black/50 backdrop-blur-xl "
                 onClick={handleModalClick}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -99,7 +100,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
                 transition={{ duration: 0.2 }}
               >
                 <motion.div
-                  className="bg-white rounded-lg p-4 w-3/4 h-3/4 max-w-[90%] max-h-[90%] flex flex-col items-center justify-center relative"
+                  className="bg-white rounded-lg p-4 w-[90%] h-[90%] flex flex-col items-center justify-center absolute drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]"
                   initial={{ scale: 0.5, opacity: 0 }}
                   animate={{ scale: 1, opacity: 1 }}
                   exit={{ scale: 0.5, opacity: 0 }}
@@ -109,7 +110,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
                     className="absolute top-2 right-1 cursor-pointer text-xl bg-slate-200 rounded-full items-center transfor hover:bg-slate-500 transition duration-300 hover:scale-105 "
                     onClick={handleCloseModal}
                   >
-                    &times
+                    &times;
                   </span>
                   <div className='max-h-[80%] max-w-[80%] overflow-y-hidden'>
                     <p className='font-bold text-xl text-center mb-4'>
@@ -128,7 +129,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
             z-10 text-2xl text-transparent duration-1000
             bg-black cursor-default
             animate-title font-display sm:text-3xl md:text-4xl xl:text-6xl
-            whitespace-nowrap bg-clip-text m-b-10"> Actors <br />
+            whitespace-nowrap bg-clip-text m-b-10 drop-shadow-[0_1.5px_5px_rgba(255,255,255,0.8)]"> Actors <br />
           </h1>
           </div>
         </div>

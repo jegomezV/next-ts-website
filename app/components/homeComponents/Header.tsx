@@ -17,7 +17,7 @@ import useLocoScroll from '../hooks/useLocoScroll';
 // HeaderM component definition
 export const HeaderM: React.FC = (): JSX.Element => {
   return (
-    <header data-scroll-section>
+    <header data-scroll-section id='home'>
       {/* Navigation bar component */}
 
       {/* Main header section with title */}

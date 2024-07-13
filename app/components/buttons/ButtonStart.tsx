@@ -3,7 +3,8 @@ import React from 'react';
 import { useLocoScrollContext } from '../utils/LocoScrollContext'; // Importa el hook
 
 export const ButtonStart = () => {
-    const locoScroll = useLocoScrollContext(); // Accede a la instancia de Locomotive Scroll
+    // Assuming `useLocoScrollContext` returns a type that could be null or has scrollTo method, explicitly type it.
+    const locoScroll = useLocoScrollContext() as { scrollTo: (y: number, options: { duration: number, easing: [number, number, number, number] }) => void } | null;
 
     const scrollToTop = () => {
         if (locoScroll) {

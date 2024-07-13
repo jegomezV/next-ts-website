@@ -4,19 +4,28 @@ import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
 import { useLocoScrollContext } from '../utils/LocoScrollContext';
 
+interface LocoScrollInstance {
+  scrollTo: (target: Element | number, options: { duration?: number; offset?: number }) => void;
+}
+
 export const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
-  const locoScrollInstance = useLocoScrollContext();
+  const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  const handleScrollTo = (e, targetId) => {
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
-    const targetElement = document.getElementById(`#$targetId`);
-  }
+    const targetElement = document.getElementById(targetId);
+    if (targetElement && locoScrollInstance) {
+      locoScrollInstance.scrollTo(targetElement, {
+        duration: 1000,
+        offset: 0,
+      });
+    }
+  };  
 
   useEffect(() => {
     const handleResize = () => {
@@ -135,6 +144,7 @@ export const Nav: React.FC = () => {
           <li className="sm:inline-block hidden">
             <Link
               href="/"
+              onClick={(e) => handleScrollTo(e, 'home')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -147,6 +157,7 @@ export const Nav: React.FC = () => {
           <li>
             <Link
               href="/"
+              onClick={(e) => handleScrollTo(e, 'actors')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -170,7 +181,8 @@ export const Nav: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/pages/credits"
+              href="/"
+              onClick={(e) => handleScrollTo(e, 'credits')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat

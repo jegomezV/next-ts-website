@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@effect-ts/otel-exporter-trace-otlp-grpc": "^0.15.1",
+    "@emotion/is-prop-valid": "^1.2.2",
     "@next/font": "^13.5.4",
     "@next/mdx": "^13.5.4",
     "@upstash/redis": "^1.23.3",
