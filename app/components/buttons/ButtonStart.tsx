@@ -1,18 +1,9 @@
-// ButtonStart.js
-import React from 'react';
-import { useLocoScrollContext } from '../utils/LocoScrollContext'; // Importa el hook
-
-export const ButtonStart = () => {
-    // Assuming `useLocoScrollContext` returns a type that could be null or has scrollTo method, explicitly type it.
-    const locoScroll = useLocoScrollContext() as { scrollTo: (y: number, options: { duration: number, easing: [number, number, number, number] }) => void } | null;
-
+export const ButtonStart: React.FC = (): JSX.Element => {
     const scrollToTop = () => {
-        if (locoScroll) {
-            locoScroll.scrollTo(0, {
-                duration: 700,
-                easing: [0.25, 0.0, 0.35, 1.0],
-            });
-        }
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     };
 
     return (

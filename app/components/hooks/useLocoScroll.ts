@@ -22,8 +22,6 @@ export default function useLocoScroll(start: boolean) {
             smooth: true,
             multiplier: 0.9,
             lerp: 0.1,
-            direction: "vertical",
-            class: "is-reveal",
           });
           setLocoScroll(locoScrollInstance);
           locoScrollRef.current = locoScrollInstance;
