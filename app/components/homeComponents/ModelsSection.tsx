@@ -9,40 +9,15 @@ import modelPhoto4 from '@/public/homeImgs/homeBg/modelsSection/saraliMainPhoto.
 import modelPhoto5 from '@/public/homeImgs/homeBg/modelsSection/zorrogrisMainPhoto1.jpg';
 import modelPhoto6 from '@/public/homeImgs/homeBg/modelsSection/zorrogrisMainPhoto2.jpg';
 
-const modelPhotos = [modelPhoto, modelPhoto2, modelPhoto3, modelPhoto4, modelPhoto5, modelPhoto6,];
+import ModelAlexa from '../actors/modelAlexa';
+import ModelClaudia from '../actors/modelClaudia';
+import ModelDiego from '../actors/modelDiego';
+import ModelJeffry from '../actors/modelJeffry';
+import ModelSarali from '../actors/modelSarali';
+import ModelZorro from '../actors/modelZorro';
 
-const modelData = [
-  {
-    title: 'Modelo 1',
-    description:
-      'Descripción del modelo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    title: 'Modelo 2',
-    description:
-      'Descripción del modelo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descripción del modelo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ',
-  },
-  {
-    title: 'Modelo 3',
-    description:
-      'Descripción del modelo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    title: 'Modelo 4',
-    description:
-      'Descripción del modelo 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    title: 'Modelo 5',
-    description:
-      'Descripción del modelo 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    title: 'Modelo 6',
-    description:
-      'Descripción del modelo 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-];
+const modelPhotos = [ modelPhoto, modelPhoto2, modelPhoto3, modelPhoto4, modelPhoto5, modelPhoto6];
+const modelComponents = [ ModelAlexa, ModelDiego, ModelJeffry, ModelSarali, ModelClaudia, ModelZorro];
 
 const ModelsSection: React.FC = (): JSX.Element => {
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
@@ -79,7 +54,6 @@ const ModelsSection: React.FC = (): JSX.Element => {
                 className='h-full w-full drop-shadow-[0_10px_30px_rgba(0,0,0,2)] cursor-pointer'
               />
             </div>
-            
           ))}
           {openModalIndex !== null && (
             
@@ -92,7 +66,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
               transition={{ duration: 0.2 }}
             >
               <motion.div
-                className="fixed inset-0 flex justify-center items-center bg-black/50 backdrop-blur-xl "
+                className="fixed inset-0 flex justify-center items-center bg-black/50 backdrop-blur-md"
                 onClick={handleModalClick}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -107,19 +81,12 @@ const ModelsSection: React.FC = (): JSX.Element => {
                   transition={{ duration: 0.4 }}
                 >
                   <span
-                    className="absolute top-2 right-1 cursor-pointer text-xl bg-slate-200 rounded-full items-center transfor hover:bg-slate-500 transition duration-300 hover:scale-105 "
+                    className="absolute top-2 right-1 cursor-pointer text-xl bg-slate-200 rounded-full items-center transform hover:bg-slate-500 transition duration-300 hover:scale-105"
                     onClick={handleCloseModal}
                   >
                     &times;
                   </span>
-                  <div className='max-h-[80%] max-w-[80%] overflow-y-hidden'>
-                    <p className='font-bold text-xl text-center mb-4'>
-                      {modelData[openModalIndex].title}
-                    </p>
-                    <p>
-                      {modelData[openModalIndex].description}
-                    </p>
-                  </div>
+                  {React.createElement(modelComponents[openModalIndex])}
                 </motion.div>
               </motion.div>
             </motion.div>
