@@ -3,8 +3,8 @@ import firstPhoto from '@/public/homeImgs/homeBg/blurHead.jpg';
 
 export const Credits: React.FC = (): JSX.Element => {
   return (
-    <section data-scroll-section id='credits'>
-          <article data-scroll>
+    <section id='credits'>
+          <article>
             <div className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-t-[1px] border-black">
               <Image
                 src={firstPhoto}
