@@ -13,10 +13,12 @@ import { Nav } from './components/general/Nav';
 import { Credits } from './components/homeComponents/Credits';
 import useLocoScroll from './components/hooks/useLocoScroll';
 import LocoScrollContext from './components/utils/LocoScrollContext'
+import CustomCursor from './components/general/CustomCursor/CustomCursor'
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  const ref = useRef(null);
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = React.useState(0);
   const id = useRef<number | undefined>(undefined);
@@ -69,7 +71,8 @@ const Home = () => {
       </div>
       ) : (
         <>
-          <div id='main-container' className="h-full w-screen" data-scroll-container>
+          <div id='main-container' className="h-full w-screen" data-scroll-container ref={ref}>
+            <CustomCursor />
             <Nav />
             <ButtonStart />
             <HeaderM />

@@ -37,7 +37,7 @@ const ModelsSection: React.FC = (): JSX.Element => {
   };
 
   return (
-    <section data-scroll-section id='actors'>
+    <section data-scroll-section data-horizontal="true" id='actors'>
       <article>
         <div className="w-full flex overflow-x-scroll h-screen items-center relative space-x-4">
           {modelPhotos.map((photo, index) => (

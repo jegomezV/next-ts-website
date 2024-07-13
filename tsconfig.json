@@ -26,6 +26,6 @@
 
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/utils/LocoScrollContext.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/components/utils/LocoScrollContext.js", "app/components/homeComponents/Gallery/index.jsx"],
   "exclude": ["node_modules"]
 }
