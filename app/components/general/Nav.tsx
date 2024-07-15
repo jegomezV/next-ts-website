@@ -2,37 +2,94 @@ import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
 import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
+import { useLocoScrollContext } from '../../../util/LocoScrollContext';
 
+interface LocoScrollInstance {
+  scrollTo: (target: Element | number, options: { duration?: number; offset?: number }) => void;
+}
 
 export const Nav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  useEffect(() => {
-    if (isOpen) {
-      gsap.to(menuRef.current, {
-        duration: 1,
-        height: '100vh',
-        ease: "expo.out",
-        onStart: () => {
-          menuRef.current?.classList.remove('max-sm:hidden');
-        },
-      });
-
-    } else {
-      gsap.to(menuRef.current, {
-        duration: 1,
-        height: '-100vh',
-        ease: "expo.out",
-        onComplete: () => {
-          menuRef.current?.classList.add('max-sm:hidden');
-        },
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement && locoScrollInstance) {
+      locoScrollInstance.scrollTo(targetElement, {
+        duration: 1000,
+        offset: 0,
       });
     }
+  };  
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 640) {
+        if (isOpen) {
+          gsap.fromTo(
+            menuRef.current,
+            { height: '0vh', opacity: 0 },
+            {
+              duration: 0.5,
+              height: '100vh',
+              opacity: 1,
+              ease: 'none',
+              onStart: () => {
+                menuRef.current?.classList.remove('max-sm:hidden');
+              },
+            }
+          );
+        } else {
+          gsap.fromTo(
+            menuRef.current,
+            { height: '100vh', opacity: 1 },
+            {
+              duration: 0.6,
+              height: '0vh',
+              opacity: 0.7,
+              ease: 'none',
+              onComplete: () => {
+                menuRef.current?.classList.add('max-sm:hidden');
+              },
+            }
+          );
+        }
+      } else {
+        if (isOpen) {
+          gsap.to(menuRef.current, {
+            duration: 0.5,
+            height: 'auto',
+            opacity: 1,
+            ease: 'none',
+            onStart: () => {
+              menuRef.current?.classList.remove('max-sm:hidden');
+            },
+          });
+        } else {
+          gsap.to(menuRef.current, {
+            duration: 0.7,
+            height: 'auto',
+            opacity: 1,
+            ease: 'power3.inOut',
+            onComplete: () => {
+              menuRef.current?.classList.add('max-sm:hidden');
+            },
+          });
+        }
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
   }, [isOpen]);
 
   return (
@@ -87,6 +144,7 @@ export const Nav: React.FC = () => {
           <li className="sm:inline-block hidden">
             <Link
               href="/"
+              onClick={(e) => handleScrollTo(e, 'home')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -99,6 +157,7 @@ export const Nav: React.FC = () => {
           <li>
             <Link
               href="/"
+              onClick={(e) => handleScrollTo(e, 'actors')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
@@ -123,6 +182,7 @@ export const Nav: React.FC = () => {
           <li>
             <Link
               href="/"
+              onClick={(e) => handleScrollTo(e, 'credits')}
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat

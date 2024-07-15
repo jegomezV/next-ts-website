@@ -17,7 +17,7 @@ import useLocoScroll from '../hooks/useLocoScroll';
 // HeaderM component definition
 export const HeaderM: React.FC = (): JSX.Element => {
   return (
-    <header id='home'>
+    <header data-scroll-section id='home'>
       {/* Navigation bar component */}
 
       {/* Main header section with title */}
@@ -43,7 +43,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
       {/* Absolute positioned images with hover effects */}
       <div className='absolute top-0 w-screen h-screen'>
-        <div className="
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className="
                   absolute left-[35%] bottom-36
                   drop-shadow-[0_1.5px_20px_rgba(0,0,0,2)]
                   h-60 w-44
@@ -63,7 +63,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </div>
 
-        <div className="
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="1" className="
                   absolute left-[61%] top-6
                   drop-shadow-[0_1.5px_20px_rgba(0,0,0,0.8)]
                   h-52 w-36
@@ -84,7 +84,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </div>
 
-        <div className="
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" className="
                   absolute top-16 -left-[4%]
                   bdrop-shadow-[0_1.5px_20px_rgba(0,0,0,5)]
                   h-52 w-36
@@ -104,7 +104,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           />
         </div>
 
-        <div className="
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className="
                 absolute right-72 bottom-24 z-20
                 drop-shadow-[0_1.5px_20px_rgba(0,0,0,1.5)]
                 h-60 w-40
@@ -147,7 +147,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </div>
 
 
-        <div className="
+        <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" className="
                 absolute right-32 top-36
                 h-0 w-0
                 sm:w-0 sm:h-0

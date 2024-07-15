@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import thirdPhoto from '@/public/homeImgs/homeBg/artAlbine.jpg';
 
-export const Marketing: React.FC = (): JSX.Element => {
+export const Actors: React.FC = (): JSX.Element => {
   return (
-    <section>
+    <section >
       <article>
         <div className="relative min-h-screen w-[100%] mx-auto flex flex-col justify-center items-center border-y-[1px]">
           <Image

@@ -7,15 +7,20 @@ import { ButtonStart } from './components/buttons/ButtonStart';
 import { HeaderM } from './components/homeComponents/Header';
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
-import { Marketing } from './components/homeComponents/Marketing';
-import ModelsSection from './components/homeComponents/ModelsSection';
+import { Marketing } from './components/homeComponents/Actors';
 import { Nav } from './components/general/Nav';
 import { Credits } from './components/homeComponents/Credits';
 import CustomCursor from './components/general/CustomCursor/CustomCursor'
+import useLocoScroll from './components/hooks/useLocoScroll';
+import LocoScrollContext from '../util/LocoScrollContext'
+
+
+import ParallaxSlider from './components/buttons/adds/Test';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
+  const ref = useRef(null);
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = React.useState(0);
   const id = useRef<number | undefined>(undefined);
@@ -45,8 +50,10 @@ const Home = () => {
     }
   }, [timer]);
 
+  const locoScrollInstance = useLocoScroll(!preloader);
+
   return (
-    <>
+    <LocoScrollContext.Provider value={locoScrollInstance}>
       {preloader ? (
         <div className='loader-wrapper absoluteP'>
         <h1 className='
@@ -66,7 +73,7 @@ const Home = () => {
       </div>
       ) : (
         <>
-          <div id='main-container' className="h-full w-screen">
+          <div id='main-container' data-scroll-container ref={ref} className="h-full w-screen">
             <CustomCursor />
             <Nav />
             <ButtonStart />
@@ -74,14 +81,13 @@ const Home = () => {
             <main className="relative h-full w-screen">
               <Introduction />
               <Stereotypes />
-              <Marketing />
-              <ModelsSection />
+              
               <Credits />
             </main>
           </div>
         </>
       )}
-    </>
+    </LocoScrollContext.Provider>
   );
 };
 
