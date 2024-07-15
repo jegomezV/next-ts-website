@@ -6,7 +6,6 @@ import { ButtonStart } from './components/buttons/ButtonStart';
 import { HeaderM } from './components/homeComponents/Header';
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
-import { Marketing } from './components/homeComponents/Actors';
 import { Nav } from './components/general/Nav';
 import { Credits } from './components/homeComponents/Credits';
 import CustomCursor from './components/general/CustomCursor/CustomCursor'
@@ -15,6 +14,7 @@ import LocoScrollContext from '../util/LocoScrollContext'
 
 
 import ParallaxSlider from './components/buttons/adds/Test';
+import { Actors } from './components/homeComponents/Actors';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -22,21 +22,12 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreloader] = useState(true);
   const [timer, setTimer] = React.useState(2);
-
   const id = useRef<number | undefined>(undefined);
 
   const clear = () => {
     if (id.current !== undefined) {
       window.clearInterval(id.current);
-      gsap.to('.loader-wrapper', {
-        opacity: 0,
-        y: 100,
-        duration: 0.5,
-        ease: 'power2.inOut',
-        onComplete: () => {
-          setPreloader(false);
-        }
-      });
+      setPreloader(false);
     }
   };
 
@@ -69,24 +60,24 @@ const Home = () => {
     <LocoScrollContext.Provider value={locoScrollInstance}>
       {preloader ? (
         <div className='loader-wrapper absoluteP'>
-          <h1 className='
-            z-10 text-2xl text-transparent duration-1000
-            bg-white cursor-default
-            animate-title2 font-display sm:text-5xl md:text-6xl xl:text-8xl
-            whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
-            Loading <br />
-          </h1>
-          <h2 className='
-            z-10 text-2xl text-transparent duration-1000
-            bg-white cursor-default
-            animate-login font-display sm:text-5xl md:text-6xl xl:text-8xl
-            whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
-            Preparing Your Content... <br />
-          </h2>
-        </div>
+        <h1 className='
+          z-10 text-2xl text-transparent duration-1000
+          bg-white cursor-default
+          animate-title2 font-display sm:text-5xl md:text-6xl xl:text-8xl
+          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
+          Loading <br />
+        </h1>
+        <h2 className='
+          z-10 text-2xl text-transparent duration-1000
+          bg-white cursor-default
+          animate-login font-display sm:text-5xl md:text-6xl xl:text-8xl
+          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
+          Preparing Your Content... <br />
+        </h2>
+      </div>
       ) : (
         <>
-          <div id='main-container' data-scroll-container ref={ref} className="h-full w-screen">
+          <div id='main-container' className="h-full w-screen" data-scroll-container ref={ref}>
             <CustomCursor />
             <Nav />
             <ButtonStart />
@@ -94,13 +85,13 @@ const Home = () => {
             <main className="relative h-full w-screen">
               <Introduction />
               <Stereotypes />
-              
+              <Actors />
               <Credits />
             </main>
           </div>
         </>
       )}
-    </LocoScrollContext.Provider>
+   </LocoScrollContext.Provider>
   );
 };
 
