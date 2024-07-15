@@ -4,6 +4,7 @@ import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
 import { useLocoScrollContext } from '../../../util/LocoScrollContext';
 
+// Define the expected methods for LocomotiveScroll instance
 interface LocoScrollInstance {
   scrollTo: (target: Element | number, options: { duration?: number; offset?: number }) => void;
 }
@@ -13,9 +14,12 @@ export const Nav: React.FC = () => {
   const menuRef = useRef<HTMLDivElement>(null);
   const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
 
+  // Toggle menu visibility
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  // Handle scrolling to a specific section
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -25,11 +29,13 @@ export const Nav: React.FC = () => {
         offset: 0,
       });
     }
-  };  
+  };
 
+  // Effect to manage menu animation and responsiveness
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 640) {
+        // Mobile view animations
         if (isOpen) {
           gsap.fromTo(
             menuRef.current,
@@ -60,6 +66,7 @@ export const Nav: React.FC = () => {
           );
         }
       } else {
+        // Desktop view animations
         if (isOpen) {
           gsap.to(menuRef.current, {
             duration: 0.5,
@@ -84,9 +91,12 @@ export const Nav: React.FC = () => {
       }
     };
 
+    // Initial setup
     handleResize();
+    // Listen to window resize events
     window.addEventListener('resize', handleResize);
 
+    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -94,6 +104,7 @@ export const Nav: React.FC = () => {
 
   return (
     <div className='w-screen mx-auto'>
+      {/* Toggle button for mobile menu */}
       <button
         className="
           menu-toggle-button
@@ -110,6 +121,7 @@ export const Nav: React.FC = () => {
           max-sm:h-10 max-sm:w-10 max-sm:p-[4px] max-sm:border-[1px]"
         onClick={toggleMenu}
       >
+        {/* Menu toggle icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -126,6 +138,7 @@ export const Nav: React.FC = () => {
         </svg>
       </button>
 
+      {/* Navigation menu */}
       <nav
         ref={menuRef}
         className="
@@ -134,13 +147,15 @@ export const Nav: React.FC = () => {
           sm:w-full sm:py-[14px]
           hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
           border-y-[1px] wrapper border-black/80 backdrop-blur-3xl
-          overflow-hidden">
-
+          overflow-hidden"
+      >
+        {/* List of navigation links */}
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center max-sm:text-2xl sm:flex-row space-x-2 md:text-lg
           md:space-x-20 lg:text-xl xl:text-xl lg:space-x-40
           hover:text-white 2xl:text-xl"
         >
+          {/* Home link */}
           <li className="sm:inline-block hidden">
             <Link
               href="/"
@@ -154,6 +169,7 @@ export const Nav: React.FC = () => {
               Home
             </Link>
           </li>
+          {/* Actors link */}
           <li>
             <Link
               href="/"
@@ -167,6 +183,7 @@ export const Nav: React.FC = () => {
               Actors
             </Link>
           </li>
+          {/* About link */}
           <li>
             <Link
               href="/pages/about"
@@ -179,6 +196,7 @@ export const Nav: React.FC = () => {
               About
             </Link>
           </li>
+          {/* Credits link */}
           <li>
             <Link
               href="/"
@@ -193,6 +211,7 @@ export const Nav: React.FC = () => {
             </Link>
           </li>
         </ul>
+        {/* Translate button */}
         <TranslateButton />
       </nav>
     </div>

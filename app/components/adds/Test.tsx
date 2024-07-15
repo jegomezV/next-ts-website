@@ -37,7 +37,7 @@ const ParallaxSlider: React.FC<ParallaxSliderProps> = () => {
     };
 
     const animateImages = () => {
-      let ratio = current / imageWidth;
+      const ratio = current / imageWidth;
       let intersectioRatioValue: number;
 
       images.forEach((image, idx) => {
