@@ -21,7 +21,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreloader] = useState(true);
-  const [timer, setTimer] = React.useState(2);
+  const [timer, setTimer] = React.useState(100);
   const id = useRef<number | undefined>(undefined);
 
   const clear = () => {
@@ -56,6 +56,18 @@ const Home = () => {
 
   const locoScrollInstance = useLocoScroll(!preloader);
 
+  const mn = gsap.matchMedia();
+
+  mn.add("(max-width: 500px)", () => {
+    gsap.to(".box",{
+    rotation: 360,
+    ease: 'none',
+    repeat:-1,
+    duration:2
+    }
+    )
+  })
+
   return (
     <LocoScrollContext.Provider value={locoScrollInstance}>
       {preloader ? (
@@ -74,6 +86,9 @@ const Home = () => {
           whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
           Preparing Your Content... <br />
         </h2>
+        <div className='box flex justify-center content-center bg-white size-40 text-black'>
+            <h1> contenedor</h1>
+        </div>
       </div>
       ) : (
         <>
