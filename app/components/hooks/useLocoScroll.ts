@@ -1,19 +1,25 @@
-// useLocoScroll.ts
 import { useEffect, useState, useRef } from "react";
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 
-export default function useLocoScroll(start: boolean) {
-  const [locoScroll, setLocoScroll] = useState(null);
-  const locoScrollRef = useRef(locoScroll);
+// Definimos el tipo para el objeto LocomotiveScroll
+type LocomotiveScrollType = {
+  destroy: () => void;
+  update: () => void;
+  start: () => void;
+  stop: () => void;
+};
+
+export default function useLocoScroll(start: boolean): LocomotiveScrollType | null {
+  const [locoScroll, setLocoScroll] = useState<LocomotiveScrollType | null>(null);
+  const locoScrollRef = useRef<LocomotiveScrollType | null>(null);
 
   useEffect(() => {
-    if (!start || typeof window === 'undefined') return;
-
-    let locoScrollInstance: any = null;
+    let locoScrollInstance: LocomotiveScrollType | null = null;
 
     const initLocomotiveScroll = async () => {
       try {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default;
+        const { default: LocomotiveScroll } = await import('locomotive-scroll');
+
         const scrollEl = document.querySelector("#main-container") as HTMLElement;
 
         if (scrollEl) {
@@ -23,6 +29,7 @@ export default function useLocoScroll(start: boolean) {
             multiplier: 0.9,
             lerp: 0.1,
           });
+
           setLocoScroll(locoScrollInstance);
           locoScrollRef.current = locoScrollInstance;
         }
@@ -31,11 +38,15 @@ export default function useLocoScroll(start: boolean) {
       }
     };
 
-    initLocomotiveScroll();
+    if (start && typeof window !== 'undefined') {
+      initLocomotiveScroll();
+    }
 
     return () => {
       if (locoScrollInstance) {
         locoScrollInstance.destroy();
+        setLocoScroll(null);
+        locoScrollRef.current = null;
       }
     };
   }, [start]);
