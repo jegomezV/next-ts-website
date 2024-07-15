@@ -1,126 +1,46 @@
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
+import { useEffect, useRef } from 'react';
+import gsap from 'gsap';
 
-gsap.registerPlugin(ScrollTrigger);
-
-ScrollTrigger.config({ limitCallbacks: true });
-
-interface LazyLoadProps {
-  src: string;
-  dataSrc: string;
-  type?: "img" | "video";
-  alt?: string;
-  [key: string]: any;
-}
-
-const LazyLoad: React.FC<LazyLoadProps> = ({ src, dataSrc, type = "img", ...props }) => {
-  const elementRef = useRef<HTMLDivElement | HTMLVideoElement>(null);
+const LazyLoad = ({ src, alt }) => {
+  const imageRef = useRef(null);
 
   useEffect(() => {
-    const element = elementRef.current;
-    let newSRC = dataSrc;
-    let newElement: HTMLImageElement | HTMLVideoElement;
+    const imageElement = imageRef.current;
 
-    const loadImage = () => {
-      if (type === "img" && element instanceof HTMLImageElement) {
-        newElement.onload = () => {
-          newElement.onload = null;
-          newElement.src = element.src;
-          element.src = newSRC;
-
-          gsap.set(newElement, {
-            position: "absolute",
-            top: element.offsetTop,
-            left: element.offsetLeft,
-            width: element.offsetWidth,
-            height: element.offsetHeight,
-          });
-
-          if (element.parentNode) {
-            element.parentNode.appendChild(newElement);
-          }
-          gsap.to(newElement, {
-            opacity: 0,
-            onComplete: () =>
-              newElement.parentNode && newElement.parentNode.removeChild(newElement),
-          });
-          st && st.kill();
-        };
-
-        newElement.src = newSRC;
-      } else if (type === "video" && element instanceof HTMLVideoElement) {
-        newElement.oncanplay = () => {
-          newElement.oncanplay = null;
-          newElement.src = element.src;
-          element.src = newSRC;
-
-          gsap.set(newElement, {
-            position: "absolute",
-            top: element.offsetTop,
-            left: element.offsetLeft,
-            width: element.offsetWidth,
-            height: element.offsetHeight,
-          });
-
-          if (element.parentNode) {
-            element.parentNode.appendChild(newElement);
-          }
-          gsap.to(newElement, {
-            opacity: 0,
-            onComplete: () =>
-              newElement.parentNode && newElement.parentNode.removeChild(newElement),
-          });
-          st && st.kill();
-        };
-
-        newElement.src = newSRC;
-      }
+    const handleIntersection = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          gsap.to(imageElement, { duration: 1, opacity: 1, ease: 'power2.inOut' });
+          observer.unobserve(imageElement);
+        }
+      });
     };
 
-    const st = ScrollTrigger.create({
-      trigger: element as Element,
-      start: "-50% bottom",
-      onEnter: loadImage,
-      markers: true,
-      onEnterBack: loadImage,
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
     });
 
+    if (imageElement) {
+      observer.observe(imageElement);
+    }
+
     return () => {
-      st && st.kill();
+      if (imageElement) {
+        observer.unobserve(imageElement);
+      }
     };
-  }, [dataSrc, type]);
+  }, []);
 
-  // Renderizar según el tipo (imagen o video)
-  if (type === "img") {
-    return (
-      <div ref={elementRef}>
-        <Image
-          src={src}
-          alt={props.alt}
-          layout="fill"
-          objectFit="cover"
-          {...props}
-        />
-      </div>
-    );
-  } else if (type === "video") {
-    return (
-      <video
-        muted={true}
-        playsInline={true}
-        autoPlay={true}
-        loop={true}
-        controls={false}
-        ref={elementRef as React.RefObject<HTMLVideoElement>}
-        src={src}
-        {...props}
-      />
-    );
-  }
-
-  return null;
+  return (
+    <img
+      ref={imageRef}
+      src={src}
+      alt={alt}
+      className="opacity-0"
+    />
+  );
 };
 
 export default LazyLoad;

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import LazyLoad from './LazyLoad';
 
 import modelPhoto from '@/public/homeImgs/homeBg/modelsSection/alexaMainPhoto.jpg';
 import modelPhoto2 from '@/public/homeImgs/homeBg/modelsSection/diegoMainPhoto.jpg';
@@ -17,8 +16,8 @@ import ModelJeffry from '../actors/modelJeffry';
 import ModelSarali from '../actors/modelSarali';
 import ModelZorro from '../actors/modelZorro';
 
-const modelPhotos = [ modelPhoto, modelPhoto2, modelPhoto3, modelPhoto4, modelPhoto5, modelPhoto6];
-const modelComponents = [ ModelAlexa, ModelDiego, ModelJeffry, ModelSarali, ModelClaudia, ModelZorro];
+const modelPhotos = [modelPhoto, modelPhoto2, modelPhoto3, modelPhoto4, modelPhoto5, modelPhoto6];
+const modelComponents = [ModelAlexa, ModelDiego, ModelJeffry, ModelSarali, ModelClaudia, ModelZorro];
 
 const ModelsSection: React.FC = (): JSX.Element => {
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
@@ -53,11 +52,14 @@ const ModelsSection: React.FC = (): JSX.Element => {
                 alt={`Model ${index + 1}`}
                 onClick={() => handleOpenModal(index)}
                 className='h-full w-full drop-shadow-[0_10px_30px_rgba(0,0,0,2)] cursor-pointer'
+                loading="lazy"
+                layout="fill"
+                objectFit="cover"
+                placeholder="blur"
               />
             </div>
           ))}
           {openModalIndex !== null && (
-            
             <motion.div
               className="fixed inset-0 flex items-center justify-center"
               onClick={handleModalClick}
