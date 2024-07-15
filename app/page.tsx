@@ -6,7 +6,6 @@ import { ButtonStart } from './components/buttons/ButtonStart';
 import { HeaderM } from './components/homeComponents/Header';
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
-import { Marketing } from './components/homeComponents/Actors';
 import { Nav } from './components/general/Nav';
 import { Credits } from './components/homeComponents/Credits';
 import CustomCursor from './components/general/CustomCursor/CustomCursor'
