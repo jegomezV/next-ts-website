@@ -1,29 +1,29 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
+import firstPhoto from '@/public/homeImgs/homeBg/albineGirl.jpg';
+import secondPhoto from '@/public/homeImgs/homeBg/albineMan.jpg';
 import thirdPhoto from '@/public/homeImgs/homeBg/shadowGirl.jpg';
 
+import gsap from 'gsap';
+
 export const Actors: React.FC = (): JSX.Element => {
+  useEffect(() => {
+    gsap.to(".box", { rotation: 360, x: 100, duration: 1, repeat: -1, yoyo: true });
+  }, []);
+
   return (
-    <section data-scroll-section>
+    <section data-scroll-section className='relative bg-black h-screen w-screen'>
       {/* Main container with background image */}
-      <article>
-        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-y border-gray-300">
-          {/* Background Image */}
-          <Image
-            src={thirdPhoto}
-            alt="A shadowed figure against a vibrant background, evoking a sense of mystery and allure."
-            layout="fill" // Ensures the image covers the entire area
-            style={{
-              objectFit: "cover",
-              objectPosition: "center"
-            }}
-            className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+      <div className='box absolute bottom-24 left-20 bg-red-800 h-20 w-20 text-white font-bold'>Luis Es Gay</div>
+      <Image
+            src={secondPhoto}
+            alt="Fashion model close-up"
+            height={400}
+            width={300}
+            objectFit="cover"
+            priority
+            className='box border-[1px] border-black/70'
           />
-          {/* Section Title */}
-          <h1 className="z-10 text-2xl text-transparent duration-1000 bg-white cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-md">
-            The Actors Section.<br />
-          </h1>
-        </div>
-      </article>
     </section>
   );
 };
