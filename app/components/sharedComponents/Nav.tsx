@@ -137,8 +137,8 @@ export const Nav: React.FC = () => {
           lg:text-xl
           xl:top-4 xl:py-[0.5rem]
           2xl:py-[0.5rem]
-          hover:duration-500 duration-500 hover:shadow-white/50 shadow-inner shadow-white/20
-          border-y-[1px] wrapper border-white< bg-black
+          hover:duration-500 duration-500 hover:shadow-white/30 shadow-inner shadow-black/50
+          border-y-[1px] wrapper border-white< bg-black/60
           overflow-hidden">
 
         <ul className="

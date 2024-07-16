@@ -1,31 +1,60 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
-import firstPhoto from '@/public/homeImgs/homeBg/albineGirl.jpg';
-import secondPhoto from '@/public/homeImgs/homeBg/albineMan.jpg';
-import thirdPhoto from '@/public/homeImgs/homeBg/shadowGirl.jpg';
-
 import gsap from 'gsap';
 
+import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
+import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.jpg';
+import mainJefreyPhoto from '@/public/homeImgs/homeBg/mainJefreyPhoto.jpg';
+import mainSecondPhoto from '@/public/homeImgs/homeBg/modelsSection/diegoMainPhoto.jpg';
+import principalPhoto from '@/public/homeImgs/homeBg/principalPhoto.jpg';
+import buttersHead from '@/public/homeImgs/homeBg/buttersHead.jpg';
+
 export const Actors: React.FC = (): JSX.Element => {
-  useEffect(() => {
+  let images: HTMLElement[] = [];
+  /* useEffect(() => {
     gsap.to(".box", { rotation: 360, x: 100, duration: 1, repeat: -1, yoyo: true });
+  }, []); */
+
+  useEffect(() => {
+    images = Array.from(document.querySelectorAll('.img'));
+    images.forEach((image, idx) => {
+      if (image instanceof HTMLElement) {
+        image.style.backgroundImage = `url(./Parallax/p${idx + 1}.jpg)`;
+      }
+    });
+
   }, []);
 
   return (
-    <section data-scroll-section className='relative bg-black h-screen w-screen'>
+    <section id='actors' data-scroll-section className='relative h-screen w-screen'>
       {/* Main container with background image */}
-      <div className='box absolute bottom-24 left-20 bg-red-800 h-20 w-20 text-white font-bold'>Luis Es Gay</div>
-      <Image
-            src={secondPhoto}
-            alt="Fashion model close-up"
-            height={400}
-            width={300}
-            objectFit="cover"
-            priority
-            className='box border-[1px] border-black/70'
-          />
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-start">
+          <div className="h-[75%] w-[100%] flex justify-start ">
+
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="img absolute left-[-200px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-180px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="img is-reveal absolute left-[-12px] w-[300px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden border-[1px] border-black/30">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-200px] w-[600px] h-[100%] bg-cover bg-center "></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="is-reveal img absolute left-[-150px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-200px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+
+          </div>
+        </div>
     </section>
-  );
+);
 };
 
 export default Actors;

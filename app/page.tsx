@@ -28,9 +28,9 @@ const Home = () => {
   const [preloader, setPreloader] = useState(false);
   const [componentsLoaded, setComponentsLoaded] = useState(false);
 
-  useCountdown(3, () => setPreloader(false)); // Temporizador de preloader
+  useCountdown(0, () => setPreloader(false)); // Temporizador de preloader
 
-  const locoScrollInstance = useLocoScroll(!preloader && componentsLoaded);
+  const locoScrollInstance = useLocoScroll(componentsLoaded);
 
   useEffect(() => {
     if (locoScrollInstance) {
