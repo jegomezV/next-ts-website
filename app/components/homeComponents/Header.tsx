@@ -154,3 +154,5 @@ export const HeaderM: React.FC = (): JSX.Element => {
     </header>
   );
 };
+
+export default HeaderM;

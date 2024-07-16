@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocoScrollContext } from '@/util/LocoScrollContext';
 
-export const ButtonStart: React.FC = () => {
+const ButtonStart: React.FC = () => {
     // Assuming `useLocoScrollContext` returns a type that could be null or has scrollTo method, explicitly type it.
     const locoScroll = useLocoScrollContext() as { scrollTo: (y: number, options: { duration: number, easing: [number, number, number, number] }) => void } | null;
 
@@ -48,3 +48,5 @@ export const ButtonStart: React.FC = () => {
         </button>
     );
 };
+
+export default ButtonStart;

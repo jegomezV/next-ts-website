@@ -1,46 +1,47 @@
+/* // 'use client'
 'use client';
 
+// Importaciones de bibliotecas externas ->
 import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import dynamic from 'next/dynamic';
 
-// Importando Hooks y componentes de utilidades ->
+// Importing Hooks and Utilities components ->
 import { useCountdown } from '../util/useCountdown';
 import useLocoScroll from './components/hooks/useLocoScroll';
 import LocoScrollContext from '../util/LocoScrollContext';
 import CustomCursor from './components/sharedComponents/CustomCursor/CustomCursor';
 
-import HeaderM from './components/homeComponents/Header';
-
-// Home components (cargados de manera diferida) ->
-const ButtonStart = dynamic(() => import('./components/buttons/ButtonStart'), { loading: () => <p></p> });
-const Introduction = dynamic(() => import('./components/homeComponents/Introduction'), { loading: () => <p></p> });
-const Stereotypes = dynamic(() => import('./components/homeComponents/Stereotypes'), { loading: () => <p></p> });
-const Nav = dynamic(() => import('./components/sharedComponents/Nav'), { loading: () => <p>.</p> });
-const Credits = dynamic(() => import('./components/homeComponents/Credits'), { loading: () => <p></p> });
-const Actors = dynamic(() => import('./components/homeComponents/Actors'), { loading: () => <p></p> });
+// Home components ->
+import { ButtonStart } from './components/buttons/ButtonStart';
+import { HeaderM } from './components/homeComponents/Header';
+import { Introduction } from './components/homeComponents/Introduction';
+import { Stereotypes } from './components/homeComponents/Stereotypes';
+import { Nav } from './components/sharedComponents/Nav';
+import { Credits } from './components/homeComponents/Credits';
+import { Actors } from './components/homeComponents/Actors';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const ref = useRef(null);
-  const [preloader, setPreloader] = useState(false);
-  const [componentsLoaded, setComponentsLoaded] = useState(false);
+  const [preloader, setPreloader] = useState(true);
 
-  useCountdown(3, () => setPreloader(false)); // Temporizador de preloader
+  // Using the custom hook for the timer
+  useCountdown(1, () => setPreloader(false));
 
-  const locoScrollInstance = useLocoScroll(!preloader && componentsLoaded);
-
+  // GSAP animations for the title and login elements
   useEffect(() => {
-    if (locoScrollInstance) {
-      locoScrollInstance.update();
+    try {
+      gsap.to('.animate-title2', { opacity: 0, y: 100, duration: 1, delay: 0.5 });
+      gsap.to('.animate-login', { opacity: 0, y: 120, duration: 1, delay: 0.5 });
+    } catch (error) {
+      console.error('Error with GSAP animations:', error);
     }
-  }, [locoScrollInstance, componentsLoaded]);
+  }, []);
 
-  useEffect(() => {
-    setComponentsLoaded(true); // Marcar como cargado cuando los componentes hayan terminado de cargarse
-  }, [preloader]);
+   // Custom hook to initialize LocoScroll
+  const locoScrollInstance = useLocoScroll(!preloader);
 
   return (
     <LocoScrollContext.Provider value={locoScrollInstance}>
@@ -79,4 +80,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; */

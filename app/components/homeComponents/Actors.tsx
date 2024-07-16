@@ -27,3 +27,5 @@ export const Actors: React.FC = (): JSX.Element => {
     </section>
   );
 };
+
+export default Actors;

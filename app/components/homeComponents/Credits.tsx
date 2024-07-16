@@ -36,3 +36,5 @@ export const Credits: React.FC = (): JSX.Element => {
     </section>
   );
 };
+
+export default Credits;
