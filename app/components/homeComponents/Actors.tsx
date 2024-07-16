@@ -1,19 +1,8 @@
 import { useEffect } from 'react';
 import Image from 'next/image';
-import gsap from 'gsap';
-
-import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
-import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.jpg';
-import mainJefreyPhoto from '@/public/homeImgs/homeBg/mainJefreyPhoto.jpg';
-import mainSecondPhoto from '@/public/homeImgs/homeBg/modelsSection/diegoMainPhoto.jpg';
-import principalPhoto from '@/public/homeImgs/homeBg/principalPhoto.jpg';
-import buttersHead from '@/public/homeImgs/homeBg/buttersHead.jpg';
 
 export const Actors: React.FC = (): JSX.Element => {
   let images: HTMLElement[] = [];
-  /* useEffect(() => {
-    gsap.to(".box", { rotation: 360, x: 100, duration: 1, repeat: -1, yoyo: true });
-  }, []); */
 
   useEffect(() => {
     images = Array.from(document.querySelectorAll('.img'));
@@ -39,7 +28,7 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
 
             <div className="relative w-[400px] h-[150%] overflow-hidden">
-              <div data-scroll data-scroll-speed='2' className="img is-reveal absolute left-[-12px] w-[300px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+              <div data-scroll data-scroll-speed='2' className="img is-reveal absolute left-[-12px] w-[300px] h-[100%] bg-cover bg-center"></div>
             </div>
             <div className=" relative w-[400px] h-[150%] overflow-hidden border-[1px] border-black/30">
               <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-200px] w-[600px] h-[100%] bg-cover bg-center "></div>

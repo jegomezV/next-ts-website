@@ -1,7 +1,7 @@
 "use client"
 
-import { Nav } from '@/app/components/general/Nav';
-import { ButtonStart } from '@/app/components/buttons/ButtonStart';
+import { Nav } from '@/app/components/sharedComponents/Nav';
+import ButtonStart from '@/app/components/buttons/ButtonStart';
 
 export default function AboutPage() {
     return (
