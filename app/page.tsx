@@ -12,6 +12,7 @@ import LocoScrollContext from '../util/LocoScrollContext';
 import CustomCursor from './components/sharedComponents/CustomCursor/CustomCursor';
 
 import HeaderM from './components/homeComponents/Header';
+import Actors from './components/homeComponents/Actors';
 
 // Home components (cargados de manera diferida) ->
 const ButtonStart = dynamic(() => import('./components/buttons/ButtonStart'), { loading: () => <p></p> });
@@ -19,7 +20,7 @@ const Introduction = dynamic(() => import('./components/homeComponents/Introduct
 const Stereotypes = dynamic(() => import('./components/homeComponents/Stereotypes'), { loading: () => <p></p> });
 const Nav = dynamic(() => import('./components/sharedComponents/Nav'), { loading: () => <p>.</p> });
 const Credits = dynamic(() => import('./components/homeComponents/Credits'), { loading: () => <p></p> });
-const Actors = dynamic(() => import('./components/homeComponents/Actors'), { loading: () => <p></p> });
+
 
 gsap.registerPlugin(ScrollTrigger);
 
