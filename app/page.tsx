@@ -18,7 +18,7 @@ import { HeaderM } from './components/homeComponents/Header';
 import { Introduction } from './components/homeComponents/Introduction';
 import { Stereotypes } from './components/homeComponents/Stereotypes';
 import { Nav } from './components/sharedComponents/Nav';
-import { Credits } from './components/homeComponents/Credits';
+import Credits from './components/homeComponents/Credits';
 import { Actors } from './components/homeComponents/Actors';
 
 gsap.registerPlugin(ScrollTrigger);
