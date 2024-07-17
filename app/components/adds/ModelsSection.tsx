@@ -1,4 +1,4 @@
-/* import React, { useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -109,4 +109,3 @@ const ModelsSection: React.FC = (): JSX.Element => {
 };
 
 export default ModelsSection;
- */
