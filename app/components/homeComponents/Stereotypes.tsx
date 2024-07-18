@@ -26,7 +26,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               </h1>
             </div>
 
-            <div data-scroll data-scroll-speed="0.5" className='relative col-start-2 h-[27rem] w-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mt-[18rem] mx-auto'>
+            <div data-scroll data-scroll-speed="0.5" className='relative col-start-2 2xl:h-[27rem] xl:h-[24rem] 2xl:w-[22rem] xl:w-[20rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mt-[18rem] mx-auto'>
               <Image
                 src={Photo2}
                 alt="Model section introduction"
@@ -38,7 +38,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               />
             </div>
 
-            <div data-scroll data-scroll-speed="-1" className='absolute 2xl:bottom-[17rem] xl:bottom-[12rem] 2xl:right-[27.3rem] xl:right-[23.2rem] z-[-1]'>
+            <div data-scroll data-scroll-speed="-1" className='absolute 2xl:bottom-[17rem] xl:bottom-[12rem] 2xl:right-[27.2rem] xl:right-[23.2rem] z-[-1]'>
               <ArrowSvg className='transform w-6 h-6 text-black rotate-90 xl:-translate-x-[2px]' />
             </div>
 
@@ -67,13 +67,13 @@ export const Stereotypes: React.FC = (): JSX.Element => {
 
             <div className="relative row-span-2 col-start-2 mt-[15rem]">
               <p
-                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] p-4 inset-0 z-0 xl:translate-y-5"
+                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] p-2 inset-0 z-0 xl:translate-y-3"
               >
                 Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this.
               </p>
             </div>
 
-            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className='relative h-[17rem] w-[30rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mb-5'>
+            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className='relative 2xl:h-[17rem] xl:h-[15rem] w-[30rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mb-5'>
               <Image
                 src={Photo1}
                 alt="Model section introduction"
@@ -81,7 +81,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 objectFit="cover"
                 placeholder="blur"
                 priority
-                className='hover:scale-105 duration-300 hover:duration-300'
+                className='hover:scale-105 duration-300 hover:duration-300 xl:-translate-x-5'
               />
             </div>
 

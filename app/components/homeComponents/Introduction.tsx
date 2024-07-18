@@ -39,14 +39,14 @@ export const Introduction: React.FC = (): JSX.Element => {
               />
             </div>
 
-            <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className='absolute 2xl:top-[21.4rem] xl:top-[16.8rem] right-[5rem]'>
+            <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className='absolute 2xl:top-[21.4rem] xl:top-[16.8rem] xl:right-[5rem]'>
               <ArrowSvg className='transform w-6 h-6 text-black rotate-180' />
             </div>
             <div data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" className='absolute bottom-[8.4rem] left-[5rem]'>
               <ArrowSvg className='transform w-6 h-6 text-black' />
             </div>
 
-            <div className='absolute h-[15rem] bg-black w-[2px] translate-y-10 2xl:translate-x-[12rem] xl:translate-x-[11rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+            <div className='absolute h-[15rem] bg-black w-[2px] translate-y-16 2xl:translate-x-[12rem] xl:translate-x-[11rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
             <div className='absolute h-[2px] bg-black w-[90%] 2xl:-translate-y-10 xl:-translate-y-12 translate-x-10 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
 
             <div data-scroll data-scroll-speed="1.0" data-scroll-direction="horizontal" className="relative 2xl:mb-10 xl:mb-10">
