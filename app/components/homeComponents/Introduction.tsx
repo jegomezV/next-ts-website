@@ -5,6 +5,7 @@ import React from 'react';
 import cameraManPhoto from '@/public/homeImgs/homeBg/cameraMan.jpg';
 import firstPhoto from '@/public/homeImgs/introduction/introduction1.jpg';
 import secondPhoto from '@/public/homeImgs/introduction/introduction2.jpg';
+import ArrowSvg from '../svgs/ArrowSvg';
 
 // Introduction component definition
 export const Introduction: React.FC = (): JSX.Element => {
@@ -18,13 +19,13 @@ export const Introduction: React.FC = (): JSX.Element => {
               <h1
                 data-scroll
                 data-scroll-speed="-1.0"
-                className="col-span-1 text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.3)]"
+                className="col-span-1 text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
               >
                 Redefining Beauty <br/> Beyond Stereotypes
               </h1>
             </div>
 
-            <div data-scroll data-scroll-speed="-0.5" data-scroll-direction="horizontal" className='relative h-[27rem] w-[22rem] row-start-1 row-end-3 mx-start drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mt-[8rem]'>
+            <div data-scroll data-scroll-speed="-0.5" data-scroll-direction="horizontal" className='relative z-10 h-[27rem] w-[22rem] row-start-1 row-end-3 mx-start drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mt-[8rem]'>
               <Image
                 src={firstPhoto}
                 alt="Model section introduction"
@@ -35,9 +36,15 @@ export const Introduction: React.FC = (): JSX.Element => {
                 className='hover:scale-105 duration-300 hover:duration-300'
               />
             </div>
-
+            <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal" className='absolute top-[21.4rem] right-[5rem]'>
+              <ArrowSvg className='transform w-6 h-6 text-black rotate-180' />
+            </div>
+            <div data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" className='absolute bottom-[8.4rem] left-[5rem]'>
+              <ArrowSvg className='transform w-6 h-6 text-black' />
+            </div>
+            <div className='absolute h-[15rem] bg-black w-[2px] translate-y-10 translate-x-[12rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
             <div className='absolute h-[2px] bg-black w-[90%] -translate-y-10 translate-x-10 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
-            <div data-scroll data-scroll-speed="-1.5" data-scroll-direction="horizontal" className="relative mb-10">
+            <div data-scroll data-scroll-speed="1.0" data-scroll-direction="horizontal" className="relative mb-10">
               <p
                 className="text-lg text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-6 backdrop-blur-3xl inset-0 z-0"
               >

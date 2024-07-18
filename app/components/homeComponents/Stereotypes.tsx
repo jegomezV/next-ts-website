@@ -4,6 +4,8 @@ import React from 'react';
 // Importing image file
 import Photo1 from '@/public/homeImgs/stereotypes/stereotypes1.jpg';
 import Photo2 from '@/public/homeImgs/stereotypes/stereotypes2.jpg';
+import ArrowSvg from '../svgs/ArrowSvg';
+import CircleSvg from '../svgs/CircleSvg';
 
 // Introduction component definition
 export const Stereotypes: React.FC = (): JSX.Element => {
@@ -17,7 +19,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               <h1
                 data-scroll
                 data-scroll-speed="-1"
-                className="col-span-1 text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.3)]"
+                className="col-span-1 text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
               >
                 Challenging <br/> Beauty Stereotypes
               </h1>
@@ -33,6 +35,20 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 priority
                 className='hover:scale-105 duration-300 hover:duration-300'
               />
+            </div>
+
+            <div data-scroll data-scroll-speed="-1" className='absolute bottom-[17rem] right-[27.3rem] z-[-1]'>
+              <ArrowSvg className='transform w-6 h-6 text-black rotate-90' />
+            </div>
+
+            <div data-scroll data-scroll-speed="3.5" className='absolute bottom-[28rem] left-[7rem]'>
+              <CircleSvg className='w-3 h-3 text-black -translate-x-[1px]'/>
+            </div>
+            <div data-scroll data-scroll-speed="1.4" className='absolute bottom-[22rem] left-[6.8rem]'>
+              <CircleSvg className='w-4 h-4 text-black'/>
+            </div>
+            <div data-scroll data-scroll-speed="1" className='absolute bottom-[20rem] left-[6.6rem]'>
+              <CircleSvg className='w-6 h-6 text-black -translate-x-[1px]'/>
             </div>
 
             <div className='absolute h-screen bg-black w-[2px] -translate-y-10 translate-x-10 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-[5rem]'></div>
