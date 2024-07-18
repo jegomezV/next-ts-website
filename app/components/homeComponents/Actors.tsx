@@ -47,7 +47,7 @@ export const Actors: React.FC = (): JSX.Element => {
       <div className="absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-start">
         <div className="h-[75%] w-[100%] flex justify-start ">
           {/* Each image container now includes hover effects and a click prompt */}
-          {<div className="relative w-[400px] h-[150%] overflow-hidden group">
+          {<div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
             <div data-scroll data-scroll-speed='2' onClick={() => handleOpenModal(2)} className="img absolute cursor-pointer left-[-240px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-[2px]"></div>
             <div className="relative inset-0 flex cursor-pointer items-center justify-end opacity-0 group-hover:opacity-100 drop-shadow-[0_1.5px_5px_rgba(255,255,255,0.2)] -rotate-90">
               <h1 className="text-2xl absolute top-[4.2rem] right-[19rem] text-transparent duration-1000 bg-white font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
@@ -56,8 +56,8 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
           </div>
           }
-          <div className="relative w-[400px] h-[150%] overflow-hidden group">
-            <div onClick={() => handleOpenModal(0)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-170px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30 drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+          <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
+            <div onClick={() => handleOpenModal(0)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-170px] w-[600px] h-[100%] bg-cover bg-center  drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black top-[4.9rem] right-[19.5rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
                 More About Alexa
@@ -65,7 +65,7 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="relative w-[400px] h-[150%] overflow-hidden group">
+          <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
             <div onClick={() => handleOpenModal(5)} data-scroll data-scroll-speed='2' className="img absolute left-[-30px] cursor-pointer w-[300px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-white top-[4.9rem] right-[13.2rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] bg-clip-text">
@@ -74,7 +74,7 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="relative w-[400px] h-[150%] overflow-hidden group">
+          <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
             <div onClick={() => handleOpenModal(1)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-200px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black top-[4.3rem] right-[19.3rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
@@ -83,8 +83,8 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="relative w-[400px] h-[150%] overflow-hidden group">
-            <div onClick={() => handleOpenModal(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-150px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30 drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+          <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
+            <div onClick={() => handleOpenModal(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-150px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute top-[4.2rem] right-[20rem] text-transparent duration-1000 bg-white font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
                 More About Saralí
@@ -92,8 +92,8 @@ export const Actors: React.FC = (): JSX.Element => {
             </div>
           </div>
 
-          <div className="relative w-[400px] h-[150%] overflow-hidden group">
-            <div onClick={() => handleOpenModal(4)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-155px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30 drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+          <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
+            <div onClick={() => handleOpenModal(4)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-155px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90 drop-shadow-[0_1.5px_5px_rgba(255,255,255,10)]">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black top-[4rem] right-[17rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
                 More About Claudia
