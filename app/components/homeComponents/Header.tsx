@@ -52,6 +52,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
+            className='hover:translate-x-6 hover:duration-200 duration-200'
           />
         </div>
 
@@ -71,6 +72,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
+            className='hover:-translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
@@ -89,6 +91,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
+            className='hover:-translate-x-4 hover:duration-200 duration-200'
           />
         </div>
 
@@ -108,6 +111,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
+            className='hover:translate-x-6 hover:duration-200 duration-200'
           />
         </div>
 
@@ -146,6 +150,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
+            className='hover:-translate-x-4 hover:duration-200 duration-200'
           />
         </div>
 
