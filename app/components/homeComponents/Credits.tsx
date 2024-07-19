@@ -24,12 +24,8 @@ export const Credits: React.FC = (): JSX.Element => {
             Credits<br />
           </h1>
           {/* Section Content */}
-          <p className="text-lg text-center text-black mt-4 font-display">
-            Beauty stereotypes imposed by the fashion industry have had profound negative repercussions
-            on the mental and emotional health of many individuals.
-            From the pressure to achieve impossible bodies to the exclusion of those who don't fit traditional molds,
-            these stigmas have limited the potential of countless people.
-            It's time to challenge these standards and advocate for beauty that includes everyone.
+          <p className="text-6xl text-center text-black mt-4 font-display">
+            UNDER CONSTRUCTION.
           </p>
         </div>
       </article>

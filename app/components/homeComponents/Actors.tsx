@@ -11,25 +11,14 @@ import ModelJeffry from '../actorsPage/modelJeffry';
 import ModelSarali from '../actorsPage/modelSarali';
 import ModelZorro from '../actorsPage/modelZorro';
 
+interface ActorsProps {
+  onActorClick: (index: number) => void;
+}
+
 const modelComponents = [ModelAlexa, ModelDiego, ModelJeffry, ModelSarali, ModelClaudia, ModelZorro];
 
-export const Actors: React.FC = (): JSX.Element => {
+export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => {
   let images: HTMLElement[] = [];
-  const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
-
-  const handleOpenModal = (index: number) => {
-    setOpenModalIndex(index);
-  };
-
-  const handleCloseModal = () => {
-    setOpenModalIndex(null);
-  };
-
-  const handleModalClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if (event.target === event.currentTarget) {
-      handleCloseModal();
-    }
-  };
 
   useEffect(() => {
     images = Array.from(document.querySelectorAll('.img'));
@@ -48,7 +37,7 @@ export const Actors: React.FC = (): JSX.Element => {
         <div className="h-[75%] w-[100%] flex justify-start ">
           {/* Each image container now includes hover effects and a click prompt */}
           {<div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div data-scroll data-scroll-speed='2' onClick={() => handleOpenModal(2)} className="img absolute cursor-pointer left-[-240px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-[2px]"></div>
+            <div data-scroll data-scroll-speed='2' onClick={() => onActorClick(2)} className="img absolute cursor-pointer left-[-240px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-[2px]"></div>
             <div className="relative inset-0 flex cursor-pointer items-center justify-end opacity-0 group-hover:opacity-100 drop-shadow-[0_1.5px_5px_rgba(255,255,255,0.2)] -rotate-90">
               <h1 className="text-2xl absolute 2xl:top-[1.2rem] xl:-top-[0.5rem] 2xl:right-[32rem] xl:right-[26rem] text-transparent duration-1000 bg-white font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -58,7 +47,7 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
           }
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => handleOpenModal(0)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-170px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(0)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-170px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black 2xl:top-[2rem] xl:top-[1.1rem] 2xl:right-[31.2rem] xl:right-[25rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -68,7 +57,7 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
 
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => handleOpenModal(5)} data-scroll data-scroll-speed='2' className="img absolute left-[-30px] cursor-pointer w-[300px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(5)} data-scroll data-scroll-speed='2' className="img absolute left-[-30px] cursor-pointer w-[300px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <div className="text-2xl absolute text-transparent duration-1000 bg-white 2xl:top-[1.7rem] xl:-top-[0.4rem] 2xl:right-[31rem] xl:right-[22rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] bg-clip-text">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -78,7 +67,7 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
 
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => handleOpenModal(1)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-200px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(1)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-200px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90 drop-shadow-[0_1.5px_5px_rgba(255,255,255,0.6)]">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black 2xl:top-[1.3rem] xl:top-[0.5rem] 2xl:right-[33rem] xl:right-[25rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -88,7 +77,7 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
 
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => handleOpenModal(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-150px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-150px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute 2xl:top-[1.8rem] xl:top-[1rem] 2xl:right-[33rem] xl:right-[25rem] text-transparent duration-1000 bg-white font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -98,7 +87,7 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
 
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => handleOpenModal(4)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-155px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(4)} data-scroll data-scroll-speed='-1' className="img absolute cursor-pointer left-[-155px] w-[600px] h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90 drop-shadow-[0_1.5px_5px_rgba(255,255,255,10)]">
               <h1 className="text-2xl absolute text-transparent duration-1000 bg-black 2xl:top-[1.8rem] xl:top-[1rem] 2xl:right-[33rem] xl:right-[25rem] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.5)] bg-clip-text">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">More About ~</span>
@@ -108,41 +97,6 @@ export const Actors: React.FC = (): JSX.Element => {
           </div>
         </div>
       </div>
-      {openModalIndex !== null && (
-        <motion.div
-          className="fixed inset-0 flex items-center justify-center"
-          onClick={handleModalClick}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
-        >
-          <motion.div
-            className="fixed inset-0 flex justify-center items-center bg-black/50 backdrop-blur-md"
-            onClick={handleModalClick}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-          >
-            <motion.div
-              className="bg-white rounded-lg p-4 w-[90%] h-[90%] flex flex-col items-center justify-center absolute drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]"
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.5, opacity: 0 }}
-              transition={{ duration: 0.4 }}
-            >
-              <span
-                className="absolute top-4 h-8 w-8 text-center border-black/60 border-[1px] right-5 cursor-pointer text-xl bg-slate-200 rounded-full  items-center transform hover:bg-black/50 hover:text-red-7 transition duration-300 hover:scale-105"
-                onClick={handleCloseModal}
-              >
-                &times;
-              </span>
-              {React.createElement(modelComponents[openModalIndex])}
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      )}
     </section>
   );
 }
