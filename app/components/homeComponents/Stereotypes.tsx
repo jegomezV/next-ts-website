@@ -44,3 +44,5 @@ export const Stereotypes: React.FC = (): JSX.Element => {
     </section>
   );
 };
+
+export default Stereotypes;

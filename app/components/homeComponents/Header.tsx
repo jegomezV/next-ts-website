@@ -34,7 +34,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
         </h3>
       </div>
 
-      {/* Absolute positioned images with hover effects */}
+      {/* Absolute positioned images */}
       <div className='absolute top-0 w-screen h-screen flex items-center justify-center overflow-hidden'>
         {/* Image 1 */}
         <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className="
@@ -43,9 +43,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-60 w-44 sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
           lg:left-[53%] lg:bottom-0 lg:h-[20rem] lg:w-[20rem]
-          xl:h-80 xl:w-80 xl:left-[50%] xl:bottom-4
-          2xl:h-[15rem] 2xl:w-[25rem] 2xl:left-[70%] 2xl:bottom-[1rem]
-          hover:translate-x-5 hover:duration-300 duration-300">
+          xl:h-[15rem] xl:w-[20rem] xl:left-[55rem] xl:bottom-4
+          2xl:h-[15rem] 2xl:w-[25rem] 2xl:left-[70%] 2xl:bottom-[1rem] duration-300">
           <Image
             src={pasarellaPhoto}
             alt="Fashion runway scene"
@@ -63,9 +62,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-52 w-36 sm:left-[67%] sm:top-3
           md:left-[78%] md:h-60 md:w-44
           lg:h-[22rem] lg:w-[17rem] lg:left-[80%] lg:top-3
-          xl:left-[84%] xl:h-[20rem] xl:w-[16rem] xl:top-16
-          2xl:h-96 2xl:w-72 2xl:top-16 2xl:-right-[4rem]
-          hover:-translate-x-1 hover:translate-y-1 hover:duration-300 duration-300">
+          xl:left-[84%] xl:h-[20rem] xl:w-[14rem] xl:top-16
+          2xl:h-96 2xl:w-72 2xl:top-16 2xl:-right-[4rem] duration-300">
           <Image
             src={mainSecondPhoto}
             alt="Fashion model close-up"
@@ -82,9 +80,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
           drop-shadow-[0_1.5px_20px_rgba(0,0,0,5)]
           h-52 w-36 sm:top-10 sm:h-56 sm:w-44
           md:-left-[4%] md:h-80 md:w-60
-          xl:h-96 xl:w-[18rem]
-          2xl:h-[30rem] 2xl:w-[20rem] 2xl:left-[4rem]
-          hover:translate-y-3 hover:duration-300 duration-300">
+          xl:h-96 xl:w-[18rem] xl:left-[4rem]
+          2xl:h-[30rem] 2xl:w-[20rem] 2xl:left-[4rem] duration-300">
           <Image
             src={firstPhoto}
             alt="Close-up portrait of a model"
@@ -102,9 +99,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
           h-60 w-40 sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
           lg:right-[70%] lg:bottom-4 lg:h-[17rem] lg:w-[12rem]
-          xl:h-[13rem] xl:w-[13rem] xl:left-4 xl:bottom-0
-          2xl:h-[16rem] 2xl:w-[14rem] 2xl:left-[10rem] 2xl:bottom-0
-          hover:translate-x-5 hover:-translate-y-2 hover:duration-300 duration-300">
+          xl:h-[13rem] xl:w-[13rem] xl:bottom-1
+          2xl:h-[16rem] 2xl:w-[14rem] 2xl:left-[10rem] 2xl:bottom-0 duration-300">
           <Image
             src={mainJefreyPhoto}
             alt="Portrait of a fashion designer"
@@ -117,14 +113,13 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
         {/* Image 5 */}
         <div className="
-          absolute bottom-[25%] left-[50%]
-          transform -translate-x-1/2 -translate-y-1/2
-          rounded drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)]
-          h-64 w-52 sm:h-72 sm:w-52 sm:bottom-20 sm:left-[47%]
+          absolute transform -translate-x-1/2 -translate-y-1/2
+          drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] h-64 w-52
+          sm:h-72 sm:w-52
           md:left-[46%] md:top-[17rem] md:h-[500px] md:w-[350px]
           lg:top-[20rem]
-          xl:h-[32rem] xl:w-[30rem] xl:top-[20rem] xl:right-[425px]
-          2xl:h-[40rem] 2xl:w-[37rem] 2xl:right-[450px] 2xl:top-[21rem]">
+          xl:h-[30rem] xl:w-[27rem] xl:top-[20rem]
+          2xl:h-[40rem] 2xl:w-[37rem] 2xl:top-[27rem]">
           <Image
             src={principalPhoto}
             alt="Portrait of a fashion model"
@@ -143,7 +138,6 @@ export const HeaderM: React.FC = (): JSX.Element => {
           lg:h-[10rem] lg:w-[8rem] lg:right-[12rem] lg:top-[15rem]
           xl:h-[11rem] xl:w-[9rem] xl:top-[11rem] xl:right-52
           2xl:h-64 2xl:w-52 2xl:right-[16rem] 2xl:top-[9rem]
-          hover:-translate-x-5 hover:-translate-y-2 hover:duration-300
           drop-shadow-[0_1.5px_20px_rgba(0,0,0,2)] duration-300">
           <Image
             src={buttersHead}
@@ -160,3 +154,5 @@ export const HeaderM: React.FC = (): JSX.Element => {
     </header>
   );
 };
+
+export default HeaderM;

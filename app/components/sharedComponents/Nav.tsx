@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
-import { TranslateButton } from '../buttons/TranslateButton';
 import { gsap } from 'gsap';
-import { useLocoScrollContext } from '../../../util/LocoScrollContext';
+import { useLocoScrollContext } from '@/util/LocoScrollContext';
+import { TranslateButton } from '../buttons/TranslateButton'; // Importa el componente correctamente
 
-// Define the expected methods for LocomotiveScroll instance
 interface LocoScrollInstance {
   scrollTo: (target: Element | number, options: { duration?: number; offset?: number }) => void;
 }
@@ -14,12 +13,10 @@ export const Nav: React.FC = () => {
   const menuRef = useRef<HTMLDivElement>(null);
   const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
 
-  // Toggle menu visibility
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Handle scrolling to a specific section
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
@@ -31,11 +28,9 @@ export const Nav: React.FC = () => {
     }
   };
 
-  // Effect to manage menu animation and responsiveness
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 640) {
-        // Mobile view animations
         if (isOpen) {
           gsap.fromTo(
             menuRef.current,
@@ -66,7 +61,6 @@ export const Nav: React.FC = () => {
           );
         }
       } else {
-        // Desktop view animations
         if (isOpen) {
           gsap.to(menuRef.current, {
             duration: 0.5,
@@ -91,12 +85,9 @@ export const Nav: React.FC = () => {
       }
     };
 
-    // Initial setup
     handleResize();
-    // Listen to window resize events
     window.addEventListener('resize', handleResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -104,7 +95,6 @@ export const Nav: React.FC = () => {
 
   return (
     <div className='w-screen mx-auto'>
-      {/* Toggle button for mobile menu */}
       <button
         className="
           menu-toggle-button
@@ -121,7 +111,6 @@ export const Nav: React.FC = () => {
           max-sm:h-10 max-sm:w-10 max-sm:p-[4px] max-sm:border-[1px]"
         onClick={toggleMenu}
       >
-        {/* Menu toggle icon */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -138,24 +127,25 @@ export const Nav: React.FC = () => {
         </svg>
       </button>
 
-      {/* Navigation menu */}
       <nav
         ref={menuRef}
         className="
           fixed max-sm:hidden max-sm:h-0 max-sm:border-y-[1px] max-sm:border-white max-sm:top-0 top-8 left-0 right-0 z-50
-          flex max-sm:flex-col items-center justify-center sm:flex-row space-x-40
+          flex max-sm:flex-col items-center justify-center sm:flex-row 
           sm:w-full sm:py-[14px]
-          hover:duration-500 duration-500 hover:shadow-white/20 shadow-inner shadow-white/10
-          border-y-[1px] wrapper border-black/80 backdrop-blur-3xl
-          overflow-hidden"
-      >
-        {/* List of navigation links */}
+          md:py-[14px] md:px-20 md:space-x-20 md:justify-center md:items-center md:text-lg
+          lg:text-xl
+          xl:top-4 xl:py-[0.5rem]
+          2xl:py-[0.5rem]
+          hover:duration-500 duration-500 hover:shadow-white/30 shadow-inner shadow-black/50
+          border-y-[1px] wrapper border-white< bg-black/60
+          overflow-hidden">
+
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center max-sm:text-2xl sm:flex-row space-x-2 md:text-lg
-          md:space-x-20 lg:text-xl xl:text-xl lg:space-x-40
+          md:space-x-20 lg:text-xl xl:text-md lg:space-x-40
           hover:text-white 2xl:text-xl"
         >
-          {/* Home link */}
           <li className="sm:inline-block hidden">
             <Link
               href="/"
@@ -163,13 +153,12 @@ export const Nav: React.FC = () => {
               className="
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
-                text-black transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
+                text-gray-300 transition-[background-size,color] duration-300
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
               Home
             </Link>
           </li>
-          {/* Actors link */}
           <li>
             <Link
               href="/"
@@ -178,12 +167,11 @@ export const Nav: React.FC = () => {
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
                 text-gray-300 transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
               Actors
             </Link>
           </li>
-          {/* About link */}
           <li>
             <Link
               href="/pages/about"
@@ -191,12 +179,11 @@ export const Nav: React.FC = () => {
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
                 text-gray-300 transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] drop-shadow-[0_0px_10px_rgba(0,0,0,10)]"
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
               About
             </Link>
           </li>
-          {/* Credits link */}
           <li>
             <Link
               href="/"
@@ -205,15 +192,16 @@ export const Nav: React.FC = () => {
                 relative max-sm:text-white bg-[linear-gradient(#00000000,#00000000),linear-gradient(#ffffff,#ffffff)]
                 bg-[length:100%_2px,0_2px] bg-[position:100%_100%,0_100%] bg-no-repeat
                 text-gray-300 transition-[background-size,color] duration-300
-                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff]"
+                hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
               Credits
             </Link>
           </li>
         </ul>
-        {/* Translate button */}
         <TranslateButton />
       </nav>
     </div>
   );
 };
+
+export default Nav;

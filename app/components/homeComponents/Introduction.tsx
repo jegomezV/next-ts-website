@@ -42,3 +42,5 @@ export const Introduction: React.FC = (): JSX.Element => {
     </section>
   );
 };
+
+export default Introduction;

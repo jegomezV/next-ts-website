@@ -1,29 +1,49 @@
+import { useEffect } from 'react';
 import Image from 'next/image';
-import thirdPhoto from '@/public/homeImgs/homeBg/shadowGirl.jpg';
 
 export const Actors: React.FC = (): JSX.Element => {
+  let images: HTMLElement[] = [];
+
+  useEffect(() => {
+    images = Array.from(document.querySelectorAll('.img'));
+    images.forEach((image, idx) => {
+      if (image instanceof HTMLElement) {
+        image.style.backgroundImage = `url(./Parallax/p${idx + 1}.jpg)`;
+      }
+    });
+
+  }, []);
+
   return (
-    <section data-scroll-section>
+    <section id='actors' data-scroll-section className='relative h-screen w-screen'>
       {/* Main container with background image */}
-      <article>
-        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-y border-gray-300">
-          {/* Background Image */}
-          <Image
-            src={thirdPhoto}
-            alt="A shadowed figure against a vibrant background, evoking a sense of mystery and allure."
-            layout="fill" // Ensures the image covers the entire area
-            style={{
-              objectFit: "cover",
-              objectPosition: "center"
-            }}
-            className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-          />
-          {/* Section Title */}
-          <h1 className="z-10 text-2xl text-transparent duration-1000 bg-white cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-md">
-            The Actors Section.<br />
-          </h1>
+      <div className="absolute top-0 left-0 w-[100%] h-[100%] flex items-center justify-start bg-slate-300">
+          <div className="h-[75%] w-[100%] flex justify-start ">
+
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="img absolute left-[-240px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-170px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+
+            <div className="relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="img is-reveal absolute left-[-30px] w-[300px] h-[100%] bg-cover bg-center"></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden border-[1px] border-black/30">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-200px] w-[600px] h-[100%] bg-cover bg-center "></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='2' className="is-reveal img absolute left-[-150px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+            <div className=" relative w-[400px] h-[150%] overflow-hidden">
+              <div data-scroll data-scroll-speed='-1' className="img is-reveal absolute left-[-155px] w-[600px] h-[100%] bg-cover bg-center border-t-[1px] border-black/30"></div>
+            </div>
+
+          </div>
         </div>
-      </article>
     </section>
-  );
+);
 };
+
+export default Actors;

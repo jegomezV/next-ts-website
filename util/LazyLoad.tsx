@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+/* import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
 const LazyLoad = ({ src, alt }) => {
@@ -44,3 +44,4 @@ const LazyLoad = ({ src, alt }) => {
 };
 
 export default LazyLoad;
+ */
