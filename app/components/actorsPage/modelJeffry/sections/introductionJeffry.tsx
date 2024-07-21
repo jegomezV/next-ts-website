@@ -7,7 +7,7 @@ import mainSecondPhoto from '@/public/homeImgs/actorsModals/jeffryModal/modalMai
 const IntroductionJeffrey: React.FC = (): JSX.Element => {
   return (
     <section className='relative h-[42rem] w-full'>
-      <div className='border-b-[4px] border-black absolute h-full w-[100%] grid grid-cols-2 gap-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+      <div className='border-b-[3px] border-black absolute h-full w-[100%] grid grid-cols-2 gap-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
         <div className='relative flex flex-col items-center justify-center h-[100%] w-[100%] mx-auto my-auto'>
           <div className='h-[50%] w-[40%] -translate-y-24 -translate-x-32'>
             <Image src={mainPhoto} alt='Jeffrey' className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] hover:scale-105 hover:duration-200 duration-200' />
@@ -19,9 +19,9 @@ const IntroductionJeffrey: React.FC = (): JSX.Element => {
                 Jeffry Riascos
               </h1>
             </div>
-            <div className='absolute w-[115%] left-0 bg-black h-[3px] -translate-y-12 2xl:translate-x-[7.7rem] xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+            <div className='absolute w-[115%] left-0 bg-black h-[2px] -translate-y-12 2xl:translate-x-[7.7rem] xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
           </div>
-          <div className='absolute h-[15rem] -bottom-0 left-[33%] bg-black w-[3px] 2xl:-translate-x-0 xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+          <div className='absolute h-[15rem] -bottom-0 left-[33%] bg-black w-[2px] 2xl:-translate-x-0 xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
         </div>
         <div className='h-[100%] w-[100%] mx-auto my-auto'>
           <div className='relative flex flex-col items-center z-[-1] justify-center h-[100%] w-[100%] mx-auto my-auto'>
@@ -40,7 +40,7 @@ const IntroductionJeffrey: React.FC = (): JSX.Element => {
                 </p>
               </div>
             </div>
-            <div className='absolute h-[113%] left-0 bg-black w-[3px] -translate-y-10 2xl:-translate-x-0 xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+            <div className='absolute h-[113%] left-0 bg-black w-[2px] -translate-y-10 2xl:-translate-x-0 xl:-translate-x-0 z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
 
             <div className='absolute bottom-[20%]  h-[25%] w-[60%] left-0 translate-y-5 drop-shadow-[0_1.5px_5px_rgba(0, 0, 0, 2)]'>
               <div className='relative h-[25%] w-[90%] translate-y-0 -translate-x-0'>

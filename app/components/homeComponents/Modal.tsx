@@ -62,8 +62,7 @@ const Models: React.FC<ModelsProps> = ({ openModalIndex, handleCloseModal }) => 
         onClick={(e) => e.stopPropagation()}>
         <span
           className="absolute z-50 top-4 h-8 w-8 text-center text-white font-bold border-black/60 border-[1px] right-5 cursor-pointer text-xl bg-black rounded-full  items-center transform hover:bg-white/80 hover:text-black hover:text-red-7 transition duration-200 hover:scale-105"
-          onClick={handleCloseModal}
-        > x </span>
+          onClick={handleCloseModal}> x</span>
         <Particles />
         <SpecificModel />
       </motion.div>
