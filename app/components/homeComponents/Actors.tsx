@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 import ModelAlexa from '../actorsPage/modelAlexa';
 import ModelClaudia from '../actorsPage/modelClaudia';
 import ModelDiego from '../actorsPage/modelDiego';
-import ModelJeffry from '../actorsPage/modelJeffry';
+import ModelJeffry from '../actorsPage/modelJeffry/modelJeffry';
 import ModelSarali from '../actorsPage/modelSarali';
 import ModelZorro from '../actorsPage/modelZorro';
 
