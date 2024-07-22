@@ -1,69 +1,109 @@
 import React from 'react';
-import Image from 'next/image';
-import firstPhoto from '@/public/homeImgs/homeBg/blurHead.jpg';
+import { motion } from 'framer-motion';
 
 const Credits: React.FC = (): JSX.Element => {
   return (
-    <section data-scroll-section id='credits' className="relative w-full min-h-screen flex flex-col justify-center items-center bg-slate-500">
-      {/* <Image
-        src={firstPhoto}
-        alt="A blurred headshot with a contemplative expression, symbolizing the introspection and challenges faced by individuals in the fashion industry."
-        layout="fill"
-        objectFit="cover"
-        className="absolute top-0 left-0 w-full h-full z-[-1]"
-      /> */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-1]"></div>
+    <section
+      data-scroll-section
+      id='credits'
+      className="relative w-full min-h-screen items-center bg-slate-200 border-x-black"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2, type: 'spring', stiffness: 100 }}
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-delay="0.1"
+        className="relative w-full max-w-5xl mx-auto p-8 "
+      >
+        <h1 className='text-6xl lg:text-7xl text-center font-bold mt-4 mb-4  drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]'>
+          Project credits
+        </h1>
 
-      <article  className="relative z-10 text-center text-white p-4">
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="mt-20 mb-8">
-          <h2 className="text-2xl font-bold mb-4 bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Information about the University
-          </h2>
-          <p className="text-lg text-white">
-            Description of the university and its role in the project.
-          </p>
-        </div>
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Information about the School
-          </h2>
-          <p className="text-lg text-white">
-            Description of the school and its contribution to the project.
-          </p>
-        </div>
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Information about Us
-          </h2>
-          <p className="text-lg text-white">
-            Brief biography or roles of the developers of the project.
-          </p>
-          <p className="text-lg text-white">
-            User's name as project director or advisor.
-          </p>
-        </div>
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="mb-8">
-          <h2 className="text-2xl font-bold mb-4 bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Faculty
-          </h2>
-          <p className="text-lg text-white">
-            Name of the faculty or academic area related to the project.
-          </p>
-        </div>
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="flex flex-col mb-8">
-          <h2 className="text-2xl font-bold mb-2 bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Acknowledgments
-          </h2>
-          <div className="text-lg text-white pl-4">
-            <p>Julanito de tal, Pepito Perez, Julanita de tal</p>
+        <div className='relative text-white p-8 overflow-auto rounded-md'>
+          <div className="scroll-content">
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Information about the University
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                The University of Example is a prestigious institution known for its excellence in education and research.
+              </p>
+            </div>
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Information about Us
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                Our team comprises passionate individuals dedicated to pushing the boundaries of fashion and beauty.
+              </p>
+            </div>
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Faculty
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                Our faculty members are experts in their fields, bringing a wealth of knowledge and experience to the project.
+              </p>
+            </div>
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Tutor in charge of the project
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                Julanito de tal
+              </p>
+            </div>
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Acknowledgments
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                Julanito de tal, Pepito Perez, Julanita de tal
+              </p>
+            </div>
+            <div
+              data-scroll
+              data-scroll-speed="-1"
+              data-scroll-delay="0.5"
+              className="mb-12"
+            >
+              <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
+                Project creation date
+              </h2>
+              <p className="text-center text-xl font-bold text-slate-900">
+                Date of the project
+              </p>
+            </div>
           </div>
         </div>
-        <div data-scroll  data-scroll-speed="-1" data-scroll-delay="0.5" className="mt-12">
-          <p className="text-lg text-white bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            Date: July 2024
-          </p>
-        </div>
-      </article>
+      </motion.div>
     </section>
   );
 };

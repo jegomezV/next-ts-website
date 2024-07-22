@@ -12,6 +12,8 @@ import LocoScrollContext from '../util/LocoScrollContext';
 import CustomCursor from './components/sharedComponents/CustomCursor/CustomCursor';
 
 import HeaderM from './components/homeComponents/Header';
+import Actors from './components/homeComponents/Actors';
+import Models from './components/homeComponents/Modal';
 
 // Home components (cargados de manera diferida) ->
 const ButtonStart = dynamic(() => import('./components/buttons/ButtonStart'), { loading: () => <p></p> });
@@ -19,7 +21,7 @@ const Introduction = dynamic(() => import('./components/homeComponents/Introduct
 const Stereotypes = dynamic(() => import('./components/homeComponents/Stereotypes'), { loading: () => <p></p> });
 const Nav = dynamic(() => import('./components/sharedComponents/Nav'), { loading: () => <p>.</p> });
 const Credits = dynamic(() => import('./components/homeComponents/Credits'), { loading: () => <p></p> });
-const Actors = dynamic(() => import('./components/homeComponents/Actors'), { loading: () => <p></p> });
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,6 +29,18 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreloader] = useState(false);
   const [componentsLoaded, setComponentsLoaded] = useState(false);
+
+  const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
+
+  const handleActorClick = (index: number) => {
+    console.log('Actor Clicked:', index); // Verifica que el índice sea correcto
+    setOpenModalIndex(index);
+  };
+  
+
+  const handleCloseModal = () => {
+    setOpenModalIndex(null);
+  };
 
   useCountdown(0, () => setPreloader(false)); // Temporizador de preloader
 
@@ -70,7 +84,8 @@ const Home = () => {
           <main className="relative h-full w-screen">
             <Introduction />
             <Stereotypes />
-            <Actors />
+            <Actors onActorClick={handleActorClick} />
+            <Models openModalIndex={openModalIndex} handleCloseModal={handleCloseModal} />
             <Credits />
           </main>
         </div>

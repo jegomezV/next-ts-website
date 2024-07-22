@@ -50,8 +50,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Fashion runway scene"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-black/40'
+            className='hover:translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
@@ -69,8 +70,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Fashion model close-up"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-black/70'
+            className='hover:-translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
@@ -87,8 +89,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Close-up portrait of a model"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-slate-800'
+            className='hover:-translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
@@ -106,8 +109,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Portrait of a fashion designer"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-black/70'
+            className='hover:translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
@@ -125,8 +129,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Portrait of a fashion model"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-black'
           />
         </div>
 
@@ -144,8 +148,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
             alt="Portrait of a model with unique features"
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
             priority
-            className='border-[1px] border-black/30'
+            className='hover:-translate-x-2 hover:duration-200 duration-200'
           />
         </div>
 
