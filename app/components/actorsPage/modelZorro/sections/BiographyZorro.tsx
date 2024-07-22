@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
 
-import rightPhoto from '@/public/homeImgs/actorsModals/jeffryModal/biographyPhoto.jpg'
-import mainSecondPhoto from '@/public/homeImgs/actorsModals/jeffryModal/modalMainSecond.jpg'
+import rightPhoto from '@/public/homeImgs/actorsModals/zorroModal/ZorroBiography.jpg'
 
-const BiographyJeffrey: React.FC = (): JSX.Element => {
+const BiographyZorro: React.FC = (): JSX.Element => {
   return (
     <section className='relative h-[42rem] w-full'>
       <div className='border-b-[3px] border-black absolute h-full w-[100%] grid grid-cols-2 gap-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -54,7 +53,7 @@ const BiographyJeffrey: React.FC = (): JSX.Element => {
 
             <div className='absolute -top-[3%] h-[100%] w-[60%] -right-16 translate-y-[1.1rem] drop-shadow-[0_1.5px_5px_rgba(0, 0, 0, 2)]'>
               <div className='relative h-[101%] w-[90%] translate-y-0 -translate-x-0'>
-                <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='z-50 hover:scale-105 hover:duration-200 duration-200' />
+                <Image src={rightPhoto} alt='Zorro Biography' fill objectFit="cover" placeholder="blur" className='z-50 hover:scale-105 hover:duration-200 duration-200' />
               </div>
             </div>
           </div>
@@ -64,4 +63,4 @@ const BiographyJeffrey: React.FC = (): JSX.Element => {
   );
 }
 
-export default BiographyJeffrey;
+export default BiographyZorro;

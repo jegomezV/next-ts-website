@@ -1,11 +1,11 @@
 import React, { useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ModelAlexa from '../actorsPage/modelAlexa';
-import ModelClaudia from '../actorsPage/modelClaudia';
-import ModelDiego from '../actorsPage/modelDiego';
+import ModelAlexa from '../actorsPage/modelAlexa/modelAlexa';
+import ModelClaudia from '../actorsPage/modelClaudia/modelClaudia';
+import ModelDiego from '../actorsPage/modelDiego/modelDiego';
 import ModelJeffry from '../actorsPage/modelJeffry/modelJeffry';
-import ModelSarali from '../actorsPage/modelSarali';
-import ModelZorro from '../actorsPage/modelZorro';
+import ModelSarali from '../actorsPage/modelSarali/modelSarali';
+import ModelZorro from '../actorsPage/modelZorro/modelZorro';
 import LocoScrollContext from '@/util/LocoScrollContext'; // Asumiendo que tienes un contexto para Locomotive Scroll
 import Particles from '../sharedComponents/Particles';
 

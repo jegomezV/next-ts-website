@@ -4,7 +4,7 @@ import Image from 'next/image';
 import rightPhoto from '@/public/homeImgs/actorsModals/jeffryModal/biographyPhoto.jpg'
 import mainSecondPhoto from '@/public/homeImgs/actorsModals/jeffryModal/modalMainSecond.jpg'
 
-const BiographyJeffrey: React.FC = (): JSX.Element => {
+const BiographyClaudia: React.FC = (): JSX.Element => {
   return (
     <section className='relative h-[42rem] w-full'>
       <div className='border-b-[3px] border-black absolute h-full w-[100%] grid grid-cols-2 gap-4 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
@@ -64,4 +64,4 @@ const BiographyJeffrey: React.FC = (): JSX.Element => {
   );
 }
 
-export default BiographyJeffrey;
+export default BiographyClaudia;
