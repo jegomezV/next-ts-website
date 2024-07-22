@@ -6,7 +6,7 @@ const Credits: React.FC = (): JSX.Element => {
     <section
       data-scroll-section
       id='credits'
-      className="relative w-full min-h-screen items-center bg-slate-200 border-x-black"
+      className="relative w-full min-h-screen items-center bg-slate-200"
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -17,7 +17,7 @@ const Credits: React.FC = (): JSX.Element => {
         data-scroll-delay="0.1"
         className="relative w-full max-w-5xl mx-auto p-8 "
       >
-        <h1 className='text-6xl lg:text-7xl text-center font-bold mt-4 mb-4  drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]'>
+        <h1 className='text-6xl lg:text-7xl text-white text-center font-semibold mt-4 mb-4  drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.9)]'>
           Project credits
         </h1>
 
