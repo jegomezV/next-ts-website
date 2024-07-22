@@ -77,7 +77,7 @@ const Home = () => {
         </div>
       ) : (
         <div id='main-container' className="h-full w-screen" data-scroll-container ref={ref}>
-          <CustomCursor />
+          {/* <CustomCursor /> */}
           <Nav />
           <ButtonStart />
           <HeaderM />
