@@ -66,7 +66,6 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 className='hover:scale-105 duration-300 hover:duration-300' />
             </div>
 
-            {/* Content visible on mobile */}
             <div className="relative z-30 left-10 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-full drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]">
               <div className="flex-1 flex flex-col justify-center items-center">
                 <h1 className="text-4xl text-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl whitespace-nowrap">
@@ -94,6 +93,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </article>

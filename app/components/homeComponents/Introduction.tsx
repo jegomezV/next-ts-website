@@ -20,7 +20,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 style={{ minWidth: 'max-content' }}
                 className="text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
               >
-                Redefining Beauty <br /> Beyond Stereotypes
+                Redefining Beauty <br />  Beyond Stereotypes
               </h1>
             </div>
 
