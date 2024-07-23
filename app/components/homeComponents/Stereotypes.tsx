@@ -1,35 +1,33 @@
 import Image from 'next/image';
 import React from 'react';
 
-// Importing image file
-import Photo1 from '@/public/homeImgs/stereotypes/stereotypes1.jpg';
-import Photo2 from '@/public/homeImgs/stereotypes/stereotypes2.jpg';
+import firstPhoto from '@/public/homeImgs/stereotypes/stereotypes1.jpg';
+import secondPhoto from '@/public/homeImgs/stereotypes/stereotypes2.jpg';
 import ArrowSvg from '../svgs/ArrowSvg';
-import CircleSvg from '../svgs/CircleSvg';
 
-// Introduction component definition
 export const Stereotypes: React.FC = (): JSX.Element => {
   return (
-    <section data-scroll-section className='border-b-[1px] border-black/60'>
+    <section data-scroll-section className='border-[1px] border-black/60'>
       <article>
-        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center">
+        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <div className='h-screen w-[80%] grid grid-cols-2 grid-rows-2 items-center justify-center'>
-
-            {/* Content */}
-            <div className="relative z-10 text-center">
+            
+            {/* Content visible on desktop */}
+            <div className="relative z-30 text-center col-span-1 overflow-visible hidden md:block">
               <h1
                 data-scroll
-                data-scroll-speed="-1"
-                className="col-span-1 text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
+                data-scroll-speed="-1.0"
+                style={{ minWidth: 'max-content' }}
+                className="text-xl text-transparent bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
               >
                 Challenging <br /> Beauty Stereotypes
               </h1>
             </div>
 
-            <div data-scroll data-scroll-speed="0.5" className='relative col-start-2 2xl:h-[27rem] xl:h-[24rem] 2xl:w-[22rem] xl:w-[20rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mt-[18rem] mx-auto'>
+            <div data-scroll data-scroll-speed="-0.5" data-scroll-direction="horizontal" className='relative z-20 hidden md:block 2xl:h-[27rem] 2xl:w-[22rem] xl:h-[22rem] xl:w-[20rem] row-start-1 row-end-3 mx-start drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] 2xl:mt-[8rem] xl:mt-[5rem]'>
               <Image
-                src={Photo2}
-                alt="Model section introduction"
+                src={firstPhoto}
+                alt="Stereotypes section introduction"
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
@@ -38,53 +36,64 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               />
             </div>
 
-            <div data-scroll data-scroll-speed="-1" className='absolute 2xl:bottom-[17rem] xl:bottom-[12rem] 2xl:right-[27.2rem] xl:right-[23.2rem] z-[-1]'>
-              <ArrowSvg className='transform w-6 h-6 text-black rotate-90 xl:-translate-x-[2px]' />
-            </div>
+            <div className='hidden md:block absolute h-[15rem] bg-black w-[2px] translate-y-16 2xl:translate-x-[12rem] xl:translate-x-[11rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]' style={{ zIndex: 10 }}></div>
+            <div className='hidden md:block absolute h-[2px] bg-black w-[90%] 2xl:-translate-y-10 xl:-translate-y-12 translate-x-10 z-10 drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
 
-            <div data-scroll data-scroll-speed="3.5" className='absolute 2xl:bottom-[28rem] xl:bottom-[24rem] 2xl:left-[7rem] xl:left-[4.6rem]'>
-              <CircleSvg className='w-3 h-3 text-black 2xl:-translate-x-[1px] xl:-translate-x-[2px]' />
-            </div>
-            <div data-scroll data-scroll-speed="1.4" className='absolute 2xl:bottom-[22rem] xl:bottom-[18rem] 2xl:left-[6.8rem] xl:left-[4.4rem]'>
-              <CircleSvg className='w-4 h-4 text-black' />
-            </div>
-            <div data-scroll data-scroll-speed="1" className='absolute 2xl:bottom-[20rem] xl:bottom-[16rem] 2xl:left-[6.6rem] xl:left-[4.1rem]'>
-              <CircleSvg className='w-6 h-6 text-black 2xl:-translate-x-[1px] xl:translate-x-[1px]' />
-            </div>
-
-            <div className='absolute h-screen bg-black w-[2px] -translate-y-10 2xl:translate-x-10 xl:-translate-x-[0.5rem] z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-[5rem]'></div>
-            <div className='absolute h-[70%] bg-black w-[2px] -translate-y-10 2xl:-translate-x-0 xl:-translate-x-[2rem] z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-[5rem]'></div>
-            <div className='absolute h-[40%] bg-black w-[2px] -translate-y-10 2xl:-translate-x-10 xl:-translate-x-[3.5rem] z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-[5rem]'></div>
-            <div className='absolute h-screen bg-black w-[2px] -translate-y-10 2xl:right-[28rem] xl:right-[24rem] z-[-1] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-[5rem]'></div>
-
-            <div data-scroll data-scroll-speed="1.5" className="relative mb-10">
+            <div data-scroll data-scroll-speed="1.0" data-scroll-direction="horizontal" className="relative hidden md:block z-20 2xl:mb-10 xl:mb-10">
               <p
-                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-4 inset-0 z-0 xl:-translate-x-[0.5rem] mt-10"
-              >
-                The fashion industry has long been dominated by narrow definitions of beauty, often perpetuating harmful stereotypes that exclude and marginalize many. It's time to challenge these outdated ideals and embrace a more inclusive and diverse perspective on beauty.
-              </p>
-            </div>
-
-            <div className="relative row-span-2 col-start-2 mt-[15rem]">
-              <p
-                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] p-2 inset-0 z-0 xl:translate-y-3"
-              >
+                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-4 backdrop-blur-3xl inset-0">
                 Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this.
               </p>
             </div>
 
-            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className='relative 2xl:h-[17rem] xl:h-[15rem] w-[30rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mb-5'>
+            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className="relative hidden md:block z-20 -translate-y-">
+              <p
+                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] p-4 inset-0">
+                The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.
+              </p>
+            </div>
+
+            <div className='hidden md:block absolute h-[4px] w-[90%] bottom-[9rem] border-[1px] bg-black -left-[10rem] translate-x-10 z-10 drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+
+            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className='hidden md:block relative z-20 2xl:h-[15rem] 2xl:w-[30rem] xl:h-[15rem] xl:w-[25rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mb-5'>
               <Image
-                src={Photo1}
-                alt="Model section introduction"
+                src={secondPhoto}
+                alt="Stereotypes section introduction"
                 layout="fill"
                 objectFit="cover"
                 placeholder="blur"
                 priority
-                className='hover:scale-105 duration-300 hover:duration-300 xl:-translate-x-5'
-              />
+                className='hover:scale-105 duration-300 hover:duration-300' />
             </div>
 
+            {/* Content visible on mobile */}
+            <div className="relative z-30 left-10 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-full drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]">
+              <div className="flex-1 flex flex-col justify-center items-center">
+                <h1 className="text-4xl text-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl whitespace-nowrap">
+                  Challenging <br /> Beauty Stereotypes
+                </h1>
+              </div>
+            </div>
+
+            <div className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-2/4 h-[60vh] top-52 left-52 bg-black">
+              <div className="flex flex-col md:flex-row w-full h-full">
+                <div className="flex-1 flex flex-col justify-center items-center p-2">
+                  <p className="2xl:text-lg xl:text-md text-center text-white">
+                    The fashion industry has long been dominated by narrow definitions of beauty, often perpetuating harmful stereotypes that exclude and marginalize many. It's time to challenge these outdated ideals and embrace a more inclusive and diverse perspective on beauty.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-2/4 h-[60vh] bottom-40 right-6 bg-black">
+              <div className="flex flex-col md:flex-row w-full h-full p-4">
+                <div className="flex-1 flex flex-col justify-center items-center">
+                  <p className="xl:text-md text-center text-white overflow-auto">
+                    Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </article>
