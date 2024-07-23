@@ -4,12 +4,12 @@ import Image from 'next/image';
 
 import { motion } from 'framer-motion';
 
-import ModelAlexa from '../actorsPage/modelAlexa';
-import ModelClaudia from '../actorsPage/modelClaudia';
-import ModelDiego from '../actorsPage/modelDiego';
+import ModelAlexa from '../actorsPage/modelAlexa/modelAlexa';
+import ModelClaudia from '../actorsPage/modelClaudia/modelClaudia';
+import ModelDiego from '../actorsPage/modelDiego/modelDiego';
 import ModelJeffry from '../actorsPage/modelJeffry/modelJeffry';
-import ModelSarali from '../actorsPage/modelSarali';
-import ModelZorro from '../actorsPage/modelZorro';
+import ModelSarali from '../actorsPage/modelSarali/modelSarali';
+import ModelZorro from '../actorsPage/modelZorro/modelZorro';
 
 interface ActorsProps {
   onActorClick: (index: number) => void;
