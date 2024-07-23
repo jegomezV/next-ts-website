@@ -92,8 +92,7 @@ const Credits: React.FC = (): JSX.Element => {
               data-scroll
               data-scroll-speed="-1"
               data-scroll-delay="0.5"
-              className="mb-12"
-            >
+              className="mb-12">
               <h2 className="text-center text-xl lg:text-3xl font-bold mb-3 sticky top-8 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)]">
                 Project creation date
               </h2>

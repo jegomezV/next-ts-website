@@ -99,14 +99,15 @@ export const Nav: React.FC = () => {
         className="
           menu-toggle-button
           fixed 
-          right-[6px] 
-          top-[4.9rem] 
+          right-10 
+          top-[10%] 
           z-[100]
           flex 
           items-center 
           justify-center 
           rounded-full 
           border-white 
+          bg-black/60
           backdrop-blur-3xl 
           max-sm:h-10 max-sm:w-10 max-sm:p-[4px] max-sm:border-[1px]"
         onClick={toggleMenu}
@@ -138,7 +139,7 @@ export const Nav: React.FC = () => {
           xl:top-4 xl:py-[0.5rem]
           2xl:py-[0.5rem]
           hover:duration-500 duration-500 hover:shadow-white/30 shadow-inner shadow-black/20
-          border-y-[1px] wrapper border-white< bg-black/60
+          border-y-[1px] wrapper border-white< bg-black/80 backdrop-blur-sm
           overflow-hidden">
 
         <ul className="
