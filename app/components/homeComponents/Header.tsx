@@ -30,7 +30,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           z-10 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-display sm:text-5xl md:text-6xl xl:text-3xl
-          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,0.8)]">Stories of Transformation
+          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(0, 0, 0, 2)] 2xl:drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,0.8)]"> Stories of Transformation
         </h3>
       </div>
 
@@ -38,7 +38,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
       <div className='absolute top-0 w-screen h-screen flex items-center justify-center overflow-hidden'>
         {/* Image 1 */}
         <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className="
-          absolute left-[35%] bottom-36
+          absolute right-0 bottom-28
           drop-shadow-[0_1.5px_20px_rgba(0,0,0,2)]
           h-60 w-44 sm:left-[49%] sm:bottom-20 sm:h-52 sm:w-44
           md:left-[56%] md:h-72 md:w-56 md:bottom-28
@@ -97,9 +97,10 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
         {/* Image 4 */}
         <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className="
-          absolute right-72 bottom-24 z-20
+          absolute left-0 bottom-24 z-20
           drop-shadow-[0_1.5px_20px_rgba(0,0,0,1.5)]
-          h-60 w-40 sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
+          h-60 w-40 
+          sm:right-[80%] sm:bottom-30 sm:h-52 sm:w-36
           md:h-60 md:w-44 md:right-[80%] md:bottom-28
           lg:right-[70%] lg:bottom-4 lg:h-[17rem] lg:w-[12rem]
           xl:h-[13rem] xl:w-[13rem] xl:bottom-1
@@ -117,8 +118,9 @@ export const HeaderM: React.FC = (): JSX.Element => {
 
         {/* Image 5 */}
         <div className="
-          absolute transform -translate-x-1/2 -translate-y-1/2
-          drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] h-64 w-52
+          absolute transform md:-translate-x-1/2 md:-translate-y-1/2
+          drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)]
+          h-64 w-52
           sm:h-72 sm:w-52
           md:left-[46%] md:top-[17rem] md:h-[500px] md:w-[350px]
           lg:top-[20rem]
