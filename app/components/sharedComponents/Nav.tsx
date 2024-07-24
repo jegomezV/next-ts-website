@@ -98,7 +98,7 @@ export const Nav: React.FC = () => {
       <button
         className="
           menu-toggle-button
-          fixed 
+          fixed
           right-10 
           top-[10%] 
           z-[100]
@@ -107,7 +107,7 @@ export const Nav: React.FC = () => {
           justify-center 
           rounded-full 
           border-white 
-          bg-black/60
+          bg-black/40
           backdrop-blur-3xl 
           max-sm:h-10 max-sm:w-10 max-sm:p-[4px] max-sm:border-[1px]"
         onClick={toggleMenu}
