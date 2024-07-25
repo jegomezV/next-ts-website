@@ -3,7 +3,6 @@ import React from 'react';
 
 import firstPhoto from '@/public/homeImgs/introduction/introduction1.jpg';
 import secondPhoto from '@/public/homeImgs/introduction/introduction2.jpg';
-import ArrowSvg from '../svgs/ArrowSvg';
 
 export const Introduction: React.FC = (): JSX.Element => {
   return (
@@ -28,7 +27,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               <Image
                 src={firstPhoto}
                 alt="Model section introduction"
-                layout="fill"
+                fill
                 objectFit="cover"
                 placeholder="blur"
                 priority
@@ -36,7 +35,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               />
             </div>
 
-            <div className='hidden md:block absolute h-[15rem] bg-black w-[2px] translate-y-16 2xl:translate-x-[12rem] xl:translate-x-[11rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]' style={{ zIndex: 10 }}></div>
+            <div className='hidden md:block absolute left-32 h-[20rem] bg-black w-[2px] translate-y-16 2xl:translate-x-[12rem] xl:translate-x-[11rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]' style={{ zIndex: 10 }}></div>
             <div className='hidden md:block absolute h-[2px] bg-black w-[90%] 2xl:-translate-y-10 xl:-translate-y-12 translate-x-10 z-10 drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
 
             <div data-scroll data-scroll-speed="1.0" data-scroll-direction="horizontal" className="relative hidden md:block z-20 2xl:mb-10 xl:mb-10">
@@ -46,27 +45,27 @@ export const Introduction: React.FC = (): JSX.Element => {
               </p>
             </div>
 
-            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className="relative hidden md:block z-20 -translate-y-">
+            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className="relative hidden md:block z-20">
               <p
-                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] p-4 inset-0">
+                className="2xl:text-lg xl:text-md text-left text-white bg-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-4 mb-2 inset-0">
                 The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.
               </p>
             </div>
 
-            <div className='hidden md:block absolute h-[4px] w-[90%] bottom-[9rem] border-[1px] bg-black -left-[10rem] translate-x-10 z-10 drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
+            <div className='hidden md:block absolute h-[4px] w-[90%] bottom-[9rem] border-[1px] bg-black -left-[14rem] translate-x-10 z-10 drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'></div>
 
-            <div data-scroll data-scroll-speed="0.5" data-scroll-direction="horizontal" className='hidden md:block relative z-20 2xl:h-[15rem] 2xl:w-[30rem] xl:h-[15rem] xl:w-[25rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,5)] mb-5'>
+            <div data-scroll data-scroll-speed="0.5" className='hidden xl:block lg:hidden relative z-20 2xl:h-[15rem] 2xl:w-[30rem] xl:h-[15rem] xl:w-[25rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mb-5'>
               <Image
                 src={secondPhoto}
                 alt="Model section introduction"
-                layout="fill"
+                fill
                 objectFit="cover"
                 placeholder="blur"
                 priority
                 className='hover:scale-105 duration-300 hover:duration-300' />
             </div>
 
-            <div className="relative z-30 right-20 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-ful drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] ">
+            <div data-scroll data-scroll-speed="1.0"  className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-full drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]">
               <div className="flex-1 flex flex-col justify-center items-center">
                 <h1 className="text-4xl text-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl 2xl:text-6xl whitespace-nowrap">
                   Redefining Beauty <br /> Beyond Stereotypes
@@ -74,7 +73,19 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-2/4 h-[60vh] top-28 left-52 bg-black">
+            <div data-scroll data-scroll-speed="1.0" className='absolute left-12 z-20 h-[20rem] w-[18rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]  hidden md:block lg:hidden xl:hidden'>
+                <Image
+                  src={firstPhoto}
+                  alt="Model section introduction"
+                  layout="fill"
+                  objectFit="cover"
+                  placeholder="blur"
+                  priority
+                  className='hover:scale-105 duration-300 hover:duration-300'
+                />
+              </div>
+
+            <div data-scroll data-scroll-speed="1.0" className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden  lg:hidden xl:hidden flex flex-col justify-center items-center w-44 h-[60vh] top-40 left-40 bg-black">
               <div className="flex flex-col md:flex-row w-full h-full">
                 <div className="flex-1 flex flex-col justify-center items-center p-2">
                   <p className="2xl:text-lg xl:text-md text-center text-white">
@@ -84,15 +95,28 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
             </div>
 
-            <div className="relative z-30 text-center col-span-2 md:col-span-1 overflow-visible md:hidden flex flex-col justify-center items-center w-2/4 h-[60vh] bottom-6 right-6 bg-black">
+            <div data-scroll data-scroll-speed="1.0" className="relative z-30 text-justify col-span-2 md:col-span-1 overflow-visible lg:hidden xl:hidden md:hidden flex flex-col justify-center items-center w-44 h-[50vh] bottom-12 right-6 bg-black">
               <div className="flex flex-col md:flex-row w-full h-full p-4">
                 <div className="flex-1 flex flex-col justify-center items-center">
-                  <p className="xl:text-md text-center text-white overflow-auto">
-                  The fashion industry has long promoted a narrow standard of beauty, often excluding those who don't fit strict molds. Recently, there's been a shift towards greater inclusion and diversity. However, it's crucial to question whether these changes are truly genuine or just marketing strategies.
+                  <p className="xl:text-md text-sm text-center text-white overflow-auto">
+                    The fashion industry has long promoted a narrow standard of beauty, often excluding those who don't fit strict molds. Recently, there's been a shift towards greater inclusion and diversity. However, it's crucial to question whether these changes are truly genuine or just marketing strategies.
                   </p>
                 </div>
               </div>
             </div>
+
+            <div data-scroll data-scroll-speed="1.0"className='absolute right-9 bottom-8 z-20 h-[15rem] w-[20rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mb-5 hidden md:block lg:hidden xl:hidden'>
+                <Image
+                  src={secondPhoto}
+                  alt="Model section introduction"
+                  fill
+                  objectFit="cover"
+                  placeholder="blur"
+                  priority
+                  className=' hover:scale-105 duration-300 hover:duration-300'
+                />
+              </div>
+
           </div>
         </div>
       </article>
