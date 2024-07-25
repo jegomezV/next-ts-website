@@ -104,7 +104,8 @@ export const Introduction: React.FC = (): JSX.Element => {
                 </div>
               </div>
             </div>
-
+ 
+  
             <div data-scroll data-scroll-speed="1.0"className='absolute right-9 bottom-8 z-20 h-[15rem] w-[20rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mb-5 hidden md:block lg:hidden xl:hidden'>
                 <Image
                   src={secondPhoto}
