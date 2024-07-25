@@ -134,17 +134,17 @@ export const Nav: React.FC = () => {
           fixed max-sm:hidden max-sm:h-0 max-sm:border-y-[1px] max-sm:border-white max-sm:top-0 top-8 left-0 right-0 z-50
           flex max-sm:flex-col items-center justify-center sm:flex-row 
           sm:w-full sm:py-[14px]
-          md:py-[14px] md:px-20 md:space-x-20 md:justify-center md:items-center md:text-lg
-          lg:text-xl
-          xl:top-4 xl:py-[0.5rem]
-          2xl:py-[0.5rem]
+          md:py-[0.4rem] md:px-20 md:space-x-20 md:justify-center md:items-center md:text-lg
+          lg:py-[0.2rem]
+          xl:top-4 xl:py-[0.4rem]
+          2xl:py-[0.3rem]
           hover:duration-500 duration-500 hover:shadow-white/30 shadow-inner shadow-black/20
           border-y-[1px] wrapper border-white< bg-black/80 backdrop-blur-sm
           overflow-hidden">
 
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center max-sm:text-2xl sm:flex-row space-x-2 md:text-lg
-          md:space-x-20 lg:text-xl xl:text-md lg:space-x-40
+          md:space-x-20 lg:text-lg xl:text-md lg:space-x-40
           hover:text-white 2xl:text-xl"
         >
           <li className="sm:inline-block hidden">
