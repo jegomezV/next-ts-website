@@ -31,7 +31,7 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
   }, []);
 
   return (
-    <section id='actors' data-scroll-section className='relative h-screen w-screen'>
+    <section id='actors' data-scroll-section className='relative h-screen w-screen overflow-x-clip'>
       {/* Main container with background image */}
       <div className="absolute top-0 left-0 w-screen h-[100%] flex items-center justify-start">
         <div className=" h-full w-full grid grid-cols-2 lg:h-[75%] lg:w-[100%] lg:flex lg:justify-start">

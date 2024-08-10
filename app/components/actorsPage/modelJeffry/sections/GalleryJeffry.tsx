@@ -6,7 +6,7 @@ import mainSecondPhoto from '@/public/homeImgs/actorsModals/jeffryModal/modalMai
 
 const GalleryJeffrey: React.FC = (): JSX.Element => {
   return (
-    <section className='relative h-[42rem] w-full'>
+    <section className='relative h-[42rem] w-full overflow-x-clip'>
       <div className='absolute h-full w-[100%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
         <div className='relative flex flex-col items-center justify-start h-[100%] w-[100%] mx-auto my-auto'>
           <div className='top-0 translate-y-5 h-full w-full'>

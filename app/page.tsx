@@ -33,7 +33,7 @@ const Home = () => {
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
 
   const handleActorClick = (index: number) => {
-    console.log('Actor Clicked:', index); // Verifica que el índice sea correcto
+    console.log('Actor Clicked:', index);
     setOpenModalIndex(index);
   };
   

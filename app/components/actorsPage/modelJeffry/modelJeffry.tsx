@@ -6,7 +6,7 @@ import GalleryJeffrey from './sections/GalleryJeffry';
 
 const ModelJeffry: React.FC = (): JSX.Element => {
   return (
-      <main className="relative h-full w-full -translate-y-[8.5rem]">
+      <main className="relative h-full w-full -translate-y-[8.5rem] overflow-x-clip">
         <IntroductionJeffrey />
         <BiographyJeffrey />
         <GalleryJeffrey />

@@ -84,7 +84,7 @@ export const TranslateButton: React.FC = (): JSX.Element => {
           height="15"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
-          className="h-8 w-8 md:h-5 lg:h-7 items-center cursor-pointer max-sm:opacity-100 opacity-60 hover:opacity-100 duration-300 hover:duration-300"
+          className="h-6 w-6 md:h-5 lg:h-7 items-center cursor-pointer max-sm:opacity-100 opacity-60 hover:opacity-100 duration-300 hover:duration-300"
         >
           <path
             d="m373.851562 308.296875c-1.445312-4.820313-7.390624-7.074219-13.496093-7.074219-5.945313 0-11.890625 2.253906-13.335938 7.074219l-31.011719 101.0625c-.160156.644531-.320312 1.285156-.320312 1.605469 0 5.144531 7.550781 8.675781 13.175781 8.675781 3.535157 0 6.265625-1.121094 7.070313-4.175781l6.101562-21.371094h36.796875l6.109375 21.371094c.800782 3.054687 3.53125 4.175781 7.066406 4.175781 5.625 0 13.175782-3.691406 13.175782-8.675781 0-.480469-.160156-.964844-.320313-1.605469zm-27.476562 69.40625 13.976562-49.324219 13.984376 49.324219zm0 0"
@@ -112,7 +112,7 @@ export const TranslateButton: React.FC = (): JSX.Element => {
   return (
     <button
       onClick={handleLanguageChange}
-      className="absolute md:static top-[10%] left-10 md:-right-20 flex items-center space-x-2 p-2 border border-white/50 rounded-full transition duration-300 ease-in-out drop-shadow-[0_3px_20px_rgba(0,0,0,5)] hover:border-white hover:bg-black/20"
+      className="absolute md:static top-[10%] left-10 md:-right-20 flex items-center space-x-2 p-2 xl:p-0 2xl:py-2 2xl:px-4 border border-white/50 rounded-full transition duration-300 ease-in-out drop-shadow-[0_3px_20px_rgba(0,0,0,5)] hover:border-white hover:bg-black/20"
     >
       {svgIcon}
       <span className="uppercase font-bold text-sm text-gray-300">{language}</span>
