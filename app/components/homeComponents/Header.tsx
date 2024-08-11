@@ -14,7 +14,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
   return (
     <header data-scroll-section id='home'>
       {/* Main header section with title */}
-      <div className="h-screen relative flex flex-col items-center justify-center overflow-x-clip bg-gradient-to-t from-slate-200 via-slate-100 to-amber-200">
+      <div className="h-screen relative flex flex-col items-center justify-center overflow-x-clip bg-gradient-to-tr from-slate-200 via-slate-100 to-amber-200">
         <div className="
           animate-glow md:block animate-fade-left
           bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0

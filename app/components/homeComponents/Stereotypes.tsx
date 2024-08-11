@@ -29,8 +29,8 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <p
               data-scroll
               data-scroll-speed="0.5"
-              className="text-sm md:text-md text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
-              The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.
+              className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
+              Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this.
             </p>
           </div>
 
@@ -45,8 +45,8 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <p
               data-scroll
               data-scroll-speed="1.0"
-              className="text-sm md:text-md text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed">
-              Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this.
+              className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed">
+              The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.
             </p>
             <div
               data-scroll

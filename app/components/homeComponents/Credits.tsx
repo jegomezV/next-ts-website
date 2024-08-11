@@ -8,8 +8,8 @@ import CircleSvg from '../svgs/CircleSvg';
 
 const Credits: React.FC = (): JSX.Element => {
   return (
-    <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen bg-gradient-to-b from-slate-200 via-amber-100 to-amber-200">
-      <article className='grid gap-4 translate-y-10 mx-auto my-auto
+    <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen bg-gradient-to-bl from-slate-200 via-white via-amber-100 to-amber-200">
+      <article className='grid gap-4 translate-y-20 mx-auto my-auto
                           grid-cols-2 h-[90%] w-[100%] absolute bottom-10
                           sm:grid-cols-2  sm:h-[85%] sm:w-[100%] sm:absolute sm:bottom-10
                           md:grid-cols-2 md:h-[88%] md:w-[100%] md:absolute md:bottom-10
@@ -17,14 +17,17 @@ const Credits: React.FC = (): JSX.Element => {
                           xl:grid-cols-5 xl:grid-rows-2 xl:h-[94%] xl:w-[100%]
                           2xl:bottom-5'>
 
-        <h1 className="absolute p-1 flex z-10 -top-14 flex-row items-center justify-center text-3xl text-transparent text-center left-1/2 -translate-x-1/2 bg-gradient-to-r from-amber-300 via-amber-100 to-amber-400 drop-shadow-[0_1.5px_2px_rgba(0,0,0,0.8)] bg-clip-text cursor-default font-thin font-serif whitespace-nowrap
+        <div className="absolute pt-1 px-4 rounded-full bg-black/50 border-[1px] border-black/50 left-1/2 hidden md:block -translate-x-1/2">
+          <h1 className="p-1 flex z-10 -top-14 text-3xl text-transparent text-center left-1/2 -translate-x-1/2 cursor-default font-thin
         sm:text-4xl sm:top-1 sm:right-0 sm:justify-end sm:items-end sm:-translate-x-[10%]
-        md:text-5xl md:top-1 max-md:right-0 max-md:justify-end max-md:items-end max-md:-translate-x-[10%]
-        lg:text-5xl lg:top-5 lg:left-1/2 lg:items-center lg:justify-center lg:-translate-x-1/2
-        xl:mt-24 xl:text-5xl xl:-top-14
-        2xl:mt-2 2xl:text-6xl 2xl:top-5">
-          Credits Section
-        </h1>
+        md:text-5xl md:top-1 max-md:right-0 max-md:justify-end max-md:items-end max-md:-translate-x-0
+        lg:text-5xl lg:top-5 lg:items-center lg:justify-center lg:translate-x-0
+        xl:text-5xl xl:-top-14 xl:px-4 xl:py-2
+        2xl:mt-2 2xl:text-6xl 2xl:top-5
+        whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_2px_rgba(0,0,0,1)] font-display bg-white">
+            Credits Section
+          </h1>
+        </div>
 
 
         <div className=""></div>
@@ -69,7 +72,7 @@ const Credits: React.FC = (): JSX.Element => {
                         sm:-bottom-[2%] sm:h-[7rem] sm:w-[6rem] sm:translate-x-[55%]
                         md:-bottom-[2%] md:h-[8rem] md:w-[7rem] md:translate-x-[55%]
                         lg:bottom-[7%] lg:h-[10rem] lg:w-[7rem] lg:-left-[15%]
-                        xl:bottom-[7%] xl:h-[10rem] xl:w-[7rem] xl:-left-[15%]
+                        xl:bottom-[7%] xl:h-[10rem] xl:w-[7rem] xl:-left-[15%] xl:translate-x-[15rem]
                         2xl:bottom-[7%] 2xl:h-[12rem] 2xl:w-[9rem] 2xl:-left-[20%]'>
             <Image
               src={GirlPic}
@@ -85,7 +88,7 @@ const Credits: React.FC = (): JSX.Element => {
                             sm:bottom-[6%] sm:h-[7rem] sm:w-[6rem] sm:translate-x-[140%]
                             md:bottom-[6%] md:h-[8rem] md:w-[7rem] md:translate-x-[140%]
                             lg:bottom-[10%] lg:h-[11rem] lg:w-[7rem] lg:right-[65%]
-                            xl:bottom-[10%] xl:h-[11rem] xl:w-[7rem] xl:right-[70%]
+                            xl:bottom-[10%] xl:h-[11rem] xl:w-[7rem] xl:right-[70%] xl:translate-x-[23rem]
                             2xl:bottom-[10%] 2xl:h-[13rem] 2xl:w-[9rem] 2xl:right-[70%]'>
             <Image
               src={ManPic}
@@ -123,13 +126,9 @@ const Credits: React.FC = (): JSX.Element => {
           <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>School Info</h1>
           <p className='text-center  py-2 translate-y-[10%] '>International School of Fashion and Design <br /> Cali - colombia <br /> Project Creation Date: Jun/2024</p>
         </div>
-        <div className=" max-lg:col-start-1 max-lg:row-start-4">
+        <div className=" max-lg:col-start-1 max-lg:row-start-4 translate-x-40">
           <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>About Us</h1>
           <p className='text-center  py-2 translate-y-[10%]'>Susana Horia<br /> Andy Gonzales</p>
-        </div>
-        <div className="max-lg:col-start-1 max-lg:row-start-5">
-          <h1 className='text-transparent mt-3 max-md:py-4 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl xl:-translate-x-3 2xl:text-3xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>Acknowledgments</h1>
-
         </div>
         <div className='absolute left-1/2 h-[100%] w-[2px]
                         lg:top-1/2 lg:w-full lg:h-[2px] lg:left-0 bg-black'>
@@ -148,10 +147,7 @@ const Credits: React.FC = (): JSX.Element => {
           <CircleSvg className="absolute h-6 w-6 bottom-[16%] -translate-x-3
             sm:bottom-[29%]
             md:h-6 md:w-6 md:bottom-[29%] md:-translate-x-3
-            lg:right-[28%] md:translate-y-3" />
-          <CircleSvg className="absolute h-6 w-6 bottom-[2%] -translate-x-3
-            md:h-6 md:w-6 md:bottom-[10%] md:-translate-x-3
-            lg:right-[8%] md:translate-y-3" />
+            lg:right-[28%] md:translate-y-3 xl:translate-x-36" />
         </div>
       </article>
     </section>
