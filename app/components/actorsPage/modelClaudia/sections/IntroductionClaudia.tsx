@@ -35,7 +35,7 @@ const IntroductionClaudia: React.FC = (): JSX.Element => {
           </h2>
           <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-              In feugiat justo non elit rutrum, non lacinia leo luctus. Aliquam tincidunt eu tortor ac faucibus. Pellentesque blandit varius sapien, eget consectetur ligula maximus in. Praesent vulputate nisi mi, at pulvinar nulla tristique id. Praesent ultrices justo sit amet enim vulputate, vel gravida diam facilisis. Nunc bibendum maximus magna ullamcorper fringilla. Donec vel aliquet lacus. Sed luctus velit a viverra tempor.
+            En las bulliciosas calles de Cali, donde el sol se mezcla con el ritmo acelerado de la vida, emerge un faro de diversidad y empoderamiento en la industria del modelaje: Perfil Class. Esta agencia, dirigida por Claudia Ruiz, no es solo un nombre en el mundo de la moda, sino una narrativa de resistencia y éxito contra viento y marea.
             </p>
           </div>
           <div className='relative mt-8 h-[200px] w-full'>

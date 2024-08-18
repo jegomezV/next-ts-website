@@ -36,7 +36,7 @@ const IntroductionZorro: React.FC = (): JSX.Element => {
           </h2>
           <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-              In feugiat justo non elit rutrum, non lacinia leo luctus. Aliquam tincidunt eu tortor ac faucibus. Pellentesque blandit varius sapien, eget consectetur ligula maximus in. Praesent vulputate nisi mi, at pulvinar nulla tristique id. Praesent ultrices justo sit amet enim vulputate, vel gravida diam facilisis. Nunc bibendum maximus magna ullamcorper fringilla. Donec vel aliquet lacus. Sed luctus velit a viverra tempor.
+            En el dinámico y a menudo superficial mundo de la moda, emergen voces que buscan trascender fronteras. Liza Ardila, diseñadora de modas y artista plástica, es una de esas voces. Fundadora y directora creativa de Zorro Gris, su marca que nació en 2013 como un proyecto académico y rápidamente se convirtió en su proyecto de vida. Desde sus inicios, Zorro Gris ha buscado romper con lo convencional, tanto en términos de género como de sostenibilidad, marcando una pauta en el panorama de la moda colombiana.
             </p>
           </div>
           <div className='relative mt-8 h-[200px] w-full'>

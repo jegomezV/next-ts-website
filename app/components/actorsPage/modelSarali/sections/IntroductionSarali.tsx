@@ -36,7 +36,7 @@ const IntroductionSarali: React.FC = (): JSX.Element => {
           </h2>
           <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-              In feugiat justo non elit rutrum, non lacinia leo luctus. Aliquam tincidunt eu tortor ac faucibus. Pellentesque blandit varius sapien, eget consectetur ligula maximus in. Praesent vulputate nisi mi, at pulvinar nulla tristique id. Praesent ultrices justo sit amet enim vulputate, vel gravida diam facilisis. Nunc bibendum maximus magna ullamcorper fringilla. Donec vel aliquet lacus. Sed luctus velit a viverra tempor.
+            En el universo implacable de la moda, donde los cánones de belleza suelen parecer muros inamovibles, Saralí a sus 23 años es una joven modelo caleña que desafía los límites impuestos por la sociedad y se levanta como un símbolo viviente de inclusión y empoderamiento. Su historia, tejida con hebras de determinación y coraje, es un testimonio de resistencia frente a los dictámenes de la moda convencional.
             </p>
           </div>
           <div className='relative mt-8 h-64 w-full'>

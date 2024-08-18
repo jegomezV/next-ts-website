@@ -26,8 +26,17 @@ export default function useLocoScroll(start: boolean): LocomotiveScrollType | nu
           locoScrollInstance = new LocomotiveScroll({
             el: scrollEl,
             smooth: true,
-            multiplier: 0.9,
+            multiplier: 0.8,
             lerp: 0.1,
+            reloadOnContextChange: true,
+            touchMultiplier: 3,
+            smartphone: {
+              smooth: true,
+            },
+            tablet: {
+              smooth: true,
+              breakpoint: 1024
+            },
           });
 
           setLocoScroll(locoScrollInstance);

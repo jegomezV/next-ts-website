@@ -36,7 +36,7 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
           </h2>
           <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-              In feugiat justo non elit rutrum, non lacinia leo luctus. Aliquam tincidunt eu tortor ac faucibus. Pellentesque blandit varius sapien, eget consectetur ligula maximus in. Praesent vulputate nisi mi, at pulvinar nulla tristique id. Praesent ultrices justo sit amet enim vulputate, vel gravida diam facilisis. Nunc bibendum maximus magna ullamcorper fringilla. Donec vel aliquet lacus. Sed luctus velit a viverra tempor.
+            Alexandra Jordan, una modelo profesional de 34 años, conocida por su nombre artístico “Cherry Bomb”, ha tallado su camino en la industria de la moda con una determinación que refleja su pasión por el arte y la autoexpresión. Aunque inicialmente su viaje comenzó con estudios en Artes Plásticas y Diseño Gráfico, cuestiones económicas truncaron su educación. Sin embargo, estos desafíos no apagaron su espíritu creativo; más bien, la condujeron a descubrir el modelaje como una nueva forma de arte y expresión.
             </p>
           </div>
           <div className='relative mt-8 h-[200px] w-full'>
