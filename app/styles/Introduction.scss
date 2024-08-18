@@ -1,0 +1,35 @@
+@import "./mixins";
+
+// Animaciones de imágenes
+.work-item-image {
+  transition: clip-path 1s var(--custom-ease-in), transform 0.6s var(--custom-ease-out);
+  clip-path: inset(100% 0% 0% 0%);
+  transform: scale(1);
+
+  &.is-reveal {
+    clip-path: inset(0% 0% 0% 0%);
+    transform: scale(1);
+  }
+}
+
+// Sección de efectos para las imágenes del header
+.effects-section {
+  .image-container {
+    overflow: hidden;
+    box-shadow: 0 1.5px 30px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      .introduction-image {
+        transform: scale(1.10);
+      }
+    }
+  }
+
+  .introduction-image {
+    transition: transform 0.3s ease;
+  }
+}
+
+.menu {
+  transition: all 0.3s var(--custom-ease-in);
+}

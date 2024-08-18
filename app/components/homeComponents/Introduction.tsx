@@ -1,3 +1,5 @@
+import '@/app/styles/Introduction.scss';
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -6,7 +8,7 @@ import secondPhoto from '@/public/homeImgs/introduction/introduction2.jpg';
 
 export const Introduction: React.FC = (): JSX.Element => {
   return (
-    <section data-scroll-section className='border-[1px] border-black/60 overflow-x-clip'>
+    <section data-scroll-section className='effects-section border-[1px] border-black/60 overflow-x-clip'>
       <article>
         <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
@@ -17,7 +19,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 data-scroll 
                 data-scroll-speed="1.5" 
                 data-scroll-direction="horizontal" 
-                className='relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
+                className='image-container relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20rem] mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
                 <Image
                   src={firstPhoto}
                   alt="Model section introduction"
@@ -25,7 +27,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                   objectFit="cover"
                   placeholder="blur"
                   priority
-                  className='hover:scale-105 duration-300 hover:duration-300'
+                  className='effects-section hover:scale-105 duration-300 hover:duration-300'
                 />
               </div>
               <h1
@@ -76,7 +78,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               <div 
                 data-scroll 
                 data-scroll-speed="1.0"
-                className='relative hidden md:block z-20 h-[15rem] w-full mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-4'>
+                className='relative image-container hidden md:block z-20 h-[15rem] w-full mx-auto drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] mt-4'>
                 <Image
                   src={secondPhoto}
                   alt="Model section introduction"
@@ -84,7 +86,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                   objectFit="cover"
                   placeholder="blur"
                   priority
-                  className='hover:scale-105 duration-300 hover:duration-300'
+                  className='introduction-image hover:scale-105 duration-300 hover:duration-300'
                 />
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative hidden  z-20 text-left text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-4 mt-4 ">

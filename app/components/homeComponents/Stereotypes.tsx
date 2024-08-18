@@ -1,3 +1,5 @@
+import '@/app/styles/Introduction.scss';
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -6,7 +8,7 @@ import secondPhoto from '@/public/homeImgs/stereotypes/stereotypes2.jpg';
 
 export const Stereotypes: React.FC = (): JSX.Element => {
   return (
-    <section data-scroll-section className='border-[1px] border-black/60 hidden md:block'>
+    <section data-scroll-section className='effects-section border-[1px] border-black/60 hidden md:block'>
       <article className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
         <div className='min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center px-4 md:px-8'>
 
@@ -15,7 +17,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <div
               data-scroll
               data-scroll-speed="-0.5"
-              className='relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
+              className='image-container relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
               <Image
                 src={firstPhoto}
                 alt="Stereotypes section introduction"
@@ -23,7 +25,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 objectFit="cover"
                 placeholder="blur"
                 priority
-                className='hover:scale-105 duration-300'
+                className='introduction-image hover:scale-105 duration-300'
               />
             </div>
             <p
@@ -51,7 +53,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <div
               data-scroll
               data-scroll-speed="0.5"
-              className='relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
+              className='image-container relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
               <Image
                 src={secondPhoto}
                 alt="Stereotypes section introduction"
@@ -59,7 +61,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
                 objectFit="cover"
                 placeholder="blur"
                 priority
-                className='hover:scale-105 duration-300'
+                className='introduction-image hover:scale-105 duration-300'
               />
             </div>
           </div>

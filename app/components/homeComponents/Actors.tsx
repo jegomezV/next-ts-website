@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '@/app/styles/Introduction.scss';
 
 import Image from 'next/image';
 
