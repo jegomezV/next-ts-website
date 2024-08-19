@@ -1,0 +1,115 @@
+{
+  "main-header": {
+    "nav": {
+      "home": "Accueil",
+      "actors": "Acteurs",
+      "about": "À propos",
+      "credits": "Crédits"
+    },
+    "first-title" : "Qu'en est-il de la beauté ?",
+    "second-title" : "Histoires de Transformation"
+  },
+  "introduction": {
+    "titleF": "Redéfinir la Beauté",
+    "titleS": "Au-Delà des Stéréotypes",
+    "first-paragraph": "Dans un monde où la mode a longtemps été un bastion de normes de beauté inaccessibles, il est crucial de remettre en question et de contester ces normes. Chez What About Beauty, nous explorons comment l'industrie de la mode transforme ses idéaux de beauté et comment ces transformations impactent notre perception de ce que signifie être véritablement beau.",
+    "second-paragraph": "L'industrie de la mode a une longue histoire de promotion d'un seul standard de beauté qui exclut souvent ceux qui ne correspondent pas à des moules stricts. Cependant, ces dernières années, nous avons observé un tournant vers une plus grande inclusion et diversité. Bien que ces changements soient prometteurs, il est essentiel de se demander s'ils sont authentiques ou simplement des stratégies marketing."
+  },
+  "sterotypes": {
+    "titleF": "Défier",
+    "titleS": "les Stéréotypes de Beauté",
+    "first-paragraph": "L'industrie de la mode a une longue histoire de promotion d'un seul standard de beauté qui exclut souvent ceux qui ne correspondent pas à des moules stricts. Cependant, ces dernières années, nous avons observé un tournant vers une plus grande inclusion et diversité. Bien que ces changements soient prometteurs, il est essentiel de se demander s'ils sont authentiques ou simplement des stratégies marketing.",
+    "second-paragraph": "Les stéréotypes de beauté dans la mode façonnent les normes sociétales, influencent l'estime de soi et impactent les carrières. Chez What About Beauty, nous mettons en lumière les effets négatifs de ces stéréotypes et la nécessité d'une inclusion authentique. À travers les histoires de nos modèles, nous montrons que la beauté est diverse et que l'industrie doit évoluer véritablement pour refléter cela."
+  },
+  "actors": {
+    "menu": {
+      "title1": "En savoir plus sur ~"
+    },
+    "jeffry": {
+      "titleI": "Introduction",
+      "name": "Jeffry Riascos",
+      "introduction-p": "",
+      "titleB": "Biographie",
+      "biography-fp": "",
+      "biography-sp": "",
+      "biography-tp": "",
+      "titleG": "Galerie"
+    },
+    "alexa": {
+    "titleI": "Introduction",
+    "name": "Alexa García",
+    "introduction-p": "Alexandra Jordan, une modèle professionnelle de 34 ans connue sous le nom de scène 'Cherry Bomb', a tracé son chemin dans l'industrie de la mode avec une détermination qui reflète sa passion pour l'art et l'expression de soi. Bien que son parcours ait commencé par des études en Beaux-Arts et en Design Graphique, des problèmes financiers ont interrompu son éducation. Cependant, ces défis n'ont pas éteint son esprit créatif ; au contraire, ils l'ont conduite à découvrir le mannequinat comme une nouvelle forme d'art et d'expression.",
+    "titleB": "Biographie",
+    "biography-fp": "À 18 ans, Alexandra se lance dans le monde du mannequinat, soutenue par ses amis, dont la plupart étaient des créateurs de mode et des photographes débutants. ~J'ai trouvé dans le mannequinat une autre forme d'expression artistique ; pour moi, c'est un moyen de communication visuelle. Je me suis toujours considérée comme une toile, et les créateurs sont les artistes qui donnent vie à leur travail sur moi, dit-elle. Cette perspective unique lui a permis de voir le mannequinat non seulement comme une profession, mais comme une extension de son art, où son corps devient le véhicule des visions créatives des autres.",
+    "biography-sp": "Cherry a fait face à une critique constante de son apparence dans ses premières années. ~J'ai toujours été vue comme une modèle grande taille, avec une taille 8 ou 10, et on me disait toujours que j'étais trop grande pour l'industrie, se souvient-elle. De plus, ses tatouages et ses cheveux colorés étaient des points de discorde. Cependant, Alexandra n'a pas laissé ces obstacles l'arrêter. ~J'ai toujours été considérée comme très bonne dans ce que je fais, mais le problème était mon poids ou mes tatouages. Malgré cela, j'ai toujours donné le meilleur de moi-même.",
+    "biography-tp": "Après une année dans sa première agence, elle a trouvé un meilleur ajustement dans une deuxième agence, où elle est restée presque six ans. Là, elle a reçu une formation en expression sur le podium et corporelle, saisissant chaque opportunité pour s'améliorer. Cependant, elle ressentait encore la pression d'être une modèle courbée dans une industrie qui valorisait l'extrême maigreur. C'était déroutant car mes tailles étaient moyennes, mais pour l'industrie, j'étais encore considérée comme trop grande.",
+    "biography-four": "Actuellement, Alexandra est dans une agence où elle se sent plus acceptée et valorisée. L'agence a pu mettre en avant ses points forts et offrir des emplois où son profil unique est apprécié. Il est important que les personnes avec qui vous travaillez croient en ce que vous faites. Cela fait toute la différence, mentionne-t-elle.",
+    "biography-five": "À 34 ans, Alexandra Jordan continue de défier les normes de l'industrie de la mode, ouvrant la voie aux générations futures de modèles. L'inclusion n'est pas une faveur ; c'est un droit. La diversité n'est pas un choix. Son histoire est un témoignage de résilience et de passion, un rappel que, dans la mode comme dans l'art, la véritable beauté réside dans la différence et l'authenticité.",
+    "biography-six": "Malgré les progrès, elle est consciente que l'industrie de la mode a encore un long chemin à parcourir en matière d'inclusion. Il y a encore beaucoup de haine manifestée. Il y a de l'homophobie, de la fatphobie et du sexisme, affirme-t-elle, mais à chaque pas qu'elle fait sur le podium, elle communique plus que de la mode ; elle délivre un message d'acceptation et d'autonomisation, transformant sa carrière en une œuvre d'art vivante qui inspire les autres.",
+    "titleG": "Galerie"
+  },
+  "zorroGris": {
+    "titleI": "Introduction",
+    "name": "",
+    "introduction-p": "Dans le monde dynamique et souvent superficiel de la mode, des voix émergent qui cherchent à transcender les frontières. Liza Ardila, créatrice de mode et artiste visuelle, est l'une de ces voix. Fondatrice et directrice créative de Zorro Gris, une marque qui a commencé en 2013 comme un projet académique et est rapidement devenue son œuvre de vie. Depuis ses débuts, Zorro Gris a visé à s'éloigner des conventions, tant en termes de genre que de durabilité, établissant une norme dans le paysage de la mode colombienne.",
+    "titleB": "Biographie",
+    "biography-fp": "Nous avons commencé sur le marché féminin, mais au fil des années, nous avons commencé à remarquer que nos silhouettes résonnaient également avec le marché masculin, dit Liza. Cette découverte a été le catalyseur pour la créatrice d'explorer les vêtements unisexes. Son parcours artistique l'a conduite à remettre en question les rôles de genre et comment ils se manifestent à travers la mode. Les vêtements nous définissent, et ils peuvent aussi représenter la définition forcée imposée par les forces politiques et sociales, réfléchit-elle. L'inclusion n'est pas juste un mot à la mode pour Zorro Gris. Liza souligne l'importance de représenter tout le monde, en brisant les normes établies par l'industrie. La marque plaide non seulement pour la diversité dans les vêtements mais aussi parmi les personnes qui les modèlent.",
+    "biography-sp": "Le parcours de Zorro Gris n'a pas été facile. Initialement, la marque était distribuée dans des magasins multi-marques à Cali et Bogotá. Cependant, au fil du temps, Liza a senti que ces magasins n'étaient plus en adéquation avec la nouvelle direction de la marque. Nous ne ressentions plus autant d'affinité avec les magasins multi-marques et avons commencé à penser à avoir notre propre canal, qui serait numérique, explique-t-elle. Cette transition vers le commerce numérique leur a permis de gérer des éditions limitées, contribuant à la durabilité, ce qui est un véritable jalon pour leur marque.",
+    "biography-tp": "La présence de Zorro Gris dans des foires nationales comme Colombiamoda et Bogotá Fashion Week a été un tournant. En 2022, ils ont participé au projet 'Women Changing Fashion' de Banco de Bogotá, une expérience que Liza décrit comme révélatrice. Il était gratifiant de voir comment le dialogue sur l'inclusion s'est ouvert de manière réelle. Cependant, elle souligne que l'industrie fait encore face à des défis importants, car les agences gèrent des profils très standardisés et fixent des quotas d'inclusion qui finissent par être trop petits pour véritablement représenter la diversité.",
+    "biography-four": "Liza Ardila est convaincue que l'inclusion et la diversité ne sont pas juste des tendances mais l'avenir de la mode. Nous devons persister dans le discours jusqu'à ce qu'il devienne partie intégrante du paysage, affirme-t-elle. Avec sa vision et sa détermination, Zorro Gris continue de tracer la voie, prouvant que la mode peut être un reflet de la diversité humaine sous toutes ses formes. Dans un monde où les esthétiques traditionnelles dominent, Zorro Gris nous rappelle que la véritable richesse de l'humanité réside dans la différence.",
+    "titleG": "Galerie"
+  },
+  "diego": {
+    "titleI": "Introduction",
+    "name": "",
+    "introduction-p": "",
+    "titleB": "Biographie",
+    "biography-fp": "",
+    "biography-sp": "",
+    "biography-tp": "",
+    "titleG": "Galerie"
+  },
+    "sarali": {
+    "titleI": "Introduction",
+    "name": "",
+    "introduction-p": "Dans l'univers impitoyable de la mode, où les standards de beauté semblent souvent être des murs infranchissables, Saralí, à 23 ans, est une jeune mannequin de Cali qui défie les limites sociétales qui lui sont imposées et se dresse comme un symbole vivant d'inclusion et d'autonomisation. Son histoire, tissée de fils de détermination et de courage, est un témoignage de la résilience face aux diktats de la mode conventionnelle.",
+    "titleB": "Biographie",
+    "biography-fp": "Née dans les recoins de Cali, elle a découvert la graine de sa passion pendant le confinement forcé de 2020 dû à la pandémie. Au milieu de l'introspection apportée par l'enfermement, Saralí a allumé le feu de son rêve avec le soutien de sa famille. Elle a décidé de franchir les seuils du mannequinat comme forme d'expression personnelle, défiant ainsi les diktats d'une société qui aime dicter ce qui est beau et ce qui ne l'est pas.",
+    "biography-sp": "Son parcours vers l'authenticité a été un voyage marqué par la découverte de soi et le rejet des normes oppressives. Depuis son jeune âge, elle a défié les préjugés profondément ancrés sur ce que signifie être une femme noire avec des tailles courbées dans l'industrie de la mode. Chaque pas sur le podium devient une déclaration de guerre contre les stéréotypes, tout en célébrant la beauté dans son spectre le plus large.",
+    "biography-tp": "À travers les lumières des podiums et le monde écrasant des médias sociaux, Saralí utilise sa voix comme un écho de la diversité dans un monde qui penche souvent vers l'uniformité. Sa participation à des événements de mode renommés comme la Bogotá Fashion Week et Colombiamoda l'a propulsée comme une figure influente dans l'univers de la mode.",
+    "biography-four": "Dans chaque publication, elle partage des aperçus de son voyage d'affirmation de soi et d'autonomisation, encourageant les autres à embrasser leur unicité et à défier les moules imposés par la société. À chaque pas, elle redéfinit les standards de beauté et favorise une culture d'acceptation.",
+    "biography-five": "Son engagement envers l'authenticité et la diversité en fait un phare d'espoir pour ceux qui cherchent à trouver leur voix dans un monde qui les réduit souvent au silence. Dans chaque défilé et chaque pose, ce mannequin transforme le jeu et ouvre la voie à une industrie de la mode plus inclusive et diversifiée.",
+    "titleG": "Galerie"
+  },
+  "claudia": {
+    "titleI": "Introduction",
+    "name": "Claudia Ruiz",
+    "introduction-p": "Dans les rues animées de Cali, où le soleil se mêle au rythme rapide de la vie, un phare de diversité et d'autonomisation émerge dans l'industrie du mannequinat : Perfil Class. Cette agence, dirigée par Claudia Ruiz, n'est pas seulement un nom dans le monde de la mode, mais un récit de résilience et de succès contre toute attente.",
+    "titleB": "Biographie",
+    "biography-fp": "Avec une trajectoire de 17 ans, Perfil Class a tracé son chemin depuis les coins les plus sombres de la discrimination pour devenir un phare d'inclusion et de professionnalisme dans le monde compétitif de la mode. Claudia Ruiz, avec son partenaire, a créé un espace où l'âge, le type de corps, l'ethnicité et le genre ne sont pas des barrières, mais des piliers de célébration.",
+    "biography-sp": "Depuis ses débuts en tant que télévendeuse, Claudia a dirigé un mouvement qui non seulement embrasse la diversité mais la célèbre sur chaque podium, dans chaque campagne et dans chaque classe de son académie. C'est ici, dans cette académie, que réside l'âme de Perfil Class, formant des mannequins selon une norme d'excellence qui a propulsé l'agence au sommet de l'industrie.",
+    "biography-tp": "Mais au-delà du podium et des lumières, Perfil Class est synonyme de changement social. En ouvrant des portes aux mannequins afro-descendants lorsque d'autres les fermaient, l'agence a non seulement créé des opportunités mais aussi changé les perceptions et les stéréotypes profondément ancrés dans l'industrie. Leur engagement envers la communauté va au-delà du podium, impliquant des partenariats avec des institutions éducatives comme l'Université de San Buenaventura, où les mannequins peuvent accéder à des cours gratuits pour leur développement holistique.",
+    "biography-four": "Cependant, le chemin vers le succès n'a pas été facile. Dans un monde où la superficialité l'emporte souvent sur le talent, Claudia et son équipe ont affronté des défis qui vont au-delà des tendances de la mode. La lutte contre la discrimination, la pression pour se conformer à des normes irréalistes et la bataille constante pour l'inclusion ont été des obstacles qu'ils ont surmontés avec détermination.",
+    "biography-five": "Les foires de mode, ce navire plein de rêves et de réalités, ont été à la fois leur scène de triomphe et leur champ de bataille. Dans un monde où la couleur de la peau est encore jugée sur le podium, Perfil Class défie les préjugés et prouve que la beauté n'a pas de limites ni de teintes définies.",
+    "biography-six": "Aujourd'hui, ce n'est pas seulement une agence de mannequins mais un symbole de changement dans l'industrie de la mode. Sa vision de l'inclusion, du professionnalisme et de l'autonomisation résonne au-delà des frontières de Cali, inspirant une nouvelle génération de mannequins et de leaders qui cherchent à briser les barrières et à créer un monde où tout le monde a sa place sur le podium de la vie.",
+    "titleG": "Galerie"
+    }
+  },
+  "credits": {
+    "title": "Section des crédits",
+    "university-title": "",
+    "university-des-1": "Universidad del valle",
+    "university-des-2": "Cali - Colombia",
+    "university-des-3": "Tuteur : Devora Cabezas",
+    "faculty-title": "",
+    "faculty-des-1": "Département de Design créé dans la Faculté des Arts Intégrés",
+    "school-info-title": "",
+    "school-info-des-1": "École Internationale de Mode et de Design",
+    "school-info-des-2": "Cali - Colombia",
+    "school-info-des-3": "Date de création du projet : Juin/2024",
+    "about-us-title": "",
+    "subtitle-1": "Université",
+    "subtitle-2": "Faculté",
+    "subtitle-3": "Infos sur l'école",
+    "subtitle-4": "À propos de nous"
+}}

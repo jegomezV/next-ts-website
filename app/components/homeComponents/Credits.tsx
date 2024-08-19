@@ -6,7 +6,11 @@ import ManPic from '@/public/homeImgs/credits/manPick.jpg'
 import GirlPic from '@/public/homeImgs/credits/GirlPic.jpg'
 import CircleSvg from '../svgs/CircleSvg';
 
+import { useTranslation } from "react-i18next";
+
 const Credits: React.FC = (): JSX.Element => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen bg-gradient-to-bl from-slate-200 via-white via-amber-100 to-amber-200">
       <article className='grid gap-4 translate-y-20 mx-auto my-auto
@@ -25,7 +29,7 @@ const Credits: React.FC = (): JSX.Element => {
         xl:text-5xl xl:-top-14 xl:px-4 xl:py-2
         2xl:mt-2 2xl:text-6xl 2xl:top-5
         whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_2px_rgba(0,0,0,1)] font-display bg-white">
-            Credits Section
+            {t("credits.title")}
           </h1>
         </div>
 
@@ -115,19 +119,19 @@ const Credits: React.FC = (): JSX.Element => {
           </div> */}
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-1">
-          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>University</h1>
-          <p className='text-center  py-2 translate-y-[10%] '>Universidad del valle<br /> Cali - colombia<br /> Tutor: Devora Cabezas</p>
+          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-1")}</h1>
+          <p className='text-center  py-2 translate-y-[10%] '>Universidad del valle<br /> Cali - colombia<br />{/* Tutor: Devora Cabezas */}</p>
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-2">
-          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>Faculty</h1>
-          <p className='text-center  py-2 translate-y-[10%] '>Department of Design created in the Faculty of Integrated Arts</p>
+          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-2")}</h1>
+          <p className='text-center  py-2 translate-y-[10%] '>{t("credits.faculty-des-1")}</p>
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-3">
-          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>School Info</h1>
-          <p className='text-center  py-2 translate-y-[10%] '>International School of Fashion and Design <br /> Cali - colombia <br /> Project Creation Date: Jun/2024</p>
+          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-3")}</h1>
+          <p className='text-center  py-2 translate-y-[10%] '>{t("credits.school-info-des-1")} <br /> Cali - colombia <br /> {t("credits.school-info-des-3")}</p>
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-4 translate-x-40">
-          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>About Us</h1>
+          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-4")}</h1>
           <p className='text-center  py-2 translate-y-[10%]'>Susana Horia<br /> Andy Gonzales</p>
         </div>
         <div className='absolute left-1/2 h-[100%] w-[2px]

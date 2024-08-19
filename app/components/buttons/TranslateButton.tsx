@@ -1,24 +1,28 @@
 'use client';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const TranslateButton: React.FC = (): JSX.Element => {
+  const { i18n } = useTranslation();
   const [language, setLanguage] = useState<'en' | 'es' | 'fr'>('en'); // Status for current language
 
   const handleLanguageChange = () => {
+    let newLanguage: 'en' | 'es' | 'fr';
     switch (language) {
       case 'en':
-        setLanguage('es');
+        newLanguage = 'es';
         break;
       case 'es':
-        setLanguage('fr');
+        newLanguage = 'fr';
         break;
       case 'fr':
-        setLanguage('en');
+        newLanguage = 'en';
         break;
       default:
-        setLanguage('en');
-        break;
+        newLanguage = 'en';
     }
+    setLanguage(newLanguage);
+    i18n.changeLanguage(newLanguage);
   };
 
   let svgIcon;

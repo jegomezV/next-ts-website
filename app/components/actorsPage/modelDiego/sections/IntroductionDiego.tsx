@@ -4,7 +4,11 @@ import Image from 'next/image';
 import mainPhoto from '@/public/homeImgs/actorsModals/diegoModal/DiegoMain.jpg';
 import mainSecondPhoto from '@/public/homeImgs/actorsModals/diegoModal/DiegoMain2.jpg';
 
+import { useTranslation } from "react-i18next";
+
 const IntroductionDiego: React.FC = (): JSX.Element => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section className='relative w-full py-16 px-4 md:py-24 lg:py-32 overflow-x-clip'>
       <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
@@ -26,7 +30,7 @@ const IntroductionDiego: React.FC = (): JSX.Element => {
             data-scroll-speed="-0.2"
             className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mt-8"
           >
-            Diego Muñoz
+            {t("actors.diego.name")}
           </h1>
         </div>
         {/* Right Column */}
@@ -37,11 +41,11 @@ const IntroductionDiego: React.FC = (): JSX.Element => {
             data-scroll-speed="-0.2"
             className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mb-6"
           >
-            Introduction
+            {t("actors.diego.titleI")}
           </h2>
           <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-              In feugiat justo non elit rutrum, non lacinia leo luctus. Aliquam tincidunt eu tortor ac faucibus. Pellentesque blandit varius sapien, eget consectetur ligula maximus in. Praesent vulputate nisi mi, at pulvinar nulla tristique id. Praesent ultrices justo sit amet enim vulputate, vel gravida diam facilisis. Nunc bibendum maximus magna ullamcorper fringilla. Donec vel aliquet lacus. Sed luctus velit a viverra tempor.
+            {t("actors.diego.introduction-p")}
             </p>
           </div>
           {/* Secondary Photo */}

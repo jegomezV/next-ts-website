@@ -15,6 +15,13 @@ import HeaderM from './components/homeComponents/Header';
 import Actors from './components/homeComponents/Actors';
 import Models from './components/homeComponents/Modal';
 
+import { I18nextProvider } from 'react-i18next';
+import i18next from 'i18next';
+import global_es from './traslates/esp/global.json';
+import global_en from './traslates/eng/global.json';
+import global_fr from './traslates/fra/global.json';
+import i18n from '../util/i18n';
+
 // Home components (cargados de manera diferida) ->
 const ButtonStart = dynamic(() => import('./components/buttons/ButtonStart'), { loading: () => <p></p> });
 const Introduction = dynamic(() => import('./components/homeComponents/Introduction'), { loading: () => <p></p> });
@@ -29,14 +36,13 @@ const Home = () => {
   const ref = useRef(null);
   const [preloader, setPreloader] = useState(false);
   const [componentsLoaded, setComponentsLoaded] = useState(false);
-
   const [openModalIndex, setOpenModalIndex] = useState<number | null>(null);
 
   const handleActorClick = (index: number) => {
     console.log('Actor Clicked:', index);
     setOpenModalIndex(index);
   };
-  
+
 
   const handleCloseModal = () => {
     setOpenModalIndex(null);
@@ -57,56 +63,52 @@ const Home = () => {
   }, [preloader]);
 
   useEffect(() => {
-    // The trick to viewport units on mobile
-    // https://css-tricks.com/the-trick-to-viewport-units-on-mobile/
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     let vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    // We listen to the resize event
     window.addEventListener('resize', () => {
-      // We execute the same script as before
       let vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty('--vh', `${vh}px`);
     });
   }, []);
 
   return (
-    <LocoScrollContext.Provider value={locoScrollInstance}>
-      {preloader ? (
-        <div className='loader-wrapper absoluteP'>
-          <h1 className='
+    <I18nextProvider i18n={i18n}>
+      <LocoScrollContext.Provider value={locoScrollInstance}>
+        {preloader ? (
+          <div className='loader-wrapper absoluteP'>
+            <h1 className='
             z-10 text-2xl text-transparent duration-1000
             bg-white cursor-default
             animate-title2 font-display sm:text-5xl md:text-6xl xl:text-8xl
             whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
-            Loading <br />
-          </h1>
-          <h2 className='
+              Loading <br />
+            </h1>
+            <h2 className='
             z-10 text-2xl text-transparent duration-1000
             bg-white cursor-default
             animate-login font-display sm:text-5xl md:text-6xl xl:text-8xl
             whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,2)]'>
-            Preparing Your Content... <br />
-          </h2>
-        </div>
-      ) : (
-        <div id='main-container' className="h-full w-screen" data-scroll-container ref={ref}>
-          {/* <CustomCursor /> */}
-          <Nav />
-          <ButtonStart />
-          <HeaderM />
-          <main className="relative h-full w-screen">
-            <Introduction />
-            <Stereotypes />
-            <Actors onActorClick={handleActorClick} />
-            <Models openModalIndex={openModalIndex} handleCloseModal={handleCloseModal} />
-            <Credits />
-          </main>
-        </div>
-      )}
-    </LocoScrollContext.Provider>
+              Preparing Your Content... <br />
+            </h2>
+          </div>
+        ) : (
+          <div id='main-container' className="h-full w-screen" data-scroll-container ref={ref}>
+            {/* <CustomCursor /> */}
+            <Nav />
+            <ButtonStart />
+            <HeaderM />
+            <main className="relative h-full w-screen">
+              <Introduction />
+              <Stereotypes />
+              <Actors onActorClick={handleActorClick} />
+              <Models openModalIndex={openModalIndex} handleCloseModal={handleCloseModal} />
+              <Credits />
+            </main>
+          </div>
+        )}
+      </LocoScrollContext.Provider>
+    </I18nextProvider>
   );
 };
 

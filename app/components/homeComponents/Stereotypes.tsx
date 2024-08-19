@@ -6,7 +6,11 @@ import React from 'react';
 import firstPhoto from '@/public/homeImgs/stereotypes/stereotypes1.jpg';
 import secondPhoto from '@/public/homeImgs/stereotypes/stereotypes2.jpg';
 
+import { useTranslation } from "react-i18next";
+
 export const Stereotypes: React.FC = (): JSX.Element => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <section data-scroll-section className='effects-section border-[1px] border-black/60 hidden md:block'>
       <article className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
@@ -32,7 +36,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               data-scroll
               data-scroll-speed="0.5"
               className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
-              Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At "What About Beauty," we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this.
+              {t("sterotypes.second-paragraph")}
             </p>
           </div>
 
@@ -42,13 +46,13 @@ export const Stereotypes: React.FC = (): JSX.Element => {
               data-scroll
               data-scroll-speed="-1.0"
               className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-transparent bg-black cursor-default font-display bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)] text-center">
-              Challenging <br /> Beauty Stereotypes
+              {t("sterotypes.titleF")} <br /> {t("sterotypes.titleS")}
             </h1>
             <p
               data-scroll
               data-scroll-speed="1.0"
               className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed">
-              The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.
+              {t("sterotypes.first-paragraph")}
             </p>
             <div
               data-scroll

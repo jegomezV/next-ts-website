@@ -2,13 +2,15 @@ import Link from 'next/link';
 import React, { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { useLocoScrollContext } from '@/util/LocoScrollContext';
-import { TranslateButton } from '../buttons/TranslateButton'; // Importa el componente correctamente
+import { TranslateButton } from '../buttons/TranslateButton';
+import { useTranslation } from "react-i18next";
 
 interface LocoScrollInstance {
   scrollTo: (target: Element | number, options: { duration?: number; offset?: number }) => void;
 }
 
 export const Nav: React.FC = () => {
+  const [t, i18n] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
@@ -157,7 +159,7 @@ export const Nav: React.FC = () => {
                 text-gray-300 transition-[background-size,color] duration-300
                 hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
-              Home
+              {t("main-header.nav.home")}
             </Link>
           </li>
           <li>
@@ -170,7 +172,7 @@ export const Nav: React.FC = () => {
                 text-gray-300 transition-[background-size,color] duration-300
                 hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
-              Actors
+              {t("main-header.nav.actors")}
             </Link>
           </li>
           <li>
@@ -182,7 +184,7 @@ export const Nav: React.FC = () => {
                 text-gray-300 transition-[background-size,color] duration-300
                 hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
-              About
+              {t("main-header.nav.about")}
             </Link>
           </li>
           <li>
@@ -195,7 +197,7 @@ export const Nav: React.FC = () => {
                 text-gray-300 transition-[background-size,color] duration-300
                 hover:bg-[0_2px,100%_2px] hover:text-[#ffffff] hover:drop-shadow-[0_0.2px_5px_rgba(255,255,255,10)]"
             >
-              Credits
+              {t("main-header.nav.credits")}
             </Link>
           </li>
         </ul>

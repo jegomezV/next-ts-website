@@ -1,0 +1,122 @@
+{
+  "main-header": {
+    "nav": {
+      "home": "Home",
+      "actors": "Actors",
+      "about": "About",
+      "credits": "Credits"
+    },
+    "first-title" : "What about beauty?",
+    "second-title" : "Stories of Transformation"
+  },
+  "introduction":{
+    "titleF": "Redefining Beauty ",
+    "titleS": "Beyond Stereotypes",
+    "first-paragraph": "In a world where fashion has long been a stronghold of unattainable beauty standards, it is crucial to question and challenge these norms. At What About Beauty, we explore how the fashion industry is transforming its ideals of beauty and how these transformations impact our perception of what it means to be truly beautiful.",
+    "second-paragraph": "The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies."
+  },
+  "sterotypes":{
+    "titleF": "Challenging ",
+    "titleS": "Beauty Stereotypes",
+    "first-paragraph": "The fashion industry has a long history of promoting a single standard of beauty that often excludes those who do not fit into strict molds. However, in recent years, we have seen a shift towards greater inclusion and diversity. While these changes are promising, it is essential to ask whether they are genuine or merely marketing strategies.",
+    "second-paragraph": "Beauty stereotypes in fashion shape societal norms, influence self-esteem, and impact careers. At What About Beauty, we highlight the negative effects of these stereotypes and the need for authentic inclusion. Through our models' stories, we show that beauty is diverse and that the industry must genuinely evolve to reflect this."
+  },
+  "actors":{
+    "menu": {
+      "title1": "More About ~"
+    },
+    "jeffry":{
+      "titleI": "introduction",
+      "name": "Jeffry Riascos",
+      "introduction-p": "",
+      "titleB": "Biography",
+      "biography-fp": "",
+      "biography-sp": "",
+      "biography-tp": "",
+      "titleG": "Gallery"
+    },
+    "alexa":{
+      "titleI": "introduction",
+      "name": "Alexa García",
+      "introduction-p": "Alexandra Jordan, a 34-year-old professional model known by her stage name 'Cherry Bomb,' has carved her path in the fashion industry with a determination that reflects her passion for art and self-expression. Although her journey initially began with studies in Fine Arts and Graphic Design, financial issues cut short her education. However, these challenges did not extinguish her creative spirit; instead, they led her to discover modeling as a new form of art and expression.",
+      "titleB": "Biography",
+      "biography-fp": "At 18 years old, Alexandra ventured into the world of modeling, supported by her friends, most of whom were fashion designers and photographers just starting out. ~I found in modeling another form of artistic expression; for me, it is a way of visual communication. I have always considered myself a canvas, and the designers are the artists who bring their work to life on me, she says. This unique perspective allowed her to see modeling not just as a profession, but as an extension of her art, where her body becomes the vehicle for others' creative visions.",
+      "biography-sp": "Cherry faced constant criticism about her appearance in her early years. ~I’ve always been seen as a plus-size model, with a size 8 or 10, and they always told me I was too big for the industry, she recalls. Additionally, her tattoos and colorful hair were points of contention. However, Alexandra didn’t let these obstacles stop her. ~I’ve always been considered very good at what I do, but the issue was my weight or my tattoos. Despite that, I always gave my best.",
+      "biography-tp": "After a year at her first agency, she found a better fit in a second agency, where she stayed for almost six years. There, she received training in runway and body expression, seizing every opportunity to improve. However, she still felt the pressure of being a curvy model in an industry that valued extreme thinness. It was confusing because my sizes were medium, but for the industry, I was still considered too big.",
+      "biography-four": "Currently, Alexandra is with an agency where she feels more accepted and valued. The agency has been able to highlight her strengths and offer jobs where her unique profile is appreciated. It’s important that the people you work with believe in what you do. That makes all the difference, she mentions.",
+      "biography-five": "At 34 years old, Alexandra Jordan continues to challenge the norms of the fashion industry, paving the way for future generations of models. Inclusion is not a favor; it’s a right. Diversity is not a choice. Her story is a testament to resilience and passion, a reminder that, in fashion as in art, true beauty lies in difference and authenticity.",
+      "biography-six": "Despite the progress, she is aware that the fashion industry still has a long way to go in terms of inclusion. There is still a lot of hate being manifested. There’s homophobia, fatphobia, and misogyny, she states, but with every step she takes on the runway, she communicates more than just fashion; she delivers a message of acceptance and empowerment, turning her career into a living work of art that inspires others.",
+      "titleG": "Gallery"
+
+    },
+    "zorroGris":{
+      "titleI": "introduction",
+      "name": "",
+      "introduction-p": "In the dynamic and often superficial world of fashion, voices emerge that seek to transcend boundaries. Liza Ardila, fashion designer and visual artist, is one of those voices. Founder and creative director of Zorro Gris, a brand that started in 2013 as an academic project and quickly became her life’s work. From its inception, Zorro Gris has aimed to break away from the conventional, both in terms of gender and sustainability, setting a standard in the Colombian fashion landscape.",
+      "titleB": "Biography",
+      "biography-fp": "We started in the women's market, but over the years, we began to notice that our silhouettes also resonated with the men's market, Liza says. This discovery was the catalyst for the designer to explore unisex clothing. Her background in the arts led her to question gender roles and how they manifest through fashion. Clothing defines us, and it can also depict the forced definition imposed by political and social forces, she reflects. Inclusion is not just a buzzword for Zorro Gris. Liza emphasizes the importance of representing everyone, breaking the norms set by the industry. The brand advocates not only for diversity in clothing but also in the people who model them.",
+      "biography-sp": "The journey of Zorro Gris has not been easy. Initially, the brand was distributed in multi-brand stores in Cali and Bogotá. However, over time, Liza felt that these stores no longer aligned with the new direction of the brand. We no longer felt as much affinity with the multi-brand stores and began thinking about having our own channel, which would be digital, she explains. This transition to digital commerce has allowed them to manage limited editions, contributing to sustainability, which is a truly important milestone for their brand.",
+      "biography-tp": "Zorro Gris's presence at national fairs like Colombiamoda and Bogotá Fashion Week has been a turning point. In 2022, they participated in the 'Women Changing Fashion' project by Banco de Bogotá, an experience Liza describes as revelatory. It was gratifying to see how the dialogue about inclusion opened up in a real way. However, she points out that the industry still faces significant challenges, as agencies manage very standardized profiles and set inclusion quotas that end up being too small to truly represent diversity.",
+      "biography-four": "Liza Ardila is convinced that inclusion and diversity are not just trends but the future of fashion. We must persist in the discourse until it becomes part of the landscape, she asserts. With her vision and determination, Zorro Gris continues to blaze trails, proving that fashion can be a reflection of human diversity in all its forms. In a world where traditional aesthetics dominate, Zorro Gris reminds us that true richness in humanity lies in difference.",
+      "titleG": "Gallery"
+
+    },
+    "diego":{
+      "titleI": "introduction",
+      "name": "",
+      "introduction-p": "",
+      "titleB": "Biography",
+      "biography-fp": "",
+      "biography-sp": "",
+      "biography-tp": "",
+      "titleG": "Gallery"
+
+    },
+    "sarali":{
+      "titleI": "introduction",
+      "name": "",
+      "introduction-p": "In the relentless universe of fashion, where beauty standards often seem like unmovable walls, Saralí, at 23 years old, is a young model from Cali who challenges the societal limits imposed on her and stands as a living symbol of inclusion and empowerment. Her story, woven with threads of determination and courage, is a testament to resilience against the dictates of conventional fashion.",
+      "titleB": "Biography",
+      "biography-fp": "Born in the folds of Cali, she found the seed of her passion during the forced lockdown of 2020 due to the pandemic. Amidst the introspection brought by the confinement, Saralí ignited the fire of her dream with the support of her family. She decided to cross the thresholds of modeling as a form of personal expression, thus challenging the dictates of a society that likes to dictate what is beautiful and what is not.",
+      "biography-sp": "Her journey toward authenticity has been a voyage marked by self-discovery and the rejection of oppressive standards. From a young age, she challenged deep-seated prejudices about what it means to be a Black woman with curvy sizes in the fashion industry. Each step on the runway becomes a declaration of war against stereotypes, while celebrating beauty in its broadest spectrum.",
+      "biography-tp": "Through the lights of the runways and the overwhelming world of social media, Saralí uses her voice as an echo of diversity in a world that often leans towards uniformity. Her participation in renowned fashion events like Bogotá Fashion Week and Colombiamoda has catapulted her as an influential figure in the fashion universe.",
+      "biography-four": "In each post, she shares glimpses of her journey of self-affirmation and empowerment, encouraging others to embrace their uniqueness and challenge the molds imposed by society. With each step, she redefines beauty standards and fosters a culture of acceptance.",
+      "biography-five": "Her commitment to authenticity and diversity makes her a beacon of hope for those seeking to find their voice in a world that often silences them. In every runway show and every pose, this model is transforming the game and paving the way for a more inclusive and diverse fashion industry.",
+      "titleG": "Gallery"
+
+    },
+    "claudia":{
+      "titleI": "introduction",
+      "name": "Claudia Ruiz",
+      "introduction-p": "In the bustling streets of Cali, where the sun blends with the fast-paced rhythm of life, a beacon of diversity and empowerment emerges in the modeling industry: Perfil Class. This agency, led by Claudia Ruiz, is not just a name in the fashion world, but a narrative of resilience and success against all odds.",
+      "titleB": "Biography",
+      "biography-fp": "With a 17-year trajectory, Perfil Class has forged its path from the darkest corners of discrimination to become a beacon of inclusion and professionalism in the competitive world of fashion. Claudia Ruiz, along with her partner, has created a space where age, body type, ethnicity, and gender are not barriers, but pillars of celebration.",
+      "biography-sp": "From her beginnings as a telemarketer, Claudia has led a movement that not only embraces diversity but celebrates it on every runway, in every campaign, and in every class of her academy. It is here, in this academy, where the soul of Perfil Class resides, training models to a standard of excellence that has propelled the agency to the heights of the industry.",
+      "biography-tp": "But beyond the runway and the lights, Perfil Class is synonymous with social change. By opening doors for Afro-descendant models when others were closing them, the agency has not only created opportunities but also changed perceptions and deep-rooted stereotypes in the industry. Their commitment to the community extends beyond the runway, involving partnerships with educational institutions like San Buenaventura University, where models can access free courses for their holistic development.",
+      "biography-four": "However, the path to success has not been easy. In a world where superficiality often overshadows talent, Claudia and her team have faced challenges that go beyond fashion trends. The fight against discrimination, the pressure to conform to unrealistic standards, and the constant battle for inclusion have been obstacles they have overcome with determination.",
+      "biography-five": "Fashion fairs, that ship full of dreams and realities, have been both their stage for triumph and their battleground. In a world where skin color is still judged on the runway, Perfil Class challenges prejudices and proves that beauty knows no limits or defined shades.",
+      "biography-six": "Today, it is not just a modeling agency but a symbol of change in the fashion industry. Its vision of inclusion, professionalism, and empowerment resonates beyond the borders of Cali, inspiring a new generation of models and leaders who seek to break barriers and create a world where everyone has a place on the runway of life.",
+      "titleG": "Gallery"
+
+    }
+
+  },
+  "credits":{
+    "title": "Credits Section",
+    "university-title": "",
+    "university-des-1": "Universidad del valle",
+    "university-des-2": "Cali - colombia",
+    "university-des-3": "Tutor: Devora Cabezas",
+    "faculty-title": "",
+    "faculty-des-1": "Department of Design created in the Faculty of Integrated Arts",
+    "school-info-title": "",
+    "school-info-des-1": "International School of Fashion and Design",
+    "school-info-des-2": "Cali - colombia",
+    "school-info-des-3": "Project Creation Date: Jun/2024",
+    "about-us-title": "",
+    "subtitle-1": "University",
+    "subtitle-2": "Faculty",
+    "subtitle-3": "School Info",
+    "subtitle-4": "About Us"
+  }
+}

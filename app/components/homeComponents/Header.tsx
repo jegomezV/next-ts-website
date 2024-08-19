@@ -3,6 +3,8 @@ import '@/app/styles/Introduction.scss';
 import Image from 'next/image';
 import React from 'react';
 
+import { useTranslation } from "react-i18next";
+
 // Importing image files
 import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
 import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.jpg';
@@ -13,6 +15,8 @@ import buttersHead from '@/public/homeImgs/homeBg/buttersHead.jpg';
 
 // HeaderM component definition
 export const HeaderM: React.FC = (): JSX.Element => {
+  const [t, i18n] = useTranslation("global");
+
   return (
     <header data-scroll-section id='home'>
       {/* Main header section with title */}
@@ -26,13 +30,14 @@ export const HeaderM: React.FC = (): JSX.Element => {
           bg-white cursor-default
           animate-title font-display sm:text-5xl md:text-6xl xl:text-8xl
           whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]
-          relative"> What about beauty? <br />
+          relative"> {t("main-header.first-title")} <br />
         </h1>
         <h3 className="
           z-10 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-display sm:text-5xl md:text-6xl xl:text-3xl
-          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(0, 0, 0, 2)] 2xl:drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,0.8)]"> Stories of Transformation
+          whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(0, 0, 0, 2)] 2xl:drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,0.8)]">
+            {t("main-header.second-title")}
         </h3>
       </div>
 
