@@ -16,34 +16,38 @@ const IntroductionDiego: React.FC = (): JSX.Element => {
         <div className='flex flex-col items-center md:items-start justify-center text-center md:text-left'>
           {/* Main Photo */}
           <div className='relative h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]'>
+          <h1 
+            data-scroll 
+            data-scroll-speed="-0.2"
+            className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white mt-8 -translate-y-28"
+          >
+            {t("actors.diego.name")}
+          </h1>
             <Image 
               src={mainPhoto} 
               alt='Diego Main' 
               className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
               layout='fill'
               objectFit='cover'
+              objectPosition='50% 10%'
             />
           </div>
           {/* Title */}
-          <h1 
-            data-scroll 
-            data-scroll-speed="-0.2"
-            className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mt-8"
-          >
-            {t("actors.diego.name")}
-          </h1>
+          
         </div>
         {/* Right Column */}
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center items-center'>
+        <div className='border border-amber-300 bg-black/30 backdrop-blur-xl rounded-2xl top-14 absolute'>
           {/* Introduction Text */}
           <h2 
             data-scroll 
             data-scroll-speed="-0.2"
-            className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mb-6"
+            className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white py-3 px-6"
           >
             {t("actors.diego.titleI")}
           </h2>
-          <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+          </div>
+          <div className='bg-amber-50/90 border border-amber-300 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
             {t("actors.diego.introduction-p")}
             </p>
@@ -56,6 +60,7 @@ const IntroductionDiego: React.FC = (): JSX.Element => {
               className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
               layout='fill'
               objectFit='cover'
+              objectPosition='50% 20%'
             />
           </div>
         </div>

@@ -14,6 +14,13 @@ const IntroductionSarali: React.FC = (): JSX.Element => {
       <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div className='flex flex-col items-center md:items-start justify-center text-center md:text-left relative'>
           <div className='relative h-60 w-60 md:h-80 md:w-80 lg:h-[400px] lg:w-[400px] mb-8'>
+          <h1 
+            data-scroll 
+            data-scroll-speed="-0.2"
+            className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white -translate-y-24"
+          >
+            {t("actors.sarali.name")}
+          </h1>
             <Image 
               src={mainPhoto} 
               alt='Sarali' 
@@ -22,23 +29,19 @@ const IntroductionSarali: React.FC = (): JSX.Element => {
               objectFit='cover'
             />
           </div>
-          <h1 
-            data-scroll 
-            data-scroll-speed="-0.2"
-            className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800"
-          >
-            {t("actors.sarali.name")}
-          </h1>
+          
         </div>
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col justify-center items-center'>
+        <div className='border border-amber-300 bg-black/30 backdrop-blur-xl rounded-2xl top-14 absolute'>
           <h2 
             data-scroll 
             data-scroll-speed="-0.2"
-            className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mb-6"
+            className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white py-3 px-6"
           >
             {t("actors.sarali.titleI")}
           </h2>
-          <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+          </div>
+          <div className='bg-amber-50/90 border border-amber-300 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
             {t("actors.sarali.introduction-p")}
             </p>

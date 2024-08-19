@@ -54,7 +54,7 @@ const Models: React.FC<ModelsProps> = ({ openModalIndex, handleCloseModal }) => 
       transition={{ duration: 0.3 }}>
 
       <motion.div
-        className="bg-slate-200 shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)] shadow-black/40 drop-shadow-[0_1.5px_20px_rgba(0,0,0,10)] p-4 z-50 rounded-lg h-[90%] w-[95%] overflow-y-auto"
+        className="bg-slate-300 shadow-[0_15px_60px_-15px_rgba(0,0,0,0.3)] shadow-black/40 drop-shadow-[0_1.5px_20px_rgba(0,0,0,10)] p-4 z-50 rounded-lg h-[90%] w-[95%] overflow-y-auto"
         initial={{ scale: 0.9 }}
         animate={{ scale: 1 }}
         exit={{ scale: 0.9 }}

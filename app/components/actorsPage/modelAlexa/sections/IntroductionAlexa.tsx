@@ -14,42 +14,45 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
       <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8'>
         <div className='flex flex-col items-center md:items-start justify-center text-center md:text-left'>
           <div className='relative h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[500px] lg:w-[500px]'>
-            <Image 
-              src={mainPhoto} 
-              alt='Alexa' 
+          <h1
+            data-scroll
+            data-scroll-speed="-0.2"
+            className="mb-20 text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white -translate-y-24"
+          >
+            {t("actors.alexa.name")}
+          </h1>
+            <Image
+              src={mainPhoto}
+              alt='Alexa'
               className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
               layout='fill'
               objectFit='cover'
             />
           </div>
-          <h1 
-            data-scroll 
-            data-scroll-speed="-0.2"
-            className="text-3xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mt-8"
-          >
-            {t("actors.alexa.name")}
-          </h1>
         </div>
-        <div className='flex flex-col justify-center'>
-          <h2 
-            data-scroll 
-            data-scroll-speed="-0.2"
-            className="text-2xl md:text-3xl lg:text-5xl font-display bg-clip-text text-transparent bg-gradient-to-r from-black to-gray-800 mb-6"
-          >
-            {t("actors.alexa.titleI")}
-          </h2>
-          <div className='bg-gray-100 p-6 rounded-lg shadow-md'>
+        <div className='flex flex-col justify-center items-center'>
+          <div className='border border-amber-300 bg-black/30 backdrop-blur-xl rounded-2xl top-14 absolute'>
+            <h2
+              data-scroll
+              data-scroll-speed="-0.2"
+              className="text-2xl md:text-3xl py-3 px-6 lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white"
+            >
+              {t("actors.alexa.titleI")}
+            </h2>
+          </div>
+          <div className='bg-amber-50/90 border border-amber-300 p-6 rounded-lg shadow-md'>
             <p className='text-gray-700'>
-            {t("actors.alexa.introduction-p")}
+              {t("actors.alexa.introduction-p")}
             </p>
           </div>
-          <div className='relative mt-8 h-[200px] w-full'>
-            <Image 
-              src={mainSecondPhoto} 
-              alt='Alexa Second' 
+          <div className='relative mt-8 h-[300px] w-[90%]'>
+            <Image
+              src={mainSecondPhoto}
+              alt='Alexa Second'
               className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
               layout='fill'
               objectFit='cover'
+              objectPosition='50% 30%'
             />
           </div>
         </div>
