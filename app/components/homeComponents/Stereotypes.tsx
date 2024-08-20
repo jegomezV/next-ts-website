@@ -12,7 +12,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <section data-scroll-section className='effects-section border-[1px] border-black/60 hidden md:block'>
+    <section data-scroll-section className='effects-section  border-black/60 hidden md:block'>
       <article className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
         <div className='min-h-screen w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center px-4 md:px-8'>
 

@@ -175,7 +175,7 @@ export const Nav: React.FC = () => {
               {t("main-header.nav.actors")}
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/pages/about"
               className="
@@ -186,7 +186,7 @@ export const Nav: React.FC = () => {
             >
               {t("main-header.nav.about")}
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/"

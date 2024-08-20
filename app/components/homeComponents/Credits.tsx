@@ -130,7 +130,7 @@ const Credits: React.FC = (): JSX.Element => {
           <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-3")}</h1>
           <p className='text-center  py-2 translate-y-[10%] '>{t("credits.school-info-des-1")} <br /> Cali - colombia <br /> {t("credits.school-info-des-3")}</p>
         </div>
-        <div className=" max-lg:col-start-1 max-lg:row-start-4 ">
+        <div className=" max-lg:col-start-1 max-lg:row-start-4 md:translate-x-40">
           <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-4")}</h1>
           <p className='text-center  py-2 translate-y-[10%]'>Susana Horia<br /> Andy Gonzales</p>
         </div>

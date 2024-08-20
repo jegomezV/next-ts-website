@@ -26,14 +26,14 @@ export const HeaderM: React.FC = (): JSX.Element => {
           bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0
           absolute translate-x-20 inset-0 z-0" />
         <h1 className="
-          z-10 text-2xl text-transparent duration-1000
+          z-30 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-display sm:text-5xl md:text-6xl xl:text-8xl
           whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]
           relative"> {t("main-header.first-title")} <br />
         </h1>
         <h3 className="
-          z-10 text-2xl text-transparent duration-1000
+          z-30 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-display sm:text-5xl md:text-6xl xl:text-3xl
           whitespace-nowrap bg-clip-text drop-shadow-[0_0.1px_0.8px_rgba(0, 0, 0, 2)] 2xl:drop-shadow-[0_0.1px_0.8px_rgba(255,255,255,0.8)]">
