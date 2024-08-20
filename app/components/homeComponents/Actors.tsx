@@ -35,7 +35,7 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
   }, []);
 
   return (
-    <section id='actors' data-scroll-section className='relative h-screen w-screen overflow-x-clip'>
+    <section id='actors' data-scroll-section className='relative h-screen w-screen overflow-x-clip mb-[12rem]'>
       {/* Main container with background image */}
       <div className="absolute top-0 left-0 w-screen h-[100%] flex items-center justify-start">
         <div className=" h-full w-full grid grid-cols-2 lg:h-[75%] lg:w-[100%] lg:flex lg:justify-start">
@@ -81,7 +81,7 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
           </div>
 
           <div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
-            <div onClick={() => onActorClick(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-1rem] md:left-[-0rem] h-[22rem] w-[15rem] md:w-[100%] md:h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
+            <div onClick={() => onActorClick(3)} data-scroll data-scroll-speed='2' className="img absolute cursor-pointer left-[-rem] md:left-[-0rem] h-[22rem] w-[15rem] md:w-[100%] md:h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] group-hover:blur-sm"></div>
             <div className="relative cursor-pointer inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 -rotate-90">
               <h1 className="text-2xl absolute top-[-4rem] right-[20rem] 2xl:top-[1.8rem] xl:top-[1rem] 2xl:right-[33rem] xl:right-[22rem] text-transparent duration-1000 bg-white font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
                 <span className="block sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-4xl">{t("actors.menu.title1")}</span>
