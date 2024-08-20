@@ -12,7 +12,7 @@ export const Introduction: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <section data-scroll-section className='effects-section border-[1px] border-black/60 overflow-x-clip'>
+    <section data-scroll-section className='effects-section md:border-[1px] border-black/60 overflow-x-clip'>
       <article>
         <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
@@ -37,7 +37,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               <h1
                 data-scroll
                 data-scroll-speed="-1.0"
-                className="md:hidden my-10 text-4xl mx-auto md:text-4xl xl:text-6xl text-black md:text-transparent md:bg-black cursor-default font-display whitespace-nowrap md:bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
+                className="md:hidden my-10 text-4xl mx-auto md:text-4xl xl:text-5xl text-black md:text-transparent md:bg-black cursor-default font-display whitespace-nowrap md:bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]"
               >
                 {t("introduction.titleF")} <br /> {t("introduction.titleS")}
               </h1>

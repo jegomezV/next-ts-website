@@ -119,19 +119,19 @@ const Credits: React.FC = (): JSX.Element => {
           </div> */}
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-1">
-          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-1")}</h1>
+          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-1")}</h1>
           <p className='text-center  py-2 translate-y-[10%] '>Universidad del valle<br /> Cali - colombia<br />{/* Tutor: Devora Cabezas */}</p>
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-2">
-          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-2")}</h1>
+          <h1 className='text-transparent mt-2 text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-2")}</h1>
           <p className='text-center  py-2 translate-y-[10%] '>{t("credits.faculty-des-1")}</p>
         </div>
         <div className=" max-lg:col-start-1 max-lg:row-start-3">
-          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-3")}</h1>
+          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-3")}</h1>
           <p className='text-center  py-2 translate-y-[10%] '>{t("credits.school-info-des-1")} <br /> Cali - colombia <br /> {t("credits.school-info-des-3")}</p>
         </div>
-        <div className=" max-lg:col-start-1 max-lg:row-start-4 translate-x-40">
-          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-4xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-4")}</h1>
+        <div className=" max-lg:col-start-1 max-lg:row-start-4 ">
+          <h1 className='text-transparent mt-2  text-center text-2xl bg-black cursor-default font-display sm:text-3xl md:text-4xl xl:text-3xl 2xl:text-4xl whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)]'>{t("credits.subtitle-4")}</h1>
           <p className='text-center  py-2 translate-y-[10%]'>Susana Horia<br /> Andy Gonzales</p>
         </div>
         <div className='absolute left-1/2 h-[100%] w-[2px]
