@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import React, { useState, useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
+import React, { useState } from 'react';
 import { useLocoScrollContext } from '@/util/LocoScrollContext';
 import { TranslateButton } from '../buttons/TranslateButton';
 import { useTranslation } from "react-i18next";
@@ -10,9 +9,8 @@ interface LocoScrollInstance {
 }
 
 export const Nav: React.FC = () => {
-  const [t, i18n] = useTranslation("global");
+  const [t] = useTranslation("global");
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
   const locoScrollInstance = useLocoScrollContext() as LocoScrollInstance | null;
 
   const toggleMenu = () => {
@@ -30,73 +28,8 @@ export const Nav: React.FC = () => {
     }
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 640) {
-        if (isOpen) {
-          gsap.fromTo(
-            menuRef.current,
-            { height: '0vh', opacity: 0 },
-            {
-              duration: 0.5,
-              height: '100vh',
-              opacity: 1,
-              ease: 'none',
-              onStart: () => {
-                menuRef.current?.classList.remove('max-sm:hidden');
-              },
-            }
-          );
-        } else {
-          gsap.fromTo(
-            menuRef.current,
-            { height: '100vh', opacity: 1 },
-            {
-              duration: 0.6,
-              height: '0vh',
-              opacity: 0.7,
-              ease: 'none',
-              onComplete: () => {
-                menuRef.current?.classList.add('max-sm:hidden');
-              },
-            }
-          );
-        }
-      } else {
-        if (isOpen) {
-          gsap.to(menuRef.current, {
-            duration: 0.5,
-            height: 'auto',
-            opacity: 1,
-            ease: 'none',
-            onStart: () => {
-              menuRef.current?.classList.remove('max-sm:hidden');
-            },
-          });
-        } else {
-          gsap.to(menuRef.current, {
-            duration: 0.7,
-            height: 'auto',
-            opacity: 1,
-            ease: 'power3.inOut',
-            onComplete: () => {
-              menuRef.current?.classList.add('max-sm:hidden');
-            },
-          });
-        }
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [isOpen]);
-
   return (
-    <div className='w-screen mx-auto'>
+    <div className="w-screen mx-auto">
       <button
         className="
           menu-toggle-button
@@ -131,19 +64,19 @@ export const Nav: React.FC = () => {
       </button>
 
       <nav
-        ref={menuRef}
-        className="
-          fixed max-sm:hidden max-sm:h-0 max-sm:border-y-[1px] max-sm:border-white max-sm:top-0 top-8 left-0 right-0 z-50
-          flex max-sm:flex-col items-center justify-center sm:flex-row 
-          sm:w-full sm:py-[14px]
+        className={`
+          fixed top-8 left-0 right-0 z-50 max-sm:h-[13rem]
+          flex items-center justify-center sm:flex-row 
+          sm:w-full sm:py-[50rem]
           md:py-[0.4rem] md:px-20 md:space-x-20 md:justify-center md:items-center md:text-lg
           lg:py-[0.2rem]
           xl:top-4 xl:py-[0.4rem]
           2xl:py-[0.5rem]
-          hover:duration-500 duration-500 hover:shadow-white/30 shadow-inner shadow-black/20
-          border-y-[1px] wrapper border-white< bg-black/80 backdrop-blur-sm
-          overflow-hidden">
-
+          border-y-[1px] border-white bg-black/80 backdrop-blur-sm
+          overflow-hidden transform transition-all duration-500 ease-in-out
+          ${isOpen ? 'max-sm:translate-y-0 max-sm:opacity-100' : 'max-sm:translate-y-[-100%] max-sm:opacity-0 max-sm:pointer-events-none'}
+        `}
+      >
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center max-sm:text-2xl sm:flex-row space-x-2 md:text-lg
           md:space-x-20 lg:text-lg xl:text-md lg:space-x-40

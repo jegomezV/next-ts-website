@@ -116,7 +116,7 @@ export const TranslateButton: React.FC = (): JSX.Element => {
   return (
     <button
       onClick={handleLanguageChange}
-      className="absolute md:static top-[10%] left-10 md:-right-20 flex items-center space-x-2 p-2 xl:py-1 xl:px-2 2xl:py-2 2xl:px-4 border border-white/50 rounded-full transition duration-300 ease-in-out drop-shadow-[0_3px_20px_rgba(0,0,0,5)] hover:border-white hover:bg-black/20"
+      className="absolute md:static top-[20%] md:top-[10%] left-10 md:-right-20 flex items-center space-x-2 p-2 xl:py-1 xl:px-2 2xl:py-2 2xl:px-4 border border-white/50 rounded-full transition duration-300 ease-in-out drop-shadow-[0_3px_20px_rgba(0,0,0,5)] hover:border-white hover:bg-black/20"
     >
       {svgIcon}
       <span className="uppercase font-bold text-sm text-gray-300">{language}</span>
