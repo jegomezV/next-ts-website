@@ -13,7 +13,7 @@ const Credits: React.FC = (): JSX.Element => {
 
   return (
     <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen ">
-      <article className='grid gap-4 translate-y-20 mx-auto max-sm:mb-[8rem]
+      <article className='grid gap-4 translate-y-20 mx-auto max-sm:mb-[7rem]
                           grid-cols-2 h-[90%] w-[100%] absolute bottom-10
                           sm:grid-cols-2  sm:h-[85%] sm:w-[100%] sm:absolute sm:bottom-10
                           md:grid-cols-2 md:h-[88%] md:w-[100%] md:absolute md:bottom-10

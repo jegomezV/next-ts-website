@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import rightPhoto from '@/public/homeImgs/actorsModals/alexaModal/BiographyAlexa.jpg';
+import mainPhoto from '@/public/homeImgs/actorsModals/alexaModal/AlexaMain.jpg';
 
 import { useTranslation } from "react-i18next";
 
@@ -34,12 +34,12 @@ const BiographyAlexa: React.FC = (): JSX.Element => {
         </div>
         <div className='relative h-[350px] w-full'>
           <Image
-            src={rightPhoto}
+            src={mainPhoto}
             alt='Alexa Biography'
             className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
             layout='fill'
             objectFit='cover'
-            objectPosition='50% 10%'
+            objectPosition='50% 30%'
           />
           <div className='bg-amber-50/90 border border-amber-300 p-6 rounded-lg shadow-md text-gray-700 mt-[24rem]'>
             <p>
