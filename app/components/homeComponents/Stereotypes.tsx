@@ -35,7 +35,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <p
               data-scroll
               data-scroll-speed="0.5"
-              className="text-sm md:text-lg lg:text-xl text-black p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
+              className="text-sm md:text-lg font-appleL tracking-[1px] lg:text-[1.5vw] lg:text-xl text-black p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
               {t("sterotypes.second-paragraph")}
             </p>
           </div>
@@ -45,13 +45,15 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <h1
               data-scroll
               data-scroll-speed="-1.0"
-              className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-transparent bg-black cursor-default font-display bg-clip-text text-center">
-              {t("sterotypes.titleF")} <br /> {t("sterotypes.titleS")}
+              className="text-lg p-4 sm:text-xl md:text-2xl lg:text-4xl xl:text-[4vw] text-transparent bg-black cursor-default font-apple bg-clip-text text-center"
+            >
+              <span className="block mb-2">{t("sterotypes.titleF")}</span>
+              <span className="block">{t("sterotypes.titleS")}</span>
             </h1>
             <p
               data-scroll
               data-scroll-speed="1.0"
-              className="text-sm md:text-lg lg:text-xl text-black p-3 md:p-4 leading-relaxed">
+              className="text-sm md:text-lg font-appleL tracking-[1px] lg:text-[1.5vw] text-black p-3 md:p-4 leading-relaxed">
               {t("sterotypes.first-paragraph")}
             </p>
             <div

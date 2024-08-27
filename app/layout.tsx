@@ -12,8 +12,7 @@ export const metadata: Metadata = {
   description: "Developed by Juan Gómez.",
   openGraph: {
     title: "Fashion.com",
-    description:
-      "Developed by Juan Gómez.",
+    description: "Developed by Juan Gómez.",
     url: "",
     siteName: "",
     images: [
@@ -26,25 +25,11 @@ export const metadata: Metadata = {
     locale: "en-US",
     type: "website",
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-  twitter: {
-    title: "Chronark",
-    card: "summary_large_image",
-  },
   icons: {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -55,18 +40,46 @@ const calSans = LocalFont({
   variable: "--font-calsans",
 });
 
+const appleFont = LocalFont({
+  src: "../public/fonts/apple/AppleGaramond.ttf",
+  variable: "--font-apple",
+});
+
+const appleFontLight = LocalFont({
+  src: "../public/fonts/apple/AppleGaramond-Light.ttf",
+  variable: "--font-apple-light",
+});
+
+const appleFontBold = LocalFont({
+  src: "../public/fonts/apple/AppleGaramond-Bold.ttf",
+  variable: "--font-bold-apple",
+});
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
+    <html
+      lang="en"
+      className={[
+        inter.variable,
+        calSans.variable,
+        appleFont.variable,
+        appleFontLight.variable,
+        appleFontBold.variable,
+      ].join(" ")}
+    >
       <head>
         {/* Agrega esta línea para tu favicon */}
         <link rel="icon" type="image/webp" href="/favicon.png" />
       </head>
-      <body className={`bg-slate-100 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
+      <body
+        className={`bg-slate-100 overflow-x-hidden ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
+      >
         {children}
       </body>
     </html>

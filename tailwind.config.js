@@ -46,7 +46,10 @@ module.exports = {
 			fontFamily: {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
-				quick: ["var(--font-quicksand)"]
+				quick: ["var(--font-quicksand)"],
+				apple: ["var(--font-apple)"],
+				appleL: ["var(--font-apple-light)"],
+				appleB: ["var(--font-bold-apple)"],
 				
 			},
 			backgroundImage: {

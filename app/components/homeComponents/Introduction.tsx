@@ -16,13 +16,13 @@ export const Introduction: React.FC = (): JSX.Element => {
       <article>
         <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
-            
+
             {/* Contenido general para escritorio */}
             <div className="flex flex-col justify-between order-1 md:order-1">
-              <div 
-                data-scroll 
-                data-scroll-speed="1.5" 
-                data-scroll-direction="horizontal" 
+              <div
+                data-scroll
+                data-scroll-speed="1.5"
+                data-scroll-direction="horizontal"
                 className='image-container relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20rem] mx-auto'>
                 <Image
                   src={firstPhoto}
@@ -37,17 +37,17 @@ export const Introduction: React.FC = (): JSX.Element => {
               <h1
                 data-scroll
                 data-scroll-speed="-1.0"
-                className="md:hidden my-10 text-4xl mx-auto md:text-4xl xl:text-5xl text-black md:text-transparent md:bg-black cursor-default font-display whitespace-nowrap md:bg-clip-text"
+                className="md:hidden my-10 text-5xl mx-auto md:text-4xl xl:text-5xl text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text"
               >
                 {t("introduction.titleF")} <br /> {t("introduction.titleS")}
               </h1>
-              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black p-4 mt-4">
-                <p className="tracking-tight leading-[30px] xl:text-xl 2xl:text-lg">
-                {t("introduction.second-paragraph")}
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black p-4 mt-4 text-[1.2rem]">
+                <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
+                  {t("introduction.second-paragraph")}
                 </p>
               </div>
-              <div 
-                data-scroll 
+              <div
+                data-scroll
                 data-scroll-speed="1.0"
                 className='relative  md:hidden z-20 h-[15rem] w-full mx-auto mt-4'>
                 <Image
@@ -61,8 +61,8 @@ export const Introduction: React.FC = (): JSX.Element => {
                 />
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 my-10 text-left text-black p-4 mt-4 md:hidden">
-                <p className="tracking-tight leading-[30px] xl:text-xl 2xl:text-lg">
-                {t("introduction.first-paragraph")}
+                <p className="tracking-tight leading-[30px] text-[1.2rem] xl:text-xl 2xl:text-lg font-appleL">
+                  {t("introduction.first-paragraph")}
                 </p>
               </div>
             </div>
@@ -70,19 +70,20 @@ export const Introduction: React.FC = (): JSX.Element => {
             {/* Contenido de la columna derecha para dispositivos grandes */}
             <div className="flex flex-col justify-between order-2 md:order-2">
               <div data-scroll data-scroll-speed="1.0" className="relative z-30 text-center md:text-left overflow-visible">
-                <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[2.8rem] text-black md:text-transparent md:bg-black cursor-default font-display whitespace-nowrap md:bg-clip-text">
-                {t("introduction.titleF")} <br /> {t("introduction.titleS")}
+                <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[4vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
+                  <span className="block mb-2">{t("introduction.titleF")}</span>
+                  <span className="block">{t("introduction.titleS")}</span>
                 </h1>
               </div>
-              <div data-scroll data-scroll-speed="2.0" className="relative z-20 text-left text-black p-4 mt-4 hidden md:block">
-                <p className="tracking-tight leading-[30px] xl:text-xl 2xl:text-lg">
-                {t("introduction.first-paragraph")}
+              <div data-scroll data-scroll-speed="2.0" className="relative z-20 text-left font-appleL text-black p-4 mt-4 hidden md:block">
+                <p className="tracking-[1px] leading-[30px] xl:text-2xl 2xl:text-[1.5vw]">
+                  {t("introduction.first-paragraph")}
                 </p>
               </div>
-              <div 
-                data-scroll 
+              <div
+                data-scroll
                 data-scroll-speed="1.0"
-                className='relative image-container hidden md:block z-20 h-[15rem] w-full mx-auto mt-4'>
+                className='relative image-container hidden md:block z-20 h-[15rem] w-full mx-auto mb-10'>
                 <Image
                   src={secondPhoto}
                   alt="Model section introduction"
@@ -94,8 +95,8 @@ export const Introduction: React.FC = (): JSX.Element => {
                 />
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative hidden  z-20 text-left text-black p-4 mt-4 ">
-                <p className="tracking-tight leading-[30px] xl:text-md 2xl:text-lg">
-                {t("introduction.second-paragraph")}
+                <p className="leading-[30px] xl:text-md 2xl:text-lg font-apple tracking-[1px]">
+                  {t("introduction.second-paragraph")}
                 </p>
               </div>
             </div>

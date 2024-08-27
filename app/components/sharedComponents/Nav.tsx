@@ -79,8 +79,8 @@ export const Nav: React.FC = () => {
       >
         <ul className="
           flex flex-col max-sm:space-y-8 max-sm:justify-center max-sm:items-center max-sm:text-2xl sm:flex-row space-x-2 md:text-lg
-          md:space-x-20 lg:text-lg xl:text-md lg:space-x-40
-          hover:text-white 2xl:text-xl"
+          md:space-x-20 lg:text-lg xl:text-2xl lg:space-x-40
+          hover:text-white 2xl:text-xl font-appleL tracking-[2px]"
         >
           <li className="sm:inline-block hidden">
             <Link
