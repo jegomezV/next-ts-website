@@ -16,10 +16,6 @@ import Actors from './components/homeComponents/Actors';
 import Models from './components/homeComponents/Modal';
 
 import { I18nextProvider } from 'react-i18next';
-import i18next from 'i18next';
-import global_es from './traslates/esp/global.json';
-import global_en from './traslates/eng/global.json';
-import global_fr from './traslates/fra/global.json';
 import i18n from '../util/i18n';
 
 // Home components (cargados de manera diferida) ->

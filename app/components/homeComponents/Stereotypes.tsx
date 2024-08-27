@@ -21,7 +21,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <div
               data-scroll
               data-scroll-speed="-0.5"
-              className='image-container relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
+              className='image-container relative z-20 w-full h-64 md:h-[22rem]'>
               <Image
                 src={firstPhoto}
                 alt="Stereotypes section introduction"
@@ -35,7 +35,7 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <p
               data-scroll
               data-scroll-speed="0.5"
-              className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
+              className="text-sm md:text-lg lg:text-xl text-black p-3 md:p-4 leading-relaxed backdrop-blur-3xl">
               {t("sterotypes.second-paragraph")}
             </p>
           </div>
@@ -45,19 +45,19 @@ export const Stereotypes: React.FC = (): JSX.Element => {
             <h1
               data-scroll
               data-scroll-speed="-1.0"
-              className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-transparent bg-black cursor-default font-display bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.6)] text-center">
+              className="text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl text-transparent bg-black cursor-default font-display bg-clip-text text-center">
               {t("sterotypes.titleF")} <br /> {t("sterotypes.titleS")}
             </h1>
             <p
               data-scroll
               data-scroll-speed="1.0"
-              className="text-sm md:text-md lg:text-lg text-black bg-amber-100 border-[1px] border-black drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)] p-3 md:p-4 leading-relaxed">
+              className="text-sm md:text-lg lg:text-xl text-black p-3 md:p-4 leading-relaxed">
               {t("sterotypes.first-paragraph")}
             </p>
             <div
               data-scroll
               data-scroll-speed="0.5"
-              className='image-container relative z-20 w-full h-64 md:h-[22rem] drop-shadow-[0_1.5px_30px_rgba(0,0,0,0.5)]'>
+              className='image-container relative z-20 w-full h-64 md:h-[22rem]'>
               <Image
                 src={secondPhoto}
                 alt="Stereotypes section introduction"

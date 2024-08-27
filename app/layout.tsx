@@ -3,7 +3,6 @@ import "@/app/styles/loader.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import Particles from './components/sharedComponents/Particles';
 
 export const metadata: Metadata = {
   title: {
@@ -67,8 +66,7 @@ export default function RootLayout({
         {/* Agrega esta línea para tu favicon */}
         <link rel="icon" type="image/webp" href="/favicon.png" />
       </head>
-      <body className={`bg-slate-200 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
-        <Particles className="fixed inset-0 -z-10 animate-fade-in" quantity={200} />
+      <body className={`bg-slate-100 overflow-x-hidden ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined}`}>
         {children}
       </body>
     </html>
