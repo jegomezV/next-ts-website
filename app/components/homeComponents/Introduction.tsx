@@ -70,7 +70,7 @@ export const Introduction: React.FC = (): JSX.Element => {
             {/* Contenido de la columna derecha para dispositivos grandes */}
             <div className="flex flex-col justify-between order-2 md:order-2">
               <div data-scroll data-scroll-speed="1.0" className="relative z-30 text-center md:text-left overflow-visible">
-                <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[4vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
+                <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[3vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
                   <span className="block mb-2">{t("introduction.titleF")}</span>
                   <span className="block">{t("introduction.titleS")}</span>
                 </h1>
