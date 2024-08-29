@@ -28,7 +28,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 mt-8'>
           {photos.map((photo, index) => (
-            <div key={index} className='relative w-full h-[40vw] border-4'>
+            <div key={index} className='relative w-full h-[40vw]'>
               <Image 
                 src={photo} 
                 alt={`Alexa Biography ${index + 1}`} 

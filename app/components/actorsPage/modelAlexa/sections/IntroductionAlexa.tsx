@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-import mainPhoto from '@/public/homeImgs/actorsModals/alexaModal/AlexaMain.jpg';
 import mainSecondPhoto from '@/public/homeImgs/actorsModals/alexaModal/AlexaModel2.jpg';
 
 import { useTranslation } from "react-i18next";
@@ -32,15 +31,6 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
                 objectPosition='50% 30%'
               />
             </div>
-            {/*<iframe className='md:h-[30vw] md:w-[40vw] lg:-translate-y-32' src="https://drive.google.com/file/d/1EH8bdzzqPxPRXo5-CiI6w4g5DL2A20s_/preview" allow="autoplay"></iframe>*/}
-
-            {/*  <Image
-              src={mainPhoto}
-              alt='Alexa'
-              className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
-              layout='fill'
-              objectFit='cover'
-            /> */}
           </div>
         </div>
         <div className='flex flex-col justify-center items-center'>

@@ -1,76 +1,67 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-
-import rightPhoto from '@/public/homeImgs/actorsModals/jeffryModal/biographyPhoto.jpg'
-
+import { createPortal } from 'react-dom';
 import { useTranslation } from "react-i18next";
+import photos from '../../modelAlexa/sections/photosGallery/photos';
 
-const GalleryClaudia: React.FC = (): JSX.Element => {
-  const [t, i18n] = useTranslation("global");
+const GalleryAlexa: React.FC = (): JSX.Element => {
+  const { t } = useTranslation("global");
+  const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.body.style.overflow = selectedPhoto ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedPhoto]);
 
   return (
-    <section className='relative h-[42rem] w-full'>
-      <div className='absolute h-full w-[100%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-        <div className='relative flex flex-col items-center justify-start h-[100%] w-[100%] mx-auto my-auto'>
-          <div className='top-0 translate-y-5 h-full w-full'>
-            <div className='bg-slate-300 z-10 h-full w-full backdrop-blur-lg items-start justify-start drop-shadow-[0_1.5px_5px_rgba(0, 0, 0, 2)]'>
-              <h1 data-scroll data-scroll-speed="-0.2"
-                className="text-2xl p-2 translate-y-10 text-transparent duration-1000 bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl whitespace-nowrap bg-clip-text">
-                {t("actors.claudia.titleG")}
-              </h1>
-              <div className='h-[75%] w-[100%] translate-y-20 grid grid-cols-3 items-center justify-center'>
-                <div className='h-full w-full mx-auto border-4'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-                <div className='h-full w-full border-4 mx-auto'>
-                  <div className='relative h-full w-full'>
-                    <Image src={rightPhoto} alt='JeffreyBiography' fill objectFit="cover" placeholder="blur" className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] z-50 hover:scale-105 hover:duration-200 duration-200' />
-                  </div>
-                </div>
-              </div>
+    <section className='relative w-full py-16 bg-slate-200'>
+      <div className='max-w-7xl mx-auto'>
+        <h1 
+          data-scroll 
+          data-scroll-speed="-0.2"
+          className="text-2xl p-2 text-center text-transparent duration-1000 bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl bg-clip-text"
+        >
+          {t("actors.alexa.titleG")}
+        </h1>
+
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 mt-8'>
+          {photos.map((photo, index) => (
+            <div key={index} className='relative w-full h-[40vw]'>
+              <Image 
+                src={photo} 
+                alt={`Alexa Biography ${index + 1}`} 
+                fill 
+                objectFit="cover" 
+                placeholder="blur" 
+                className='drop-shadow-[0_1.5px_20px_rgba(0,0,0,1)] hover:scale-105 transition-transform duration-200 cursor-pointer'
+                onClick={() => setSelectedPhoto(photo.src)}
+              />
             </div>
-          </div>
+          ))}
         </div>
+
+        {selectedPhoto && createPortal(
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={() => setSelectedPhoto(null)}>
+            <div className="relative w-11/12 max-w-4xl h-auto">
+              <Image 
+                src={selectedPhoto} 
+                alt="Selected Image" 
+                layout="responsive" 
+                width={100} 
+                height={75} 
+                objectFit="contain" 
+                className='cursor-pointer' 
+              />
+              <button className="absolute top-4 right-4 text-white text-2xl" onClick={() => setSelectedPhoto(null)}>✕</button>
+            </div>
+          </div>,
+          document.body
+        )}
       </div>
     </section>
   );
 }
 
-export default GalleryClaudia;
+export default GalleryAlexa;

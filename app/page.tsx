@@ -96,7 +96,7 @@ const Home = () => {
             <HeaderM />
             <main className="relative h-full w-screen">
               <Introduction />
-              <Stereotypes />
+              {/* <Stereotypes /> */}
               <Actors onActorClick={handleActorClick} />
               <Models openModalIndex={openModalIndex} handleCloseModal={handleCloseModal} />
               <Credits />

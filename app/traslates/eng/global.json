@@ -76,7 +76,7 @@
     },
     "sarali":{
       "titleI": "introduction",
-      "name": "",
+      "name": "Saralí",
       "introduction-p": "In the relentless universe of fashion, where beauty standards often seem like unmovable walls, Saralí, at 23 years old, is a young model from Cali who challenges the societal limits imposed on her and stands as a living symbol of inclusion and empowerment. Her story, woven with threads of determination and courage, is a testament to resilience against the dictates of conventional fashion.",
       "titleB": "Biography",
       "biography-fp": "Born in the folds of Cali, she found the seed of her passion during the forced lockdown of 2020 due to the pandemic. Amidst the introspection brought by the confinement, Saralí ignited the fire of her dream with the support of her family. She decided to cross the thresholds of modeling as a form of personal expression, thus challenging the dictates of a society that likes to dictate what is beautiful and what is not.",
@@ -120,5 +120,7 @@
     "subtitle-2": "Faculty",
     "subtitle-3": "School Info",
     "subtitle-4": "About Us"
-  }
+  },
+  "showLess": "Close",
+  "showMore": "Show More"
 }

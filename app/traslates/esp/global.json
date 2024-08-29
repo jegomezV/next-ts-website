@@ -120,5 +120,7 @@
     "subtitle-2": "Facultad",
     "subtitle-3": "Escuela Moda",
     "subtitle-4": "Sobre nosotros"
-  }
+  },
+  "showLess": "Cerrar",
+  "showMore": "Mostrar más"
 }

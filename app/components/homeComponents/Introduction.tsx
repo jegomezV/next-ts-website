@@ -55,6 +55,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                   alt="Model section introduction"
                   fill
                   objectFit="cover"
+                  objectPosition="top"
                   placeholder="blur"
                   priority
                   className='hover:scale-105 duration-300 hover:duration-300'

@@ -4,6 +4,7 @@ import BiographySarali from './sections/BiographySarali';
 import GallerySarali from './sections/GallerySarali';
 
 import { useTranslation } from 'react-i18next';
+import { VideoSectionSarali } from './sections/VideoSection';
 
 const ModelSarali: React.FC = (): JSX.Element => {
   const { t } = useTranslation('global');
@@ -11,6 +12,7 @@ const ModelSarali: React.FC = (): JSX.Element => {
   return (
       <main className="relative h-full w-full -translate-y-[8.5rem]">
         <IntroductionSarali />
+        <VideoSectionSarali />
         <BiographySarali />
         <GallerySarali />
       </main>

@@ -19,7 +19,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
   return (
     <header data-scroll-section id='home'>
       {/* Main header section with title */}
-      <div className="h-screen relative flex flex-col items-center justify-center overflow-x-clip bg-slate-100">
+      <div className="h-screen relative flex flex-col items-center justify-center overflow-x-clip">
         <div className="
           animate-glow md:block animate-fade-left
           bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0
@@ -58,6 +58,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             placeholder="blur"
             priority
             className='introduction-image hover:translate-x-2 hover:duration-200 duration-200'
+            objectPosition='50% 20%'
           />
         </div>
 
@@ -68,7 +69,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           md:left-[78%] md:h-60 md:w-44
           lg:h-[22rem] lg:w-[17rem] lg:left-[80%] lg:top-3
           xl:left-[84%] xl:h-[20rem] xl:w-[14rem] xl:top-16
-          2xl:h-[25vw] 2xl:w-[17vw] 2xl:top-16 2xl:-right-[4rem] duration-300">
+          2xl:h-[27vw] 2xl:w-[19vw] 2xl:top-16 2xl:-right-[4rem] duration-300">
           <Image
             src={mainSecondPhoto}
             alt="Fashion model close-up"

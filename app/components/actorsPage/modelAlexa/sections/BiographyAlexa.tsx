@@ -1,10 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
-import mainPhoto from '@/public/homeImgs/actorsModals/alexaModal/AlexaMain.jpg';
+import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 const BiographyAlexa: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
+  const [showFullText, setShowFullText] = useState(false);
+
+  const handleToggleText = () => {
+    setShowFullText(!showFullText);
+  };
 
   return (
     <section className='relative w-full py-16 px-4 md:py-24 lg:py-32 bg-slate-200 overflow-x-clip mb-[5rem] md:mb-24 lg:mb-0'>
@@ -20,21 +23,31 @@ const BiographyAlexa: React.FC = (): JSX.Element => {
             <p>
               {t("actors.alexa.biography-fp")}<br /><br />
             </p>
-            <p>
-              {t("actors.alexa.biography-sp")}<br /><br />
-            </p>
-            <p>
-              {t("actors.alexa.biography-tp")}<br /><br />
-            </p>
-            <p>
-              {t("actors.alexa.biography-four")}<br /><br />
-            </p>
-            <p>
-              {t("actors.alexa.biography-five")}<br /><br />
-            </p>
-            <p>
-              {t("actors.alexa.biography-six")}
-            </p>
+            {showFullText && (
+              <>
+                <p>
+                  {t("actors.alexa.biography-sp")}<br /><br />
+                </p>
+                <p>
+                  {t("actors.alexa.biography-tp")}<br /><br />
+                </p>
+                <p>
+                  {t("actors.alexa.biography-four")}<br /><br />
+                </p>
+                <p>
+                  {t("actors.alexa.biography-five")}<br /><br />
+                </p>
+                <p>
+                  {t("actors.alexa.biography-six")}
+                </p>
+              </>
+            )}
+            <button
+              onClick={handleToggleText}
+              className="mt-4 text-blue-500 hover:underline"
+            >
+              {showFullText ? t("showLess") : t("showMore")}
+            </button>
           </div>
         </div>
       </div>
