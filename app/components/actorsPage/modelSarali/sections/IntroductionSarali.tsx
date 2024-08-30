@@ -43,11 +43,9 @@ const IntroductionSarali: React.FC = (): JSX.Element => {
               {t("actors.sarali.titleI")}
             </h2>
           </div>
-          <div className='text-xl lg:text-2xl p-6 mt-6'>
+          <div className='text-xl lg:text-3xl p-6 mt-6'>
             <p className='text-gray-700 font-apple tracking-[2px]'>
-              {t("actors.alexa.introduction-p")} <br /><br />
-              {t("actors.alexa.introduction-p2")} <br /><br />
-              {t("actors.alexa.introduction-p3")}
+              {t("actors.sarali.introduction-p")} <br /><br />
             </p>
           </div>
         </div>

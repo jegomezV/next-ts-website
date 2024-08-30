@@ -1,17 +1,17 @@
 // photos.ts
 
-import photo3 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo3.jpg';
-import photo4 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo4.jpg';
-import photo5 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo5.jpg';
-import photo7 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo7.webp';
-import photo9 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo9.jpg';
-import photo10 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo10.jpg';
-import photo11 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo11.jpg';
-import photo12 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo12.jpg';
-import photo14 from '@/public/homeImgs/actorsModals/alexaModal/alexaGallery/photo14.jpg';
+import photo1 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo1.webp';
+import photo2 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo2.webp';
+import photo3 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo3.webp';
+import photo4 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo4.webp';
+import photo5 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo5.webp';
+import photo6 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo6.webp';
+import photo7 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo7.webp';
+import photo8 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo8.webp';
+import photo9 from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/photo9.webp';
 
 const photos = [
-  photo3, photo4, photo5, photo7, photo10, photo11, photo9, photo12, photo14
+  photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9
 ];
 
 export default photos;

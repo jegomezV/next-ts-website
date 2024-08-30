@@ -1,11 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 
-import mainSecondPhoto from '@/public/homeImgs/actorsModals/alexaModal/AlexaModel2.jpg';
+import mainSecondPhoto from '@/public/homeImgs/actorsModals/claudiaModal/claudiaGallery/mainPhoto.webp';
 
 import { useTranslation } from "react-i18next";
 
-const IntroductionAlexa: React.FC = (): JSX.Element => {
+const IntroductionClaudia: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
 
   return (
@@ -18,13 +18,13 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
               data-scroll-speed="-0.2"
               className="mb-20 text-4xl md:text-4xl lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white -translate-y-24"
             >
-              {t("actors.alexa.name")}
+              {t("actors.claudia.name")}
             </h1>
             {/* Video de Google Drive */}
             <div className='relative -translate-y-10 lg:-translate-y-36 h-[50vw] md:h-[30vw] w-[100%]'>
               <Image
                 src={mainSecondPhoto}
-                alt='Alexa Second'
+                alt='Claudia Second'
                 className='rounded-lg shadow-lg hover:scale-105 transition-transform duration-200'
                 layout='fill'
                 objectFit='cover'
@@ -40,14 +40,12 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
               data-scroll-speed="-0.2"
               className="text-2xl md:text-3xl py-3 px-6 lg:text-6xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white"
             >
-              {t("actors.alexa.titleI")}
+              {t("actors.claudia.titleI")}
             </h2>
           </div>
-          <div className='text-xl lg:text-2xl p-6 mt-6'>
+          <div className='text-xl lg:text-3xl p-6 mt-6'>
             <p className='text-gray-700 font-apple tracking-[2px]'>
-              {t("actors.alexa.introduction-p")} <br /><br />
-              {t("actors.alexa.introduction-p2")} <br /><br />
-              {t("actors.alexa.introduction-p3")}
+              {t("actors.claudia.introduction-p")} <br /><br />
             </p>
           </div>
         </div>
@@ -56,4 +54,4 @@ const IntroductionAlexa: React.FC = (): JSX.Element => {
   );
 }
 
-export default IntroductionAlexa;
+export default IntroductionClaudia;

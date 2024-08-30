@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 // Importing image files
 import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
-import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.jpg';
+import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.webp';
 import mainJefreyPhoto from '@/public/homeImgs/homeBg/mainJefreyPhoto.jpg';
 import mainSecondPhoto from '@/public/homeImgs/homeBg/mainSecondPhoto.jpg';
 import principalPhoto from '@/public/homeImgs/homeBg/principalPhoto.jpg';

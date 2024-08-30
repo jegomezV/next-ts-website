@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import { useTranslation } from "react-i18next";
-import photos from '../../modelAlexa/sections/photosGallery/photos';
+import photos from '../../modelClaudia/sections/photosGallery/photos';
 
-const GalleryAlexa: React.FC = (): JSX.Element => {
+const GalleryClaudia: React.FC = (): JSX.Element => {
   const { t } = useTranslation("global");
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
@@ -31,7 +31,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
             <div key={index} className='relative w-full h-[40vw]'>
               <Image 
                 src={photo} 
-                alt={`Alexa Biography ${index + 1}`} 
+                alt={`Claudia Biography ${index + 1}`} 
                 fill 
                 objectFit="cover" 
                 placeholder="blur" 
@@ -64,4 +64,4 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
   );
 }
 
-export default GalleryAlexa;
+export default GalleryClaudia;

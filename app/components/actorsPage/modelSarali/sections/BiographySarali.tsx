@@ -19,7 +19,7 @@ const BiographySarali: React.FC = (): JSX.Element => {
               {t("actors.sarali.titleB")}
             </h2>
           </div>
-          <div className='text-xl lg:text-2xl p-6 rounded-lg mt-28 text-gray-700 lg:w-[50%] mx-auto font-apple tracking-[2px]'>
+          <div className='text-xl lg:text-3xl p-6 rounded-lg mt-28 text-gray-700 lg:w-[50%] mx-auto font-apple tracking-[2px]'>
             <p>
               {t("actors.sarali.biography-fp")}<br /><br />
             </p>
