@@ -10,7 +10,7 @@ import firstPhoto from '@/public/homeImgs/homeBg/firstPhoto.jpg';
 import pasarellaPhoto from '@/public/homeImgs/homeBg/pasarellaPhoto.webp';
 import mainJefreyPhoto from '@/public/homeImgs/homeBg/mainJefreyPhoto.jpg';
 import mainSecondPhoto from '@/public/homeImgs/homeBg/mainSecondPhoto.jpg';
-import principalPhoto from '@/public/homeImgs/homeBg/principalPhoto.jpg';
+import principalPhoto from '@/public/homeImgs/homeBg/HOME.webp';
 
 // HeaderM component definition
 export const HeaderM: React.FC = (): JSX.Element => {
@@ -71,7 +71,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           xl:left-[84%] xl:h-[20rem] xl:w-[14rem] xl:top-16
           2xl:h-[27vw] 2xl:w-[19vw] 2xl:top-16 2xl:-right-[4rem] duration-300">
           <Image
-            src={mainSecondPhoto}
+            src={principalPhoto}
             alt="Fashion model close-up"
             layout="fill"
             objectFit="cover"
@@ -129,7 +129,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           xl:h-[30rem] xl:w-[27rem] xl:top-[20rem]
           2xl:h-[41vw] 2xl:w-[38vw] 2xl:top-[27rem]">
           <Image
-            src={principalPhoto}
+            src={mainSecondPhoto}
             alt="Portrait of a fashion model"
             layout="fill"
             objectFit="cover"

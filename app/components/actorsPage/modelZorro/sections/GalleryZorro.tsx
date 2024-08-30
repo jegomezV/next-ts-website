@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { createPortal } from 'react-dom';
 import { useTranslation } from "react-i18next";
-import photos from '../../modelAlexa/sections/photosGallery/photos';
+import photos from '../../modelZorro/sections/photosGallery/photos';
 
 const GalleryAlexa: React.FC = (): JSX.Element => {
   const { t } = useTranslation("global");
@@ -23,7 +23,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
           data-scroll-speed="-0.2"
           className="text-2xl p-2 text-center text-transparent duration-1000 bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl bg-clip-text"
         >
-          {t("actors.alexa.titleG")}
+          {t("actors.zorroGris.titleG")}
         </h1>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-4 mt-8'>
@@ -31,7 +31,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
             <div key={index} className='relative w-full h-[40vw]'>
               <Image 
                 src={photo} 
-                alt={`Alexa Biography ${index + 1}`} 
+                alt={`Zorro Biography ${index + 1}`} 
                 fill 
                 objectFit="cover" 
                 placeholder="blur" 
