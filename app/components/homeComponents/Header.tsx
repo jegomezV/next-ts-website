@@ -26,12 +26,12 @@ export const HeaderM: React.FC = (): JSX.Element => {
           absolute translate-x-20 inset-0 z-0" />
         <h1 className="
           z-30 text-4xl text-transparent duration-1000
-          bg-white cursor-default
+          bg-white cursor-default md:h-[6.5rem]
           animate-title sm:text-5xl md:text-6xl xl:text-8xl
           whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)] font-apple 
           relative tracking-[4px]"> {t("main-header.first-title")} <br />
         </h1>
-        <h3 className="border-[1px] border-white/30 rounded-2xl p-1 backdrop-blur-3xl
+        <h3 className="border-[1px] border-white/30 rounded-2xl p-1 backdrop-blur-3xl mt-2
           z-30 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-appleL sm:text-5xl md:text-6xl xl:text-4xl

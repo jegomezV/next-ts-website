@@ -57,8 +57,8 @@ export const TranslateButton: React.FC = (): JSX.Element => {
     case 'es':
       svgIcon = (
         <svg
-          width="15"
-          height="15"
+          width="10"
+          height="10"
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
           className="h-8 w-8 md:h-5 lg:h-7 items-center cursor-pointer max-sm:opacity-100 opacity-60 hover:opacity-100 duration-300 hover:duration-300"
@@ -119,7 +119,7 @@ export const TranslateButton: React.FC = (): JSX.Element => {
       className="absolute md:static top-[20%] md:top-[10%] left-10 md:-right-20 flex items-center space-x-2 p-2 xl:py-1 xl:px-2 2xl:py-2 2xl:px-4 border border-white/50 rounded-full transition duration-300 ease-in-out drop-shadow-[0_3px_20px_rgba(0,0,0,5)] hover:border-white hover:bg-black/20"
     >
       {svgIcon}
-      <span className="uppercase font-bold text-sm text-gray-300">{language}</span>
+      <span className="uppercase font-bold lg:text-[0.6rem] 2xl:text-[0.7rem] text-gray-300">{language}</span>
     </button>
   );
 };
