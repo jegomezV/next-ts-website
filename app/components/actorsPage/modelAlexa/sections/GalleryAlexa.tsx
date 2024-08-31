@@ -43,8 +43,11 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
         </div>
 
         {selectedPhoto && createPortal(
-          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={() => setSelectedPhoto(null)}>
-            <div className="relative w-11/12 max-w-4xl h-auto">
+          <div 
+            className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" 
+            onClick={() => setSelectedPhoto(null)}
+          >
+            <div className="relative w-full max-w-2xl h-auto">
               <Image 
                 src={selectedPhoto} 
                 alt="Selected Image" 
@@ -52,7 +55,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
                 width={100} 
                 height={75} 
                 objectFit="contain" 
-                className='cursor-pointer' 
+                className='cursor-pointer max-h-screen max-w-full'
               />
               <button className="absolute top-4 right-4 text-white text-2xl" onClick={() => setSelectedPhoto(null)}>✕</button>
             </div>

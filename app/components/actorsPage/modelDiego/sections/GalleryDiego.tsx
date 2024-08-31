@@ -46,7 +46,7 @@ const GalleryDiego: React.FC = (): JSX.Element => {
 
         {selectedPhoto && createPortal(
           <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50" onClick={() => setSelectedPhoto(null)}>
-            <div className="relative w-11/12 max-w-4xl h-auto">
+            <div className="relative w-11/12 max-w-lg h-auto">
               <Image
                 src={selectedPhoto}
                 alt="Selected Image"
