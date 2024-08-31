@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
-const BiographyAlexa: React.FC = (): JSX.Element => {
+const BiographyDiego: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
   const [showFullText, setShowFullText] = useState(false);
 
@@ -16,7 +16,7 @@ const BiographyAlexa: React.FC = (): JSX.Element => {
           <div className='absolute bg-black/40 backdrop-blur-xl rounded-2xl top-0 flex justify-center w-[60%]'>
             <h2 data-scroll data-scroll-speed="-0.2"
               className="text-2xl md:text-3xl lg:text-6xl py-3 px-6 rounded-2xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white">
-              {t("actors.alexa.titleB")}
+              {t("actors.diego.titleB")}
             </h2>
           </div>
           <div className='text-xl lg:text-2xl p-6 rounded-lg mt-28 text-gray-700 lg:w-[50%] mx-auto font-apple tracking-[2px]'>
@@ -55,4 +55,4 @@ const BiographyAlexa: React.FC = (): JSX.Element => {
   );
 };
 
-export default BiographyAlexa;
+export default BiographyDiego;

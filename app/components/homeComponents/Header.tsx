@@ -31,7 +31,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
           whitespace-nowrap bg-clip-text drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)] font-apple 
           relative tracking-[4px]"> {t("main-header.first-title")} <br />
         </h1>
-        <h3 className="
+        <h3 className="border-[1px] border-white/30 rounded-2xl p-1 backdrop-blur-3xl
           z-30 text-2xl text-transparent duration-1000
           bg-white cursor-default
           animate-title font-appleL sm:text-5xl md:text-6xl xl:text-4xl

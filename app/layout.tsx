@@ -6,12 +6,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Fashion.com",
-    template: "%s | Fashion.com",
+    default: "Antihegemonic Molds",
+    template: "%s | Antihegemonic Molds",
   },
   description: "Developed by Juan Gómez.",
   openGraph: {
-    title: "Fashion.com",
+    title: "Antihegemonic Molds",
     description: "Developed by Juan Gómez.",
     url: "",
     siteName: "",
