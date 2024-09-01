@@ -12,7 +12,7 @@ export const Introduction: React.FC = (): JSX.Element => {
   const [t, i18n] = useTranslation("global");
 
   return (
-    <section data-scroll-section className='effects-section md:border-[1px] border-black/60 overflow-x-clip'>
+    <section data-scroll-section className='effects-section md:border-t-[1px] border-black/60 overflow-x-clip'>
       <article>
         <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
@@ -23,7 +23,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 data-scroll
                 data-scroll-speed="1.5"
                 data-scroll-direction="horizontal"
-                className='image-container relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20rem] mx-auto'>
+                className='image-container relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20vw] mx-auto'>
                 <Image
                   src={firstPhoto}
                   alt="Model section introduction"
@@ -41,7 +41,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               >
                 {t("introduction.titleF")} <br /> {t("introduction.titleS")}
               </h1>
-              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black p-4 mt-4 text-[1.2rem]">
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem]">
                 <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
                   {t("introduction.second-paragraph")}
                 </p>
@@ -55,7 +55,6 @@ export const Introduction: React.FC = (): JSX.Element => {
                   alt="Model section introduction"
                   fill
                   objectFit="cover"
-                  objectPosition="top"
                   placeholder="blur"
                   priority
                   className='hover:scale-105 duration-300 hover:duration-300'
@@ -76,7 +75,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                   <span className="block">{t("introduction.titleS")}</span>
                 </h1>
               </div>
-              <div data-scroll data-scroll-speed="2.0" className="relative z-20 text-left font-appleL text-black p-4 mt-4 hidden md:block">
+              <div data-scroll data-scroll-speed="2.0" className="relative z-20 text-left font-appleL text-black px-4 mt-0 hidden md:block">
                 <p className="tracking-[1px] leading-[30px] xl:text-2xl 2xl:text-[1.5vw]">
                   {t("introduction.first-paragraph")}
                 </p>
@@ -84,7 +83,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               <div
                 data-scroll
                 data-scroll-speed="1.0"
-                className='relative image-container hidden md:block z-20 h-[15rem] w-full mx-auto mb-10'>
+                className='relative image-container hidden md:block z-20 h-[22vw] w-full mx-auto mb-10'>
                 <Image
                   src={secondPhoto}
                   alt="Model section introduction"

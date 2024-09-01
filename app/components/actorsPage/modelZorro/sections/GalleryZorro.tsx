@@ -4,7 +4,7 @@ import { createPortal } from 'react-dom';
 import { useTranslation } from "react-i18next";
 import photos from '../../modelZorro/sections/photosGallery/photos';
 
-const GalleryAlexa: React.FC = (): JSX.Element => {
+const GalleryZorro: React.FC = (): JSX.Element => {
   const { t } = useTranslation("global");
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
 
@@ -21,7 +21,7 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
         <h1 
           data-scroll 
           data-scroll-speed="-0.2"
-          className="text-2xl p-2 text-center text-transparent duration-1000 bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl bg-clip-text"
+          className="text-5xl p-2 text-center text-transparent duration-1000 bg-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] cursor-default font-display sm:text-3xl md:text-4xl xl:text-6xl bg-clip-text"
         >
           {t("actors.zorroGris.titleG")}
         </h1>
@@ -64,4 +64,4 @@ const GalleryAlexa: React.FC = (): JSX.Element => {
   );
 }
 
-export default GalleryAlexa;
+export default GalleryZorro;

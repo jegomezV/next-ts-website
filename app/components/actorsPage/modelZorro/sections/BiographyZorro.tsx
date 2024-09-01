@@ -13,9 +13,9 @@ const BiographyZorro: React.FC = (): JSX.Element => {
     <section className='relative w-full py-16 px-4 md:py-24 lg:py-32 bg-slate-200 overflow-x-clip mb-[5rem] md:mb-24 lg:mb-0'>
       <div className='max-w-7xl mx-auto flex flex-col gap-8'>
         <div className='relative flex justify-center'>
-          <div className='absolute bg-black/40 backdrop-blur-xl rounded-2xl top-0 flex justify-center w-[60%]'>
+          <div className='absolute border border-amber-300 bg-black/40 backdrop-blur-xl rounded-2xl top-0 flex justify-center w-[60%]'>
             <h2 data-scroll data-scroll-speed="-0.2"
-              className="text-2xl md:text-3xl lg:text-6xl py-3 px-6 rounded-2xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white">
+              className="text-3xl md:text-3xl lg:text-6xl py-3 px-6 rounded-2xl font-display bg-clip-text text-transparent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] bg-white">
               {t("actors.zorroGris.titleB")}
             </h2>
           </div>

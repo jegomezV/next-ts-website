@@ -1,13 +1,6 @@
 import React, { useEffect } from 'react';
 import '@/app/styles/Introduction.scss';
 
-import ModelAlexa from '../actorsPage/modelAlexa/modelAlexa';
-import ModelClaudia from '../actorsPage/modelClaudia/modelClaudia';
-import ModelDiego from '../actorsPage/modelDiego/modelDiego';
-import ModelJeffry from '../actorsPage/modelJeffry/modelJeffry';
-import ModelSarali from '../actorsPage/modelSarali/modelSarali';
-import ModelZorro from '../actorsPage/modelZorro/modelZorro';
-
 import { useTranslation } from "react-i18next";
 
 interface ActorsProps {
@@ -30,9 +23,17 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
 
   return (
     <section id='actors' data-scroll-section className='relative h-screen w-screen overflow-x-clip mb-[12rem]'>
+      <div className="text-center bg-black overflow-y-hidden shadow-[0_1px_5px_0px_rgba(0,0,0,1)] border-b-[1px] border-t-[2px] border-white/40">
+        <h1 data-scroll data-scroll-speed='-1'
+          className="flex items-center justify-center text-5xl md:text-7xl font-appleL text-white py-1">
+          <span className="text-xl md:text-2xl mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]">✦</span>
+          Actors Profiles
+        </h1>
+      </div>
+
       {/* Main container with background image */}
-      <div className="absolute top-0 left-0 w-screen h-[100%] flex items-center justify-start">
-        <div className=" h-full w-full grid grid-cols-2 lg:h-[75%] lg:w-[100%] lg:flex lg:justify-start">
+      <div className="absolute top-0 left-0 w-screen h-[100%] flex items-center justify-start max-md:mt-20">
+        <div className=" h-full w-full grid grid-cols-2 lg:h-[75%] lg:w-[100%] lg:flex lg:justify-start mt-40">
           {/* Each image container now includes hover effects and a click prompt */}
           {<div className="relative w-[400px] h-[150%] overflow-hidden group drop-shadow-[0_1.5px_5px_rgba(0,0,0,0.8)]">
             <div data-scroll data-scroll-speed='2' onClick={() => onActorClick(2)} className="img absolute cursor-pointer top-[0rem] h-[22rem] w-[16rem] md:w-[100%] md:h-[100%] bg-cover bg-center drop-shadow-[0_1.5px_5px_rgba(0,0,0,10)] lg:group-hover:blur-[2px]"></div>
