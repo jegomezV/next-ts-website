@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: "",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://antihegemonicmolds.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fphoto2.388a4a95.webp&w=1920&q=75",
         width: 1920,
         height: 1080,
       },
