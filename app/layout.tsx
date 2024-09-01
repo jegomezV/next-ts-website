@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "Developed by Juan Gómez.",
   openGraph: {
     title: "Antihegemonic Molds",
-    description: "Developed by Juan Gómez.",
+    description: "Redefine Fashion: Beyond the Stereotypes",
     url: "",
     siteName: "",
     images: [
