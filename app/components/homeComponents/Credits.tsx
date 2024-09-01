@@ -6,7 +6,7 @@ import GirlPic from '@/public/homeImgs/credits/GirlPic.jpg';
 
 const Credits: React.FC = (): JSX.Element => {
   return (
-    <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen effects-section">
+    <section id="credits" data-scroll-section className="flex flex-col relative h-screen w-screen effects-section mt-40">
       <div className="grid grid-cols-2 h-full">
         
         {/* Columna izquierda */}

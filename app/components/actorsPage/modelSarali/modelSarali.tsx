@@ -12,7 +12,7 @@ const ModelSarali: React.FC = (): JSX.Element => {
   return (
       <main className="relative h-full w-full -translate-y-[8.5rem]">
         <IntroductionSarali />
-        {/* <VideoSectionSarali /> */}
+        <VideoSectionSarali />
         <BiographySarali />
         <GallerySarali />
       </main>
