@@ -11,7 +11,7 @@ const BiographySarali: React.FC = (): JSX.Element => {
 
   return (
     <section className='relative w-full py-16 px-4 md:py-24 lg:py-32 bg-slate-200 overflow-x-clip mb-[5rem] md:mb-24 lg:mb-0'>
-      <div className='max-w-7xl mx-auto flex flex-col gap-8'>
+      <div className='flex flex-col gap-8 mx-auto max-w-7xl'>
         <div className='relative flex justify-center'>
           <div className='absolute border border-amber-300 bg-black/40 backdrop-blur-xl rounded-2xl top-0 flex justify-center w-[60%]'>
             <h2 data-scroll data-scroll-speed="-0.2"
@@ -32,10 +32,10 @@ const BiographySarali: React.FC = (): JSX.Element => {
                   {t("actors.sarali.biography-tp")}<br /><br />
                 </p>
                 <p>
-                  {t("actors.sarali.biography-four")}<br /><br />
+                  {t("actors.sarali.biography-4p")}<br /><br />
                 </p>
                 <p>
-                  {t("actors.sarali.biography-five")}<br /><br />
+                  {t("actors.sarali.biography-5p")}<br /><br />
                 </p>
               </>
             )}

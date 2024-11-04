@@ -14,7 +14,7 @@ export const Introduction: React.FC = (): JSX.Element => {
   return (
     <section data-scroll-section className='effects-section md:border-t-[1px] border-black/60 overflow-x-clip'>
       <article className="mt-[5rem]">
-        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center">
+        <div className="relative flex flex-col items-center justify-center w-full min-h-screen mx-auto">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
 
             {/* Contenido general para escritorio */}
@@ -44,7 +44,8 @@ export const Introduction: React.FC = (): JSX.Element => {
               </h1>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem]">
                 <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
-                  {t("introduction.second-paragraph")}
+                  {t("introduction.second-paragraph")}<br/><br/>
+                  {t("introduction.secondAux-paragraph")}
                 </p>
               </div>
               <div
@@ -63,7 +64,8 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 p-4 my-10 mt-4 text-left text-black md:hidden">
                 <p className="tracking-tight leading-[30px] text-[1.2rem] xl:text-xl 2xl:text-lg font-appleL">
-                  {t("introduction.first-paragraph")}
+                  {t("introduction.first-paragraph")}<br/>
+                  {t("introduction.firstAux-paragraph")}
                 </p>
               </div>
             </div>
@@ -73,12 +75,13 @@ export const Introduction: React.FC = (): JSX.Element => {
               <div data-scroll data-scroll-speed="1.0" className="relative z-30 overflow-visible text-center md:text-left">
                 <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[3vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
                   <span className="block mb-2">{t("introduction.titleF")}</span>
-                  <span className="block">{t("introduction.titleS")}</span>
+                  <span className="block mb-2">{t("introduction.titleS")}</span>
                 </h1>
               </div>
               <div data-scroll data-scroll-speed="2.0" className="relative z-20 hidden px-4 mt-0 text-left text-black font-appleL md:block">
                 <p className="tracking-[1px] leading-[30px] xl:text-2xl 2xl:text-[1.5vw]">
-                  {t("introduction.first-paragraph")}
+                  {t("introduction.first-paragraph")}<br/>
+                  {t("introduction.firstAux-paragraph")}
                 </p>
               </div>
               <div
@@ -97,7 +100,8 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 hidden p-4 mt-4 text-left text-black ">
                 <p className="leading-[30px] xl:text-md 2xl:text-lg font-apple tracking-[1px]">
-                  {t("introduction.second-paragraph")}
+                  {t("introduction.second-paragraph")}<br/>
+                  {t("introduction.secondAux-paragraph")}
                 </p>
               </div>
             </div>

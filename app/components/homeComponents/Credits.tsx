@@ -15,7 +15,7 @@ const Credits: React.FC = (): JSX.Element => {
         <h1 data-scroll data-scroll-speed='1'
           className="flex items-center justify-center py-4 text-5xl text-white translate-y-20 p md:text-7xl font-appleL">
           <span className="text-xl md:text-2xl mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]">✦</span>
-          Credits
+          {t("credits.title")}
         </h1>
       </div>
       <div className="grid h-full grid-cols-2 mt-40 ">
@@ -69,7 +69,7 @@ const Credits: React.FC = (): JSX.Element => {
           </div>
           <h2 className="text-3xl font-apple tracking-[1px] mb-4">- UNIVERSIDAD DEL VALLE</h2>
           <h3 className="mb-2 text-3xl font-appleL">- {t("credits.fai")} (FAI)</h3>
-          <h3 className="text-3xl font-appleL">- {t("credits.ecs")}L (ECS)</h3>
+          <h3 className="text-3xl font-appleL">- {t("credits.ecs")} (ECS)</h3>
         </div>
       </div>
     </section>

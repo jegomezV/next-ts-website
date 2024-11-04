@@ -6,12 +6,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: "Antihegemonic Molds",
-    template: "%s | Antihegemonic Molds",
+    default: "Anti-hegemonic Molds",
+    template: "%s | Anti-hegemonic Molds",
   },
   description: "Developed by Juan Gómez.",
   openGraph: {
-    title: "Antihegemonic Molds",
+    title: "Anti-hegemonic Molds",
     description: "Redefine Fashion: Beyond the Stereotypes",
     url: "",
     siteName: "",
