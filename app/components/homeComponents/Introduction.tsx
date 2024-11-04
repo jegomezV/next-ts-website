@@ -3,7 +3,7 @@ import '@/app/styles/Introduction.scss';
 import Image from 'next/image';
 import React from 'react';
 
-import firstPhoto from '@/public/homeImgs/introduction/introduction1.jpg';
+import firstPhoto from '@/public/homeImgs/introduction/sectionPhoto.webp';
 import secondPhoto from '@/public/homeImgs/introduction/introduction2.jpg';
 
 import { useTranslation } from "react-i18next";
@@ -13,8 +13,8 @@ export const Introduction: React.FC = (): JSX.Element => {
 
   return (
     <section data-scroll-section className='effects-section md:border-t-[1px] border-black/60 overflow-x-clip'>
-      <article>
-        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center border-t-[1px]">
+      <article className="mt-[5rem]">
+        <div className="relative min-h-screen w-full mx-auto flex flex-col justify-center items-center">
           <div className='w-[90%] max-w-screen-lg grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-center'>
 
             {/* Contenido general para escritorio */}
@@ -23,7 +23,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 data-scroll
                 data-scroll-speed="1.5"
                 data-scroll-direction="horizontal"
-                className='image-container relative z-20 py-10 my-10 h-[15rem] w-full 2xl:h-[20vw] mx-auto'>
+                className='image-container relative z-20 py-10 my-10 h-[27rem] w-[90%] 2xl:h-[25vw] mx-auto'>
                 <Image
                   src={firstPhoto}
                   alt="Model section introduction"
@@ -31,13 +31,14 @@ export const Introduction: React.FC = (): JSX.Element => {
                   objectFit="cover"
                   placeholder="blur"
                   priority
-                  className='effects-section hover:scale-105 duration-300 hover:duration-300'
+                  className='duration-300 effects-section hover:scale-105 hover:duration-300'
+                  objectPosition='50% 20%'
                 />
               </div>
               <h1
                 data-scroll
                 data-scroll-speed="-1.0"
-                className="md:hidden my-10 text-5xl mx-auto md:text-4xl xl:text-5xl text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text"
+                className="mx-auto my-10 text-5xl text-black cursor-default md:hidden md:text-4xl xl:text-5xl md:text-transparent md:bg-black font-apple whitespace-nowrap md:bg-clip-text"
               >
                 {t("introduction.titleF")} <br /> {t("introduction.titleS")}
               </h1>
@@ -57,10 +58,10 @@ export const Introduction: React.FC = (): JSX.Element => {
                   objectFit="cover"
                   placeholder="blur"
                   priority
-                  className='hover:scale-105 duration-300 hover:duration-300'
+                  className='duration-300 hover:scale-105 hover:duration-300'
                 />
               </div>
-              <div data-scroll data-scroll-speed="1.0" className="relative z-20 my-10 text-left text-black p-4 mt-4 md:hidden">
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 p-4 my-10 mt-4 text-left text-black md:hidden">
                 <p className="tracking-tight leading-[30px] text-[1.2rem] xl:text-xl 2xl:text-lg font-appleL">
                   {t("introduction.first-paragraph")}
                 </p>
@@ -69,13 +70,13 @@ export const Introduction: React.FC = (): JSX.Element => {
 
             {/* Contenido de la columna derecha para dispositivos grandes */}
             <div className="flex flex-col justify-between order-2 md:order-2">
-              <div data-scroll data-scroll-speed="1.0" className="relative z-30 text-center md:text-left overflow-visible">
+              <div data-scroll data-scroll-speed="1.0" className="relative z-30 overflow-visible text-center md:text-left">
                 <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[3vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
                   <span className="block mb-2">{t("introduction.titleF")}</span>
                   <span className="block">{t("introduction.titleS")}</span>
                 </h1>
               </div>
-              <div data-scroll data-scroll-speed="2.0" className="relative z-20 text-left font-appleL text-black px-4 mt-0 hidden md:block">
+              <div data-scroll data-scroll-speed="2.0" className="relative z-20 hidden px-4 mt-0 text-left text-black font-appleL md:block">
                 <p className="tracking-[1px] leading-[30px] xl:text-2xl 2xl:text-[1.5vw]">
                   {t("introduction.first-paragraph")}
                 </p>
@@ -91,10 +92,10 @@ export const Introduction: React.FC = (): JSX.Element => {
                   objectFit="cover"
                   placeholder="blur"
                   priority
-                  className='introduction-image hover:scale-105 duration-300 hover:duration-300'
+                  className='duration-300 introduction-image hover:scale-105 hover:duration-300'
                 />
               </div>
-              <div data-scroll data-scroll-speed="1.0" className="relative hidden  z-20 text-left text-black p-4 mt-4 ">
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 hidden p-4 mt-4 text-left text-black ">
                 <p className="leading-[30px] xl:text-md 2xl:text-lg font-apple tracking-[1px]">
                   {t("introduction.second-paragraph")}
                 </p>

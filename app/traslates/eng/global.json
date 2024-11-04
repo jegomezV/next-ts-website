@@ -27,7 +27,7 @@
     },
     "jeffry":{
       "titleI": "introduction",
-      "name": "Jeffry Riascos",
+      "name": "JEFFRY RIASCOS",
       "introduction-p": "",
       "titleB": "Biography",
       "biography-fp": "",
@@ -37,7 +37,7 @@
     },
     "alexa":{
       "titleI": "introduction",
-      "name": "Alexa García",
+      "name": "ALEXADRA JORDAN (Alexa)",
       "introduction-p": "Alexandra Jordan, a 34-year-old professional model known by her stage name 'Cherry Bomb,' has carved her path in the fashion industry with a determination that reflects her passion for art and self-expression.",
       "introduction-p2": "Although her journey initially began with studies in Fine Arts and Graphic Design, financial issues cut short her education. However, these challenges did not extinguish her creative spirit; instead, they led her to discover modeling as a new form of art and expression.",
       "introduction-p3": "However, these challenges did not extinguish her creative spirit; instead, they led her to discover modeling as a new form of art and expression.",
@@ -53,7 +53,7 @@
     },
     "zorroGris":{
       "titleI": "introduction",
-      "name": "Zorro Gris",
+      "name": "ZORRO GRIS (liza ardilla)",
       "introduction-p": "In the dynamic and often superficial world of fashion, voices emerge that seek to transcend boundaries. Liza Ardila, fashion designer and visual artist, is one of those voices. Founder and creative director of Zorro Gris, a brand that started in 2013 as an academic project and quickly became her life’s work. From its inception, Zorro Gris has aimed to break away from the conventional, both in terms of gender and sustainability, setting a standard in the Colombian fashion landscape.",
       "titleB": "Biography",
       "biography-fp": "We started in the women's market, but over the years, we began to notice that our silhouettes also resonated with the men's market, Liza says. This discovery was the catalyst for the designer to explore unisex clothing. Her background in the arts led her to question gender roles and how they manifest through fashion. Clothing defines us, and it can also depict the forced definition imposed by political and social forces, she reflects. Inclusion is not just a buzzword for Zorro Gris. Liza emphasizes the importance of representing everyone, breaking the norms set by the industry. The brand advocates not only for diversity in clothing but also in the people who model them.",
@@ -65,7 +65,7 @@
     },
     "diego":{
       "titleI": "introduction",
-      "name": "Diego",
+      "name": "DIEGO MUÑOZ (DIFHER)",
       "introduction-p": "",
       "titleB": "Biography",
       "biography-fp": "",
@@ -76,7 +76,7 @@
     },
     "sarali":{
       "titleI": "introduction",
-      "name": "Saralí",
+      "name": "SARA FERNÁNDEZ (saralí)",
       "introduction-p": "In the relentless universe of fashion, where beauty standards often seem like unmovable walls, Saralí, at 23 years old, is a young model from Cali who challenges the societal limits imposed on her and stands as a living symbol of inclusion and empowerment. Her story, woven with threads of determination and courage, is a testament to resilience against the dictates of conventional fashion.",
       "titleB": "Biography",
       "biography-fp": "Born in the folds of Cali, she found the seed of her passion during the forced lockdown of 2020 due to the pandemic. Amidst the introspection brought by the confinement, Saralí ignited the fire of her dream with the support of her family. She decided to cross the thresholds of modeling as a form of personal expression, thus challenging the dictates of a society that likes to dictate what is beautiful and what is not.",
@@ -89,7 +89,7 @@
     },
     "claudia":{
       "titleI": "introduction",
-      "name": "Claudia Ruiz",
+      "name": "PERFILCLASS (claudia Ruiz)",
       "introduction-p": "In the bustling streets of Cali, where the sun blends with the fast-paced rhythm of life, a beacon of diversity and empowerment emerges in the modeling industry: Perfil Class. This agency, led by Claudia Ruiz, is not just a name in the fashion world, but a narrative of resilience and success against all odds.",
       "titleB": "Biography",
       "biography-fp": "With a 17-year trajectory, Perfil Class has forged its path from the darkest corners of discrimination to become a beacon of inclusion and professionalism in the competitive world of fashion. Claudia Ruiz, along with her partner, has created a space where age, body type, ethnicity, and gender are not barriers, but pillars of celebration.",
@@ -104,22 +104,9 @@
 
   },
   "credits":{
-    "title": "Credits Section",
-    "university-title": "",
-    "university-des-1": "Universidad del valle",
-    "university-des-2": "Cali - colombia",
-    "university-des-3": "Tutor: Devora Cabezas",
-    "faculty-title": "",
-    "faculty-des-1": "Department of Design created in the Faculty of Integrated Arts",
-    "school-info-title": "",
-    "school-info-des-1": "International School of Fashion and Design",
-    "school-info-des-2": "Cali - colombia",
-    "school-info-des-3": "Project Creation Date: Jun/2024",
-    "about-us-title": "",
-    "subtitle-1": "University",
-    "subtitle-2": "Faculty",
-    "subtitle-3": "School Info",
-    "subtitle-4": "About Us"
+    "tutor": "Thesis Supervisor: PATRICIA ALZATE",
+    "fai": "FACULTY OF INTEGRATED ARTS",
+    "ecs": "SCHOOL OF SOCIAL COMMUNICATION"
   },
   "showLess": "Close",
   "showMore": "Show More"

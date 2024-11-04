@@ -27,7 +27,7 @@
     },
     "jeffry":{
       "titleI": "introducción",
-      "name": "Jeffry Riascos",
+      "name": "JEFFRY RIASCOS",
       "introduction-p": "",
       "titleB": "Biografía",
       "biography-fp": "",
@@ -37,7 +37,7 @@
     },
     "alexa":{
       "titleI": "introducción",
-      "name": "Alexa García",
+      "name": "ALEXADRA JORDAN (Alexa)",
       "introduction-p": "Alexandra Jordan, una modelo profesional de 34 años, conocida por su nombre artístico “Cherry Bomb”, ha tallado su camino en la industria de la moda con una determinación que refleja su pasión por el arte y la autoexpresión. Aunque inicialmente su viaje comenzó con estudios en Artes Plásticas y Diseño Gráfico, cuestiones económicas truncaron su educación. Sin embargo, estos desafíos no apagaron su espíritu creativo; más bien, la condujeron a descubrir el modelaje como una nueva forma de arte y expresión.",
       "introduction-p2": "Aunque su viaje comenzó inicialmente con estudios en Bellas Artes y Diseño Gráfico, los problemas financieros interrumpieron su educación. Sin embargo, estos desafíos no extinguieron su espíritu creativo; en cambio, la llevaron a descubrir el modelaje como una nueva forma de arte y expresión.",
       "introduction-p3": "Sin embargo, estos desafíos no extinguieron su espíritu creativo; en cambio, la llevaron a descubrir el modelaje como una nueva forma de arte y expresión.",
@@ -53,7 +53,7 @@
     },
     "zorroGris":{
       "titleI": "introducción",
-      "name": "Zorro Gris",
+      "name": "ZORRO GRIS (liza ardilla)",
       "introduction-p": "En el dinámico y a menudo superficial mundo de la moda, emergen voces que buscan trascender fronteras. Liza Ardila, diseñadora de modas y artista plástica, es una de esas voces. Fundadora y directora creativa de Zorro Gris, su marca que nació en 2013 como un proyecto académico y rápidamente se convirtió en su proyecto de vida. Desde sus inicios, Zorro Gris ha buscado romper con lo convencional, tanto en términos de género como de sostenibilidad, marcando una pauta en el panorama de la moda colombiana.",
       "titleB": "Biografía",
       "biography-fp": "~Nosotros iniciamos en el mercado femenino, pero con el paso de los años empezamos a percibir que nuestras siluetas también daban cierta acogida en el mercado masculino, comenta Liza. Este descubrimiento fue el catalizador para que la diseñadora explorara el ámbito de las prendas unisex. Su formación en artes la llevó a cuestionar los roles de género y cómo estos se manifiestan a través de la moda. ~La ropa nos define y también puede dibujar la definición forzada desde lo político y lo social, reflexiona. La inclusión no es solo una palabra de moda para Zorro Gris. Liza destaca la importancia de representar a todos, rompiendo los cánones establecidos por la industria. La marca no solo aboga por la diversidad en las prendas, sino también en las personas que las modelan.",
@@ -65,7 +65,7 @@
     },
     "diego":{
       "titleI": "introducción",
-      "name": "Diego",
+      "name": "DIEGO MUÑOZ (DIFHER)",
       "introduction-p": "",
       "titleB": "Biografía",
       "biography-fp": "",
@@ -76,7 +76,7 @@
     },
     "sarali":{
       "titleI": "introducción",
-      "name": "Saralí",
+      "name": "SARA FERNÁNDEZ (saralí)",
       "introduction-p": "En el universo implacable de la moda, donde los cánones de belleza suelen parecer muros inamovibles, Saralí a sus 23 años es una joven modelo caleña que desafía los límites impuestos por la sociedad y se levanta como un símbolo viviente de inclusión y empoderamiento. Su historia, tejida con hebras de determinación y coraje, es un testimonio de resistencia frente a los dictámenes de la moda convencional.",
       "titleB": "Biografía",
       "biography-fp": "Nacida en los pliegues de Cali, encontró la semilla de su pasión durante el encierro forzoso en el año 2020 a raíz de la pandemia. En medio de la introspección que trajo consigo el confinamiento, Saralí avivó el fuego de su sueño con el apoyo de su familia. Decidió traspasar los umbrales del modelaje como una forma de expresión personal, desafiando así las imposiciones de una sociedad a la que le gusta dictar lo que es bello y lo que no",
@@ -89,7 +89,7 @@
     },
     "claudia":{
       "titleI": "introducción",
-      "name": "Claudia Ruiz",
+      "name": "PERFILCLASS (claudia Ruiz)",
       "introduction-p": "En las bulliciosas calles de Cali, donde el sol se mezcla con el ritmo acelerado de la vida, emerge un faro de diversidad y empoderamiento en la industria del modelaje: Perfil Class. Esta agencia, dirigida por Claudia Ruiz, no es solo un nombre en el mundo de la moda, sino una narrativa de resistencia y éxito contra viento y marea.",
       "titleB": "Biografía",
       "biography-fp": "Con una trayectoria de 17 años, Perfil Class ha forjado su camino desde los rincones más oscuros de la discriminación hasta convertirse en un faro de inclusión y profesionalismo en el competitivo mundo de la moda. Claudia Ruiz, junto con su socia, ha labrado un espacio donde la edad, la contextura, la etnia y el género no son barreras, sino pilares de celebración.",
@@ -104,22 +104,9 @@
 
   },
   "credits":{
-    "title": "Sección de Creditos",
-    "university-title": "",
-    "university-des-1": "Universidad del valle",
-    "university-des-2": "Cali - colombia",
-    "university-des-3": "Profesor: Devora Cabezas",
-    "faculty-title": "",
-    "faculty-des-1": "Departamento de Diseño en la Facultad de Artes Integradas",
-    "school-info-title": "",
-    "school-info-des-1": "Escuela Internacional de Moda y Diseño",
-    "school-info-des-2": "Cali - colombia",
-    "school-info-des-3": "Fecha de creación del proyecto: Jun/2024",
-    "about-us-title": "",
-    "subtitle-1": "Universidad",
-    "subtitle-2": "Facultad",
-    "subtitle-3": "Escuela Moda",
-    "subtitle-4": "Sobre nosotros"
+    "tutor": "Directora de trabajo de grado: PATRICIA ALZATE",
+    "fai": "⁠FACULTAD DE ARTES INTEGRADAS",
+    "ecs": "ESCUELA DE COMUNICACIÓN SOCIAL"
   },
   "showLess": "Cerrar",
   "showMore": "Mostrar más"

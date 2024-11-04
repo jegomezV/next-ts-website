@@ -19,11 +19,8 @@ export const HeaderM: React.FC = (): JSX.Element => {
   return (
     <header data-scroll-section id='home'>
       {/* Main header section with title */}
-      <div className="h-screen relative flex flex-col items-center justify-center overflow-x-clip">
-        <div className="
-          animate-glow md:block animate-fade-left
-          bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0
-          absolute translate-x-20 inset-0 z-0" />
+      <div className="relative flex flex-col items-center justify-center h-screen overflow-x-clip">
+        <div className="absolute inset-0 z-0 translate-x-20 animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/0 to-zinc-300/0" />
         <h1 className="
           z-30 text-4xl text-transparent duration-1000
           bg-white cursor-default md:h-[6.5rem]
@@ -41,7 +38,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
       </div>
 
       {/* Absolute positioned images */}
-      <div className='effects-section absolute top-0 w-screen h-screen flex items-center justify-center overflow-hidden'>
+      <div className='absolute top-0 flex items-center justify-center w-screen h-screen overflow-hidden effects-section'>
         {/* Image 1 */}
         <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" className=" image-container
           absolute right-0 bottom-28
@@ -57,7 +54,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
-            className='introduction-image hover:translate-x-2 hover:duration-200 duration-200'
+            className='duration-200 introduction-image hover:translate-x-2 hover:duration-200'
             objectPosition='50% 20%'
           />
         </div>
@@ -77,7 +74,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
-            className='introduction-image hover:-translate-x-2 hover:duration-200 duration-200'
+            className='duration-200 introduction-image hover:-translate-x-2 hover:duration-200'
           />
         </div>
 
@@ -95,7 +92,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
-            className='introduction-image hover:-translate-x-2 hover:duration-200 duration-200'
+            className='duration-200 introduction-image hover:-translate-x-2 hover:duration-200'
           />
         </div>
 
@@ -115,7 +112,7 @@ export const HeaderM: React.FC = (): JSX.Element => {
             objectFit="cover"
             placeholder="blur"
             priority
-            className='introduction-image hover:translate-x-2 hover:duration-200 duration-200'
+            className='duration-200 introduction-image hover:translate-x-2 hover:duration-200'
           />
         </div>
 

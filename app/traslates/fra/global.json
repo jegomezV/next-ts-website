@@ -27,7 +27,7 @@
     },
     "jeffry": {
       "titleI": "Introduction",
-      "name": "Jeffry Riascos",
+      "name": "JEFFRY RIASCOS",
       "introduction-p": "",
       "titleB": "Biographie",
       "biography-fp": "",
@@ -37,7 +37,7 @@
     },
     "alexa": {
       "titleI": "Introduction",
-      "name": "Alexa García",
+      "name": "ALEXADRA JORDAN (Alexa)",
       "introduction-p": "Alexandra Jordan, une modèle professionnelle de 34 ans connue sous le nom de scène 'Cherry Bomb', a tracé son chemin dans l'industrie de la mode avec une détermination qui reflète sa passion pour l'art et l'expression de soi. Bien que son parcours ait commencé par des études en Beaux-Arts et en Design Graphique, des problèmes financiers ont interrompu son éducation. Cependant, ces défis n'ont pas éteint son esprit créatif ; au contraire, ils l'ont conduite à découvrir le mannequinat comme une nouvelle forme d'art et d'expression.",
       "introduction-p2": "Bien que son parcours ait commencé par des études en Beaux-Arts et en Design Graphique, des problèmes financiers ont interrompu sa formation. Cependant, ces défis n'ont pas éteint son esprit créatif ; au contraire, ils l'ont amenée à découvrir le mannequinat comme une nouvelle forme d'art et d'expression.",
       "introduction-p3": "Cependant, ces défis n'ont pas éteint son esprit créatif ; au contraire, ils l'ont amenée à découvrir le mannequinat comme une nouvelle forme d'art et d'expression.",
@@ -52,7 +52,7 @@
     },
     "zorroGris": {
       "titleI": "Introduction",
-      "name": "Zorro Gris",
+      "name": "ZORRO GRIS (liza ardilla)",
       "introduction-p": "Dans le monde dynamique et souvent superficiel de la mode, des voix émergent qui cherchent à transcender les frontières. Liza Ardila, créatrice de mode et artiste visuelle, est l'une de ces voix. Fondatrice et directrice créative de Zorro Gris, une marque qui a commencé en 2013 comme un projet académique et est rapidement devenue son œuvre de vie. Depuis ses débuts, Zorro Gris a visé à s'éloigner des conventions, tant en termes de genre que de durabilité, établissant une norme dans le paysage de la mode colombienne.",
       "titleB": "Biographie",
       "biography-fp": "Nous avons commencé sur le marché féminin, mais au fil des années, nous avons commencé à remarquer que nos silhouettes résonnaient également avec le marché masculin, dit Liza. Cette découverte a été le catalyseur pour la créatrice d'explorer les vêtements unisexes. Son parcours artistique l'a conduite à remettre en question les rôles de genre et comment ils se manifestent à travers la mode. Les vêtements nous définissent, et ils peuvent aussi représenter la définition forcée imposée par les forces politiques et sociales, réfléchit-elle. L'inclusion n'est pas juste un mot à la mode pour Zorro Gris. Liza souligne l'importance de représenter tout le monde, en brisant les normes établies par l'industrie. La marque plaide non seulement pour la diversité dans les vêtements mais aussi parmi les personnes qui les modèlent.",
@@ -63,7 +63,7 @@
     },
     "diego": {
       "titleI": "Introduction",
-      "name": "Diego",
+      "name": "DIEGO MUÑOZ (DIFHER)",
       "introduction-p": "",
       "titleB": "Biographie",
       "biography-fp": "",
@@ -73,7 +73,7 @@
     },
     "sarali": {
       "titleI": "Introduction",
-      "name": "",
+      "name": "SARA FERNÁNDEZ (saralí)",
       "introduction-p": "Dans l'univers impitoyable de la mode, où les standards de beauté semblent souvent être des murs infranchissables, Saralí, à 23 ans, est une jeune mannequin de Cali qui défie les limites sociétales qui lui sont imposées et se dresse comme un symbole vivant d'inclusion et d'autonomisation. Son histoire, tissée de fils de détermination et de courage, est un témoignage de la résilience face aux diktats de la mode conventionnelle.",
       "titleB": "Biographie",
       "biography-fp": "Née dans les recoins de Cali, elle a découvert la graine de sa passion pendant le confinement forcé de 2020 dû à la pandémie. Au milieu de l'introspection apportée par l'enfermement, Saralí a allumé le feu de son rêve avec le soutien de sa famille. Elle a décidé de franchir les seuils du mannequinat comme forme d'expression personnelle, défiant ainsi les diktats d'une société qui aime dicter ce qui est beau et ce qui ne l'est pas.",
@@ -85,7 +85,7 @@
     },
     "claudia": {
       "titleI": "Introduction",
-      "name": "Claudia Ruiz",
+      "name": "PERFILCLASS (claudia Ruiz)",
       "introduction-p": "Dans les rues animées de Cali, où le soleil se mêle au rythme rapide de la vie, un phare de diversité et d'autonomisation émerge dans l'industrie du mannequinat : Perfil Class. Cette agence, dirigée par Claudia Ruiz, n'est pas seulement un nom dans le monde de la mode, mais un récit de résilience et de succès contre toute attente.",
       "titleB": "Biographie",
       "biography-fp": "Avec une trajectoire de 17 ans, Perfil Class a tracé son chemin depuis les coins les plus sombres de la discrimination pour devenir un phare d'inclusion et de professionnalisme dans le monde compétitif de la mode. Claudia Ruiz, avec son partenaire, a créé un espace où l'âge, le type de corps, l'ethnicité et le genre ne sont pas des barrières, mais des piliers de célébration.",
@@ -98,22 +98,9 @@
     }
   },
   "credits": {
-    "title": "Section des crédits",
-    "university-title": "",
-    "university-des-1": "Universidad del valle",
-    "university-des-2": "Cali - Colombia",
-    "university-des-3": "Tuteur : Devora Cabezas",
-    "faculty-title": "",
-    "faculty-des-1": "Département de Design créé dans la Faculté des Arts Intégrés",
-    "school-info-title": "",
-    "school-info-des-1": "École Internationale de Mode et de Design",
-    "school-info-des-2": "Cali - Colombia",
-    "school-info-des-3": "Date de création du projet : Juin/2024",
-    "about-us-title": "",
-    "subtitle-1": "Université",
-    "subtitle-2": "Faculté",
-    "subtitle-3": "Infos sur l'école",
-    "subtitle-4": "À propos de nous"
+    "tutor": "Directrice de travail de fin d'études: PATRICIA ALZATE",
+    "fai": "FACULTÉ DES ARTS INTÉGRÉS",
+    "ecs": "ÉCOLE DE COMMUNICATION SOCIALE"
   },
   "showLess": "Fermer",
   "showMore": "Voir plus"
