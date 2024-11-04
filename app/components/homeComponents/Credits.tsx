@@ -34,7 +34,7 @@ const Credits: React.FC = (): JSX.Element => {
                   className="rounded-lg introduction-image"
                 />
               </div>
-              <h2 className="text-3xl -translate-y-10 font-apple">- ANDRÉS SERNA</h2>
+              <h2 className="text-3xl -translate-y-10 font-apple">ANDRÉS SERNA</h2>
             </div>
             <div className="flex flex-col items-center">
               <div className="relative h-[17vw] w-[15vw] 2xl:h-[23vw] 2xl:w-[20vw] translate-y-10 mb-4 image-container">
@@ -46,7 +46,7 @@ const Credits: React.FC = (): JSX.Element => {
                   className="rounded-lg introduction-image"
                 />
               </div>
-              <h2 className="text-3xl translate-y-10 font-apple">- ⁠VALERIA CASTAÑO</h2>
+              <h2 className="text-3xl translate-y-10 font-apple">⁠VALERIA CASTAÑO</h2>
             </div>
           </div>
           {/* Tutora */}
@@ -67,7 +67,7 @@ const Credits: React.FC = (): JSX.Element => {
               className="introduction-image"
             />
           </div>
-          <h2 className="text-3xl font-apple tracking-[1px] mb-4">- UNIVERSIDAD DEL VALLE</h2>
+          <h2 className="text-3xl font-apple tracking-[1px] mb-4">UNIVERSIDAD DEL VALLE</h2>
           <h3 className="mb-2 text-3xl font-appleL">- {t("credits.fai")} (FAI)</h3>
           <h3 className="text-3xl font-appleL">- {t("credits.ecs")} (ECS)</h3>
         </div>

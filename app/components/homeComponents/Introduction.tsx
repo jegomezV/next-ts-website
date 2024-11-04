@@ -40,7 +40,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 data-scroll-speed="-1.0"
                 className="mx-auto my-10 text-5xl text-black cursor-default md:hidden md:text-4xl xl:text-5xl md:text-transparent md:bg-black font-apple whitespace-nowrap md:bg-clip-text"
               >
-                {t("introduction.titleF")} <br /> {t("introduction.titleS")}
+                {t("introduction.titleF")} <br /> {t("introduction.titleS")}<br /> {t("introduction.titleT")}
               </h1>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem]">
                 <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
@@ -76,6 +76,7 @@ export const Introduction: React.FC = (): JSX.Element => {
                 <h1 className="hidden md:block text-center text-xl md:text-4xl xl:text-[3vw] p-2 text-black md:text-transparent md:bg-black cursor-default font-apple whitespace-nowrap md:bg-clip-text">
                   <span className="block mb-2">{t("introduction.titleF")}</span>
                   <span className="block mb-2">{t("introduction.titleS")}</span>
+                  <span className="block mb-2">{t("introduction.titleT")}</span>
                 </h1>
               </div>
               <div data-scroll data-scroll-speed="2.0" className="relative z-20 hidden px-4 mt-0 text-left text-black font-appleL md:block">
