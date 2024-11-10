@@ -106,7 +106,6 @@ export const Introduction: React.FC = (): JSX.Element => {
                 </p>
               </div>
             </div>
-
           </div>
         </div>
       </article>
