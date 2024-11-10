@@ -60,7 +60,7 @@ const Credits: React.FC = (): JSX.Element => {
               />
             ))}
             <div className="flex items-center justify-center mt-8 md:mt-0 mb-10 md:mb-10">
-              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-black/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
+              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-gradient-to-r from-neutral-600 to-black/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
                 {t("credits.tutor")}
               </h3>
             </div>
