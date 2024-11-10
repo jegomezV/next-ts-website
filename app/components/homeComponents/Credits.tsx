@@ -1,12 +1,19 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import universidad from '@/public/homeImgs/credits/Universidadvalle.png';
 import ManPic from '@/public/homeImgs/credits/andresPhoto.webp';
 import GirlPic from '@/public/homeImgs/credits/valeriaPhoto.webp';
 import { useTranslation } from "react-i18next";
 
+// Definir el tipo de las props para PersonCard
+interface PersonCardProps {
+  src: StaticImageData;
+  name: string;
+  translateYClass: string;
+}
+
 // Componente para tarjetas de personas
-const PersonCard = ({ src, name, translateYClass }) => (
+const PersonCard: React.FC<PersonCardProps> = ({ src, name, translateYClass }) => (
   <div className="flex flex-col items-center mb-6 md:mb-0">
     <div className={`relative h-[35vw] w-[35vw] md:h-[17vw] md:w-[15vw] 2xl:h-[23vw] 2xl:w-[20vw] image-container ${translateYClass}`}>
       <Image
@@ -53,13 +60,11 @@ const Credits: React.FC = (): JSX.Element => {
               />
             ))}
             <div className="flex items-center justify-center mt-8 md:mt-0 mb-10 md:mb-10">
-              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] bg-clip-text text-transparent md:translate-x-1/2 bg-gradient-to-r from-neutral-500 to-black/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
+              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-black/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
                 {t("credits.tutor")}
               </h3>
             </div>
           </div>
-
-
 
           {/* Contenido de la Universidad en dispositivos móviles */}
           <div className="flex flex-col items-center mx-auto mt-10 text-center md:hidden">
