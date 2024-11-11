@@ -23,6 +23,7 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
 
   return (
     <section id='actors' data-scroll-section className='relative h-screen w-screen overflow-x-clip mt-[5rem] mb-[12rem]'>
+      
       <div className="text-center bg-black/80 overflow-y-hidden shadow-[0_1px_5px_0px_rgba(0,0,0,1)] border-b-[1px] border-t-[2px] border-white/40">
         <h1 data-scroll data-scroll-speed='-1'
           className="flex items-center justify-center py-1 text-5xl text-white md:text-7xl font-appleL">

@@ -23,7 +23,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ src, name, translateYClass }) =
         className="rounded-lg introduction-image"
       />
     </div>
-    <h2 className={`text-2xl md:text-2xl font-apple mt-2 ${translateYClass} text-center`}>{name}</h2>
+    <h2 className={`text-2xl md:text-3xl font-apple mt-2 ${translateYClass} text-center`}>{name}</h2>
   </div>
 );
 
@@ -39,8 +39,9 @@ const Credits: React.FC = (): JSX.Element => {
 
   return (
     <section id="credits" data-scroll-section className="relative flex flex-col w-screen h-auto min-h-[100vh] mt-20 md:mt-40 effects-section">
+
       <div className="text-center translate-y-8 md:translate-y-12 2xl:translate-y-20 absolute w-full bg-black/80 overflow-y-hidden shadow-[0_1px_5px_0px_rgba(0,0,0,1)] border-b-[1px] border-t-[2px] border-white/40">
-        <h1 data-scroll data-scroll-speed="1" className="flex items-center justify-center py-4 text-3xl text-white translate-y-8 md:translate-y-20 md:text-5xl lg:text-6xl xl:text-7xl font-appleL">
+        <h1 data-scroll data-scroll-speed="1" className="flex items-center justify-center py-2 text-3xl text-white translate-y-8 md:translate-y-20 md:text-5xl lg:text-6xl xl:text-7xl font-appleL">
           <span className="text-lg md:text-xl lg:text-2xl mr-3 md:mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]">✦</span>
           {t("credits.title")}
         </h1>
@@ -60,8 +61,9 @@ const Credits: React.FC = (): JSX.Element => {
               />
             ))}
             <div className="flex items-center justify-center mt-8 md:mt-0 mb-10 md:mb-10">
-              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-black drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
-                {t("credits.tutor")}
+              <h3 className="text-2xl md:text-2xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 text-center">
+                {t("credits.tutor")}<br/>
+                {t("credits.tutor2")}
               </h3>
             </div>
           </div>
@@ -84,7 +86,7 @@ const Credits: React.FC = (): JSX.Element => {
 
         {/* Columna derecha de la universidad para pantallas más grandes */}
         <div className="flex-col items-center justify-center hidden p-5 md:flex md:p-10">
-          <div className="relative h-[18vw] w-[18vw] mb-6 image-container">
+          <div className="relative h-[18vw] w-[14vw] mb-6 image-container">
             <Image
               src={universidad}
               alt="Logo Universidad del Valle"

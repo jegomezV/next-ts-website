@@ -127,7 +127,8 @@
   },
   "credits": {
     "title": "À Propos de Nous",
-    "tutor": "Directrice de thèse: PATRICIA ALZATE",
+    "tutor": "Directrice de thèse",
+    "tutor2": "PATRICIA ALZATE",
     "fai": "FACULTÉ DES ARTS INTÉGRÉS",
     "ecs": "ÉCOLE DE COMMUNICATION SOCIALE"
   },

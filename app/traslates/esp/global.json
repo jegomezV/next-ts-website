@@ -133,7 +133,8 @@
   },
   "credits":{
     "title": "Acerca de Nosotros",
-    "tutor": "DIRECTORA DE TESIS: PATRICIA ALZATE",
+    "tutor": "DIRECTORA DE TESIS",
+    "tutor2": "PATRICIA ALZATE",
     "fai": "⁠FACULTAD DE ARTES INTEGRADAS",
     "ecs": "ESCUELA DE COMUNICACIÓN SOCIAL"
   },

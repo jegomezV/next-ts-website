@@ -133,7 +133,8 @@
   },
   "credits":{
     "title": "About Us",
-    "tutor": "THESIS DIRECTOR PATRICIA ALZATE",
+    "tutor": "THESIS DIRECTOR",
+    "tutor2": "PATRICIA ALZATE",
     "fai": "FACULTY OF INTEGRATED ARTS",
     "ecs": "SCHOOL OF SOCIAL COMMUNICATION"
   },
