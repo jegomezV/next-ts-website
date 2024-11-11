@@ -41,7 +41,7 @@ const Credits: React.FC = (): JSX.Element => {
     <section id="credits" data-scroll-section className="relative flex flex-col w-screen h-auto min-h-[100vh] mt-20 md:mt-40 effects-section">
 
       <div className="text-center translate-y-24 md:translate-y-12 2xl:translate-y-24 absolute w-full bg-black/50 overflow-y-hidden shadow-[0_1px_5px_0px_rgba(0,0,0,1)] border-b-[1px] border-t-[2px] border-white/40">
-        <h1 data-scroll data-scroll-speed="1" className="flex items-center justify-center py-2 text-3xl text-white translate-y-8 md:translate-y-20 md:text-5xl lg:text-6xl xl:text-7xl font-appleL">
+        <h1 data-scroll data-scroll-speed="1" className="flex items-center justify-center py-3 text-3xl text-white translate-y-8 md:translate-y-20 md:text-5xl lg:text-6xl xl:text-6xl font-appleL">
           <span className="text-lg md:text-xl lg:text-2xl mr-3 md:mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]"></span>
           {t("credits.title")}
         </h1>
