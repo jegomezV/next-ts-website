@@ -27,7 +27,7 @@ export const Actors: React.FC<ActorsProps> = ({ onActorClick }): JSX.Element => 
       <div className="text-center bg-black/50 overflow-y-hidden shadow-[0_1px_5px_0px_rgba(0,0,0,1)] border-b-[1px] border-t-[2px] border-white/40">
         <h1 data-scroll data-scroll-speed='-1'
           className="flex items-center justify-center py-1 text-5xl text-white md:text-7xl font-appleL">
-          <span className="text-xl md:text-2xl mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]">✦</span>
+          <span className="text-xl md:text-2xl mr-5 drop-shadow-[0_1.2px_1.2px_rgba(255,255,255,0.2)]"></span>
           {t("actors.title.title1")}
         </h1>
       </div>
