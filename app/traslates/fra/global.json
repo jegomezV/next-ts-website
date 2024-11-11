@@ -4,7 +4,7 @@
       "home": "Accueil",
       "actors": "Acteurs",
       "about": "À propos",
-      "credits": "Crédits"
+      "credits": "À Propos de Nous"
     },
     "first-title": "Moules Anti-Hégémoniques",
     "second-title": "Histoires de Transformation"
@@ -127,7 +127,7 @@
   },
   "credits": {
     "title": "À Propos de Nous",
-    "tutor": "Directrice de travail de fin d'études: PATRICIA ALZATE",
+    "tutor": "Directrice de thèse: PATRICIA ALZATE",
     "fai": "FACULTÉ DES ARTS INTÉGRÉS",
     "ecs": "ÉCOLE DE COMMUNICATION SOCIALE"
   },

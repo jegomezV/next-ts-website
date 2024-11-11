@@ -4,7 +4,7 @@
       "home": "Home",
       "actors": "Actors",
       "about": "About",
-      "credits": "Credits"
+      "credits": "About Us"
     },
     "first-title" : "Anti-Hegemonic Molds",
     "second-title" : "Stories of Transformation"
@@ -133,7 +133,7 @@
   },
   "credits":{
     "title": "About Us",
-    "tutor": "Thesis Supervisor: PATRICIA ALZATE",
+    "tutor": "THESIS DIRECTOR PATRICIA ALZATE",
     "fai": "FACULTY OF INTEGRATED ARTS",
     "ecs": "SCHOOL OF SOCIAL COMMUNICATION"
   },

@@ -15,7 +15,7 @@ interface PersonCardProps {
 // Componente para tarjetas de personas
 const PersonCard: React.FC<PersonCardProps> = ({ src, name, translateYClass }) => (
   <div className="flex flex-col items-center mb-6 md:mb-0">
-    <div className={`relative h-[35vw] w-[35vw] md:h-[17vw] md:w-[15vw] 2xl:h-[23vw] 2xl:w-[20vw] image-container ${translateYClass}`}>
+    <div className={`relative h-[30vw] w-[27vw] md:h-[17vw] md:w-[15vw] 2xl:h-[22vw] 2xl:w-[18vw] image-container ${translateYClass}`}>
       <Image
         src={src}
         alt={name}
@@ -23,7 +23,7 @@ const PersonCard: React.FC<PersonCardProps> = ({ src, name, translateYClass }) =
         className="rounded-lg introduction-image"
       />
     </div>
-    <h2 className={`text-2xl md:text-3xl font-apple ${translateYClass} text-center`}>{name}</h2>
+    <h2 className={`text-2xl md:text-2xl font-apple mt-2 ${translateYClass} text-center`}>{name}</h2>
   </div>
 );
 
@@ -60,7 +60,7 @@ const Credits: React.FC = (): JSX.Element => {
               />
             ))}
             <div className="flex items-center justify-center mt-8 md:mt-0 mb-10 md:mb-10">
-              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-gradient-to-r from-neutral-600 to-black/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
+              <h3 className="text-3xl md:text-4xl font-appleL tracking-[1px] md:tracking-[2px] max-md:translate-x-1/2 bg-clip-text text-transparent bg-black drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)] text-center">
                 {t("credits.tutor")}
               </h3>
             </div>
@@ -92,9 +92,9 @@ const Credits: React.FC = (): JSX.Element => {
               className="introduction-image"
             />
           </div>
-          <h2 className="text-3xl font-apple tracking-[1px] mb-4 text-center">UNIVERSIDAD DEL VALLE</h2>
-          <h3 className="mb-2 text-3xl text-center font-appleL">- {t("credits.fai")} (FAI)</h3>
-          <h3 className="text-3xl text-center font-appleL">- {t("credits.ecs")} (ECS)</h3>
+          <h2 className="text-2xl font-apple tracking-[1px] mb-4 text-center">UNIVERSIDAD DEL VALLE</h2>
+          <h3 className="mb-2 text-2xl text-center font-appleL">- {t("credits.fai")} (FAI)</h3>
+          <h3 className="text-2xl text-center font-appleL">- {t("credits.ecs")} (ECS)</h3>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@
       "home": "Inicio",
       "actors": "Actores",
       "about": "Acerca de",
-      "credits": "Créditos"
+      "credits": "Acerca de Nosotros"
     },
     "first-title" : "Moldes Anti Hegemónicos",
     "second-title" : "Historias de Transformación"
@@ -133,7 +133,7 @@
   },
   "credits":{
     "title": "Acerca de Nosotros",
-    "tutor": "Directora de trabajo de grado: PATRICIA ALZATE",
+    "tutor": "DIRECTORA DE TESIS: PATRICIA ALZATE",
     "fai": "⁠FACULTAD DE ARTES INTEGRADAS",
     "ecs": "ESCUELA DE COMUNICACIÓN SOCIAL"
   },

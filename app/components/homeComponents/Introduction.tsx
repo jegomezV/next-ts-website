@@ -36,17 +36,22 @@ export const Introduction: React.FC = (): JSX.Element => {
                 />
               </div>
               <h1
-  data-scroll
-  data-scroll-speed="-1.0"
-  className="w-[90%] max-w-[18rem] mx-auto my-10 text-4xl text-center text-black cursor-default md:hidden md:text-4xl xl:text-5xl font-apple break-words md:text-transparent md:bg-black md:bg-clip-text"
->
-  {t("introduction.titleF")} <br /> {t("introduction.titleS")}<br /> {t("introduction.titleT")}
-</h1>
-
-              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem]">
+                data-scroll
+                data-scroll-speed="-1.0"
+                className="w-[90%] max-w-[18rem] mx-auto my-10 text-4xl text-center text-black cursor-default md:hidden md:text-4xl xl:text-5xl font-apple break-words md:text-transparent md:bg-black md:bg-clip-text"
+              >
+                {t("introduction.titleF")} <br /> {t("introduction.titleS")}<br /> {t("introduction.titleT")}
+              </h1>
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem] hidden md:block">
                 <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
-                  {t("introduction.second-paragraph")}<br/><br/>
+                  {t("introduction.second-paragraph")}<br /><br />
                   {t("introduction.secondAux-paragraph")}
+                </p>
+              </div>
+              <div data-scroll data-scroll-speed="1.0" className="relative z-20 text-left text-black px-4 text-[1.2rem] md:hidden ">
+                <p className="xl:text-2xl 2xl:text-[1.5vw] font-appleL">
+                  {t("introduction.first-paragraph")}<br /><br />
+                  {t("introduction.firstAux-paragraph")}
                 </p>
               </div>
               <div
@@ -65,8 +70,8 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 p-4 my-10 mt-4 text-left text-black md:hidden">
                 <p className="tracking-tight leading-[30px] text-[1.2rem] xl:text-xl 2xl:text-lg font-appleL">
-                  {t("introduction.first-paragraph")}<br/>
-                  {t("introduction.firstAux-paragraph")}
+                  {t("introduction.second-paragraph")}<br />
+                  {t("introduction.secondAux-paragraph")}
                 </p>
               </div>
             </div>
@@ -82,7 +87,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
               <div data-scroll data-scroll-speed="2.0" className="relative z-20 hidden px-4 mt-0 text-left text-black font-appleL md:block">
                 <p className="tracking-[1px] leading-[30px] xl:text-2xl 2xl:text-[1.5vw]">
-                  {t("introduction.first-paragraph")}<br/>
+                  {t("introduction.first-paragraph")}<br />
                   {t("introduction.firstAux-paragraph")}
                 </p>
               </div>
@@ -102,7 +107,7 @@ export const Introduction: React.FC = (): JSX.Element => {
               </div>
               <div data-scroll data-scroll-speed="1.0" className="relative z-20 hidden p-4 mt-4 text-left text-black ">
                 <p className="leading-[30px] xl:text-md 2xl:text-lg font-apple tracking-[1px]">
-                  {t("introduction.second-paragraph")}<br/>
+                  {t("introduction.second-paragraph")}<br />
                   {t("introduction.secondAux-paragraph")}
                 </p>
               </div>
