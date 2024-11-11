@@ -15,7 +15,7 @@ interface PersonCardProps {
 // Componente para tarjetas de personas
 const PersonCard: React.FC<PersonCardProps> = ({ src, name, translateYClass }) => (
   <div className="flex flex-col items-center mb-6 md:mb-0">
-    <div className={`relative h-[30vw] w-[27vw] md:h-[17vw] md:w-[15vw] 2xl:h-[22vw] 2xl:w-[18vw] image-container ${translateYClass}`}>
+    <div className={`relative h-[30vw] w-[21vw] md:h-[17vw] md:w-[14vw] 2xl:h-[21vw] 2xl:w-[15vw] image-container ${translateYClass}`}>
       <Image
         src={src}
         alt={name}
@@ -93,8 +93,8 @@ const Credits: React.FC = (): JSX.Element => {
             />
           </div>
           <h2 className="text-2xl font-apple tracking-[1px] mb-4 text-center">UNIVERSIDAD DEL VALLE</h2>
-          <h3 className="mb-2 text-2xl text-center font-appleL">- {t("credits.fai")} (FAI)</h3>
-          <h3 className="text-2xl text-center font-appleL">- {t("credits.ecs")} (ECS)</h3>
+          <h3 className="mb-2 text-2xl text-center font-appleL"> {t("credits.fai")} (FAI)</h3>
+          <h3 className="text-2xl text-center font-appleL"> {t("credits.ecs")} (ECS)</h3>
         </div>
       </div>
     </section>
