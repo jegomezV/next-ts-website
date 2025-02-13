@@ -44,7 +44,7 @@ const IntroductionJeffry: React.FC = (): JSX.Element => {
             className="flex items-center mt-4 text-xl md:text-2xl text-pink-500 transition-transform cursor-pointer hover:text-pink-600 hover:scale-105"
           >
             <FaInstagram className="mr-2" />
-            IG: @jeffry_riascos
+            IG: @jeffrey_riascos
           </a>
         </div>
 
